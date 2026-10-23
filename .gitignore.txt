@@ -1,0 +1,7 @@
+# รูปต้นฉบับขนาดใหญ่ (เว็บใช้แค่ image/web และ image/reward)
+image/*.JPG
+image/*.png
+# ไฟล์เอกสารต้นฉบับและไฟล์สำหรับรันบนเครื่อง
+tests/*.docx
+__pycache__/
+Preview website.cmd

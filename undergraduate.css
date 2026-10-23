@@ -1,0 +1,298 @@
+/* Undergraduate page (undergraduate.html).
+   Colours come from the CI tokens in styles.css:
+   --ci-gold #FAAC1E · --ci-orange #F16422 · --ci-purple #9E76B4 (--ci-purple-strong for white text) */
+
+/* ---------- Shared building blocks ---------- */
+.ug-section { padding: clamp(4.5rem, 9vw, 7.5rem) 0; background: var(--cream); }
+.ug-section-tint { background: var(--ci-purple-tint); }
+
+.ug-heading { max-width: 760px; margin-bottom: 2.5rem; }
+.ug-heading h2 { margin: .4rem 0 1rem; font-size: clamp(2.2rem, 4.4vw, 4.2rem); font-weight: 500; line-height: 1.12; letter-spacing: -.03em; }
+.ug-heading h2 em { display: block; color: var(--ci-orange); font-style: normal; }
+.ug-heading > p:not(.degree-level) { color: var(--ci-gray-dark); line-height: 1.8; }
+
+.ug-card { padding: clamp(1.4rem, 2.5vw, 2rem); border: 1px solid var(--ci-purple-soft); border-radius: 16px; background: #fff; }
+.ug-card h3 { margin: 0 0 .9rem; font-size: 1.3rem; font-weight: 600; }
+.ug-card p, .ug-card li { color: var(--ci-gray-dark); line-height: 1.75; }
+.ug-card ul { margin: 0; padding-left: 1.1rem; }
+.ug-card li + li { margin-top: .5rem; }
+
+.ug-link { display: inline-block; margin-top: 1rem; padding-bottom: .2rem; border-bottom: 2px solid var(--ci-orange); color: var(--ci-orange-deep); font-weight: 600; }
+.ug-small { margin-top: 1rem; font-size: .85rem; }
+.ug-note { margin-top: 2rem; color: var(--ci-gray-dark); }
+.ug-note a { color: var(--ci-orange-deep); font-weight: 600; }
+
+/* ---------- Hero facts ---------- */
+.degree-page .degree-hero h1 { font-size: clamp(2.2rem, 4.2vw, 3.8rem); line-height: 1.2; }
+
+/* ---------- Two program cards ---------- */
+.ug-programs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.2rem; }
+.ug-program { display: flex; flex-direction: column; padding: clamp(1.6rem, 3vw, 2.6rem); border-radius: 20px; color: #fff; }
+.ug-program-thai { background: linear-gradient(150deg, var(--ci-gold), var(--ci-orange) 70%); }
+.ug-program-intl { background: linear-gradient(150deg, var(--ci-purple), var(--ci-purple-strong) 70%); }
+.ug-program-tag { margin: 0; font-size: .75rem; font-weight: 700; letter-spacing: .12em; }
+.ug-program h3 { margin: 2rem 0 .3rem; font-size: clamp(1.5rem, 2.6vw, 2.2rem); font-weight: 600; line-height: 1.25; }
+.ug-program-en { margin: 0 0 1.5rem; opacity: .9; }
+.ug-program dl { margin: 0 0 auto; }
+.ug-program dt { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #ffffff55; font-size: .8rem; font-weight: 600; opacity: .9; }
+.ug-program dd { margin: .25rem 0 0; font-size: 1.1rem; font-weight: 500; }
+.ug-program .ug-link { align-self: flex-start; margin-top: 1.8rem; border-color: #fff; color: #fff; }
+
+/* ---------- Curriculum structure ---------- */
+.ug-split { display: grid; grid-template-columns: 1.1fr .9fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
+.ug-split .ug-heading { margin-bottom: 0; }
+.ug-credits { display: grid; gap: 1rem; margin: 0; padding: 0; list-style: none; }
+.ug-credits li { display: flex; align-items: center; gap: 1.4rem; padding: 1.4rem 1.6rem; border-radius: 16px; background: #fff; border-left: 6px solid var(--ci-gold); }
+.ug-credits li:nth-child(2) { border-left-color: var(--ci-orange); }
+.ug-credits li:nth-child(3) { border-left-color: var(--ci-purple); }
+.ug-credits b { min-width: 3ch; font-size: 2.6rem; font-weight: 600; line-height: 1; }
+.ug-credits span { color: var(--ci-gray-dark); }
+
+/* ---------- Admission routes ---------- */
+.ug-admission-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; align-items: start; }
+.ug-track { margin: 0 0 1rem; padding: .9rem 1.2rem; border-radius: 12px; color: #fff; font-size: 1.15rem; font-weight: 600; }
+.ug-track-thai { background: var(--ci-orange); }
+.ug-track-intl { background: var(--ci-purple-strong); }
+.ug-round { margin-bottom: .7rem; border: 1px solid var(--ci-purple-soft); border-radius: 12px; background: #fff; }
+.ug-round summary { position: relative; padding: 1rem 3rem 1rem 1.2rem; cursor: pointer; font-weight: 600; list-style: none; }
+.ug-round summary::-webkit-details-marker { display: none; }
+.ug-round summary::after { content: "+"; position: absolute; right: 1.2rem; top: 50%; color: var(--ci-orange); font-size: 1.5rem; line-height: 1; transform: translateY(-50%); }
+.ug-round[open] summary::after { content: "−"; }
+.ug-round[open] summary { border-bottom: 1px solid var(--ci-purple-soft); }
+.ug-round ul { margin: 0; padding: 1rem 1.2rem 0 2.4rem; color: var(--ci-gray-dark); line-height: 1.75; }
+.ug-round li + li { margin-top: .45rem; }
+.ug-round .ug-link { margin: .8rem 1.2rem 1.2rem; }
+.ug-round > ul:last-child { padding-bottom: 1.2rem; }
+
+/* ---------- IPAS ---------- */
+.ug-section-ipas { background: #fff; }
+.ug-timeline { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 0 0 1.5rem; padding: 0; list-style: none; }
+.ug-timeline li { padding: 1.2rem; border-radius: 14px; background: var(--ci-purple-strong); color: #fff; }
+.ug-timeline b { display: block; margin-bottom: .3rem; font-size: 1.15rem; }
+.ug-timeline span { opacity: .9; }
+.ug-ipas-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; margin-bottom: 2rem; }
+
+/* ---------- Support ---------- */
+.ug-support { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+
+/* ---------- Mobile ---------- */
+@media (max-width: 900px) {
+  .ug-programs, .ug-split, .ug-admission-grid, .ug-ipas-grid, .ug-support { grid-template-columns: 1fr; }
+  .ug-timeline { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .ug-timeline { grid-template-columns: 1fr; }
+}
+
+/* ---------- Yellow card tone (same as the index Undergraduate card) ---------- */
+.ug-program, .ug-program-thai, .ug-program-intl, .ug-card, .ug-credits li, .ug-timeline li, .ug-track, .ug-track-thai, .ug-track-intl {
+  border: 0; color: #fff; background: linear-gradient(150deg, #FDC456, var(--ci-gold) 60%);
+  box-shadow: 0 .5rem 1.2rem rgba(250, 172, 30, .25);
+}
+.ug-card h3, .ug-card p, .ug-card li, .ug-card b, .ug-credits span, .ug-credits b { color: #fff; }
+.ug-card .ug-link, .ug-program .ug-link { border-color: #fff; color: #fff; }
+.ug-credits li { border-left: 0; }
+
+
+/* ---------- Hero layout (colours live in levels.css) ---------- */
+.degree-page .degree-lede { max-width: 34rem; }
+.degree-page .degree-breadcrumb { font-size: .85rem; }
+
+
+.ug-facts { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; margin: 0; padding: 0; list-style: none; }
+.ug-facts li { display: grid; align-content: start; gap: .3rem; padding: 1.1rem 1.3rem; border-radius: 14px; background: rgba(255, 255, 255, .9); box-shadow: 0 .4rem 1rem rgba(70, 42, 94, .18); }
+.ug-facts span { color: var(--ci-gray-dark); font-size: .8rem; }
+.ug-facts b { color: var(--ink); font-size: clamp(1.05rem, 1.5vw, 1.3rem); font-weight: 600; line-height: 1.3; }
+
+@media (max-width: 700px) {
+  .degree-page .degree-hero-grid { padding-block: 110px 50px; gap: 1.6rem; }
+  .degree-page .degree-actions { flex-wrap: nowrap; gap: .6rem; }
+  .degree-page .degree-actions .button { flex: 1 1 0; padding-inline: .8rem; font-size: .8rem; }
+  .ug-facts li { padding: .8rem .9rem; }
+  .ug-facts span { font-size: .72rem; }
+  .ug-facts b { font-size: .95rem; }
+}
+
+/* ---------- Hero facts: 4 stacked glass rows ---------- */
+.ug-facts { grid-template-columns: 1fr; gap: .7rem; }
+.ug-facts li {
+  grid-template-columns: 9rem 1fr; align-items: center; gap: 1rem; padding: 1rem 1.4rem;
+  border: 1px solid rgba(255, 255, 255, .55); border-radius: 16px;
+  background: rgba(255, 255, 255, .22); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), 0 .4rem 1rem rgba(70, 42, 94, .12);
+  backdrop-filter: blur(14px) saturate(140%); -webkit-backdrop-filter: blur(14px) saturate(140%);
+}
+.ug-facts span { color: var(--lv-text, var(--ink)); opacity: .75; font-size: .8rem; }
+.ug-facts b { color: var(--lv-text, var(--ink)); }
+
+/* ---------- Faculty mark on program cards (same as the index Finder cards) ---------- */
+.ug-program { position: relative; overflow: hidden; isolation: isolate; }
+.ug-program::before {
+  content: ""; position: absolute; z-index: -1; width: 300px; height: 327px; top: -72px; right: -100px;
+  background: url("image/web/nursecmu-mark.png") center / contain no-repeat; opacity: .3;
+  transition: transform 1s ease, opacity .5s;
+}
+.ug-program:hover::before { opacity: .45; transform: translate(-12px, 18px) scale(1.05); }
+
+@media (max-width: 700px) {
+  .ug-facts li { grid-template-columns: 1fr; gap: .2rem; padding: .8rem 1rem; }
+}
+
+/* ---------- Hero facts: single-line glass rows with a check badge ---------- */
+.ug-facts li { grid-template-columns: auto 1fr; gap: .9rem; padding: .95rem 1.3rem; }
+.ug-facts li::before {
+  content: "✓"; display: grid; place-items: center; width: 2rem; height: 2rem; border-radius: 50%;
+  background: #fff; color: var(--ci-orange); font-size: .95rem; font-weight: 700;
+  box-shadow: 0 .2rem .5rem rgba(70, 42, 94, .15);
+}
+.ug-facts b { font-size: clamp(1rem, 1.4vw, 1.15rem); font-weight: 600; line-height: 1.35; }
+.ug-facts li:hover { background: rgba(255, 255, 255, .32); transform: translateX(4px); transition: background .25s, transform .25s; }
+@media (max-width: 700px) {
+  .ug-facts li { grid-template-columns: auto 1fr; padding: .75rem 1rem; }
+  .ug-facts li::before { width: 1.7rem; height: 1.7rem; font-size: .8rem; }
+}
+
+/* ---------- Content cards: glassmorphism instead of solid yellow ---------- */
+.level-ug .ug-section { background:
+  radial-gradient(circle at 8% 15%, rgba(250, 172, 30, .22), transparent 35%),
+  radial-gradient(circle at 92% 85%, rgba(158, 118, 180, .18), transparent 38%), var(--cream); }
+.level-ug .ug-section-tint { background:
+  radial-gradient(circle at 90% 10%, rgba(250, 172, 30, .25), transparent 38%),
+  radial-gradient(circle at 10% 90%, rgba(241, 100, 34, .12), transparent 35%), var(--lv-tint); }
+
+.ug-program, .ug-program-thai, .ug-program-intl, .ug-card, .ug-credits li, .ug-timeline li, .ug-track, .ug-track-thai, .ug-track-intl {
+  color: var(--ink); background: rgba(255, 255, 255, .55);
+  border: 1px solid rgba(255, 255, 255, .8);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .9), 0 .6rem 1.6rem rgba(70, 42, 94, .08);
+  backdrop-filter: blur(16px) saturate(150%); -webkit-backdrop-filter: blur(16px) saturate(150%);
+}
+.ug-card h3, .ug-card b, .ug-credits b, .ug-program h3, .ug-timeline b { color: var(--ink); }
+.ug-card p, .ug-card li, .ug-credits span, .ug-program-en, .ug-timeline span { color: var(--ci-gray-dark); }
+.ug-program-tag { color: var(--ci-orange-deep); }
+.ug-program dt { color: var(--ci-gray-dark); border-top-color: rgba(42, 27, 54, .1); }
+.ug-program dd { color: var(--ink); }
+.ug-card .ug-link, .ug-program .ug-link { border-color: var(--ci-orange); color: var(--ci-orange-deep); }
+.ug-track { border-left: 5px solid var(--lv); }
+.ug-credits li { border-left: 5px solid var(--lv); }
+.ug-timeline li { border-top: 4px solid var(--lv); }
+
+/* ---------- Hero facts: no check badge, roomier rows ---------- */
+.ug-facts { gap: 1rem; }
+.ug-facts li { grid-template-columns: 1fr; padding: 1.35rem 1.6rem; }
+.ug-facts li::before { content: none; }
+.ug-facts li:hover { transform: none; }
+@media (max-width: 700px) {
+  .ug-facts { gap: .75rem; }
+  .ug-facts li { grid-template-columns: 1fr; padding: 1rem 1.2rem; }
+}
+
+/* ---------- Program cards: no logo; clear bilingual title (current language big, other language small) ---------- */
+.ug-program::before { content: none; }
+.ug-program-en { margin-top: .35rem; padding-left: .7rem; border-left: 3px solid var(--ci-orange); color: var(--ci-gray-dark); font-size: .95rem; font-style: italic; opacity: 1; }
+
+/* ---------- Program cards: bigger dt headings, light dd values ---------- */
+.ug-program dt { margin-top: 1.3rem; padding-top: 1.1rem; color: var(--ink); font-size: 1.1rem; font-weight: 600; opacity: 1; }
+.ug-program dd { margin-top: .35rem; color: var(--ci-gray-dark); font-size: 1rem; font-weight: 300; line-height: 1.6; }
+
+/* ---------- Credit rows: big number + unit + category ---------- */
+.ug-credits li { display: grid; grid-template-columns: 5.5rem 1fr; align-items: center; gap: 1.2rem; padding: 1.3rem 1.6rem; }
+.ug-credits b { color: var(--ci-orange); font-size: clamp(2.4rem, 4vw, 3.2rem); font-weight: 600; line-height: 1; text-align: right; }
+.ug-credits p { display: grid; gap: .1rem; margin: 0; }
+.ug-credits small { color: var(--ci-gray-dark); font-size: .75rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; }
+.ug-credits span { color: var(--ink); font-size: 1.1rem; font-weight: 600; }
+
+/* ---------- Credit rows: category left · number + unit right ---------- */
+.ug-credits li { grid-template-columns: 1fr auto; }
+.ug-credits p { display: flex; align-items: baseline; gap: .45rem; }
+.ug-credits b { text-align: left; }
+.ug-credits small { text-transform: none; letter-spacing: 0; font-size: .9rem; }
+.ug-credits p { gap: .75rem; }
+.ug-program dd { color: var(--ink); font-size: clamp(1.15rem, 1.6vw, 1.35rem); font-weight: 400; }
+
+/* ---------- Admission column headings: yellow card · bigger type ---------- */
+.ug-track, .ug-track-thai, .ug-track-intl {
+  padding: 1.2rem 1.5rem; border: 0; border-left: 0; color: #fff;
+  background: linear-gradient(150deg, var(--lv-light, #FDC456), var(--lv, #FAAC1E) 60%);
+  font-size: clamp(1.25rem, 2vw, 1.55rem); font-weight: 600;
+  text-shadow: 0 1px 4px rgba(77, 77, 77, .45);
+  box-shadow: 0 .5rem 1.2rem rgba(250, 172, 30, .25);
+  backdrop-filter: none; -webkit-backdrop-filter: none;
+}
+
+/* ---------- Round toggles: triangle ▼ closed · ▲ open ---------- */
+.ug-round summary::after { content: "▼"; font-size: .8rem; }
+.ug-round[open] summary::after { content: "▲"; }
+
+/* ---------- Fatter triangle toggle ---------- */
+.ug-round summary::after {
+  content: ""; width: 0; height: 0; right: 1.2rem;
+  border-left: .55rem solid transparent; border-right: .55rem solid transparent;
+  border-top: .7rem solid var(--ci-orange); border-bottom: 0;
+}
+.ug-round[open] summary::after { content: ""; border-top: 0; border-bottom: .7rem solid var(--ci-orange); }
+
+/* ---------- TCAS round 2: three numbered quota projects in one panel ---------- */
+.ug-quota { margin: 0; padding: 1rem 1.2rem 1.2rem 2.6rem; }
+.ug-quota > li { padding-left: .3rem; color: var(--ci-orange-deep); font-weight: 600; }
+.ug-quota > li + li { margin-top: 1.2rem; padding-top: 1.2rem; border-top: 1px solid var(--ci-purple-soft); }
+.ug-quota h4 { margin: 0 0 .4rem; color: var(--ink); font-size: 1.05rem; }
+.ug-quota ul { padding: 0 0 0 1.1rem; font-weight: 400; }
+.ug-quota .ug-link { margin: .6rem 0 0; }
+
+/* ---------- Admission heading row: title left · official link right ---------- */
+.ug-heading-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 1rem 2rem; flex-wrap: wrap; max-width: none; }
+.ug-heading-row h2 { margin-bottom: 0; }
+.ug-heading-row .ug-note { margin: 0 0 .4rem; }
+.ug-heading-row .ug-note { display: grid; gap: .2rem; font-size: 1.1rem; text-align: right; }
+.ug-heading-row .ug-note a { font-size: clamp(1.25rem, 2vw, 1.5rem); }
+@media (max-width: 700px) { .ug-heading-row .ug-note { text-align: left; } }
+
+/* ---------- Admission: Thai shows every route; English shows only the International Program's IPAS ---------- */
+html:not([lang="en"]) .en-only, html[lang="en"] .th-only { display: none; }
+html[lang="en"] .ug-admission-grid { grid-template-columns: minmax(0, 760px); }
+
+/* ---------- IPAS page: connected timeline ---------- */
+.ipas-hero .degree-actions { margin-top: 1.8rem; }
+.ug-timeline { position: relative; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 0 0 3rem; padding: 0; list-style: none; counter-reset: step; }
+.ug-timeline::before { content: ""; position: absolute; top: 1.15rem; left: 12.5%; right: 12.5%; height: 4px; border-radius: 4px; background: linear-gradient(90deg, var(--ci-gold), var(--ci-orange), var(--ci-purple)); }
+.ug-timeline li { position: relative; display: grid; justify-items: center; gap: .3rem; padding: 3.4rem .8rem 1.2rem; border: 0; border-top: 0; background: none; box-shadow: none; text-align: center; counter-increment: step; backdrop-filter: none; -webkit-backdrop-filter: none; }
+.ug-timeline li::before { content: counter(step); position: absolute; top: 0; left: 50%; display: grid; place-items: center; width: 2.4rem; height: 2.4rem; border: 4px solid #fff; border-radius: 50%; background: var(--ci-orange); color: #fff; font-weight: 700; transform: translateX(-50%); box-shadow: 0 .3rem .8rem rgba(70, 42, 94, .2); }
+.ug-timeline li:nth-child(1)::before { background: var(--ci-gold); }
+.ug-timeline li:nth-child(4)::before { background: var(--ci-purple-strong); }
+.ug-timeline b { color: var(--ink); font-size: 1.2rem; }
+.ug-timeline span { color: var(--ci-gray-dark); }
+
+@media (max-width: 700px) {
+  .ug-timeline { grid-template-columns: 1fr; gap: 0; }
+  .ug-timeline::before { top: 0; bottom: 0; left: 1.2rem; right: auto; width: 4px; height: auto; background: linear-gradient(180deg, var(--ci-gold), var(--ci-orange), var(--ci-purple)); }
+  .ug-timeline li { justify-items: start; padding: .4rem 0 1.6rem 3.6rem; text-align: left; }
+  .ug-timeline li::before { left: 1.3rem; }
+}
+.ipas-hero .degree-hero-grid { grid-template-columns: minmax(0, 760px); }
+
+/* ---------- IPAS page: numbered blocks following the source document ---------- */
+.ipas-doc { display: grid; gap: clamp(2.5rem, 5vw, 4rem); }
+.ipas-block > h2 { display: flex; align-items: center; gap: .9rem; margin: 0 0 1.2rem; font-size: clamp(1.6rem, 2.8vw, 2.3rem); font-weight: 600; }
+.ipas-block > h2 span { display: grid; place-items: center; flex: 0 0 auto; width: 2.6rem; height: 2.6rem; border-radius: 50%; background: var(--ci-orange); color: #fff; font-size: 1.1rem; }
+.ipas-block > p { color: var(--ci-gray-dark); }
+.ipas-block .ug-timeline { margin: 2rem 0 0; }
+.ipas-big { font-size: 1.3rem; }
+.ipas-big b { color: var(--ci-orange); font-size: 3rem; line-height: 1; }
+.ipas-scores { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .6rem; margin: .8rem 0 !important; padding: 0 !important; list-style: none; }
+.ipas-scores li { display: grid; padding: .7rem .9rem; border-radius: 12px; background: var(--ci-orange-tint); color: var(--ink); font-size: 1.3rem; font-weight: 600; }
+.ipas-scores li + li { margin-top: 0; }
+.ipas-scores b { color: var(--ci-gray-dark); font-size: .75rem; font-weight: 500; }
+.ipas-fee p b { color: var(--ci-orange); font-size: 1.5rem; }
+.ipas-apply { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 1rem; padding: 1.6rem 2rem; border-radius: 18px; background: var(--ci-orange-tint); }
+.ipas-apply p { margin: 0; font-size: 1.2rem; font-weight: 600; }
+@media (max-width: 520px) { .ipas-scores { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+
+/* ---------- Master's / Doctoral pages (same layout as undergraduate) ---------- */
+.tbd { display: inline-block; padding: .2rem .7rem; border: 1px dashed var(--ci-orange); border-radius: 999px; color: var(--ci-orange-deep); font-size: .85rem; font-weight: 500; }
+.grad-fields { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .3rem 1.4rem; margin: 0 0 .5rem; padding-left: 1.3rem; color: var(--ink); line-height: 1.6; }
+.grad-fields li::marker { color: var(--ci-orange); font-weight: 700; }
+.grad-single { grid-template-columns: minmax(0, 760px); }
+.ug-credits li > p { margin: 0; }
+@media (max-width: 520px) { .grad-fields { grid-template-columns: 1fr; } }
+.grad-fee-note { margin: 1.2rem 0 0; color: var(--ci-gray-dark); font-size: .85rem; }
+.grad-alert { display: inline-block; margin: .3rem 0 0; padding: .35rem .8rem; border-radius: 8px; background: var(--ci-orange-tint); color: var(--ci-orange-deep); font-size: .9rem; font-weight: 600; }
+.ug-card ul { margin: 0 0 .5rem; }

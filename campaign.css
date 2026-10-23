@@ -1,0 +1,161 @@
+/* Recruitment campaign: real identity, open white space, Warm Sunset accents. */
+.brand { gap: .85rem; letter-spacing: 0; flex-shrink: 0; }
+.faculty-logo { width: 76px; height: 70px; object-fit: contain; padding: 0; background: transparent; border: 0; border-radius: 0; box-shadow: none; }
+.faculty-brand-text { display: grid; gap: .3rem; max-width: 190px; }
+.faculty-brand-text strong { font-size: 1rem; font-weight: 500; line-height: 1.3; }
+.faculty-brand-text small { font-size: .68rem; font-weight: 400; line-height: 1.4; opacity: .92; }
+.nav-wrap { min-height: 98px; gap: 1.2rem; }
+.nav-apply { border-color: #ffffff80; }
+.footer-brand .faculty-logo { width: 90px; height: 82px; }
+
+/* The glass is painted on a separate layer so it cannot trap the fixed mobile menu. */
+.site-header, .degree-page .site-header,
+.site-header.is-scrolled, .degree-page .site-header.is-scrolled {
+  color: #2a1b36; background: transparent; backdrop-filter: none;
+  -webkit-backdrop-filter: none; box-shadow: none; isolation: isolate;
+}
+.site-header::before {
+  content: ''; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(110deg, #ffffffb3, #fff8f385 60%, #f5f0f880);
+  backdrop-filter: blur(22px) saturate(150%); -webkit-backdrop-filter: blur(22px) saturate(150%);
+  border-bottom: 1px solid #ffffffb3; box-shadow: 0 8px 32px #7d52a012;
+  transition: background .35s, box-shadow .35s;
+}
+.site-header.is-scrolled::before { background: #fffcfacc; box-shadow: 0 8px 30px #7d52a01c; }
+.site-header .nav-wrap, .degree-page .nav-wrap { border-bottom: 0; }
+.site-header .faculty-logo { background: transparent; border: 0; box-shadow: none; }
+.site-header .desktop-nav a:hover { color: #f16422; opacity: 1; }
+.site-header .nav-apply, .site-header.is-scrolled .nav-apply { background: #f16422; color: #fff; border-color: #f16422; box-shadow: 0 5px 20px #f1642220; }
+.site-header .menu-toggle, .site-header.is-scrolled .menu-toggle { border-color: #7d52a040; }
+.site-header.menu-active .menu-toggle { color: #2a1b36; }
+.site-header .mobile-nav, .degree-page .site-header .mobile-nav {
+  background: #fff8f3e6; backdrop-filter: blur(28px); -webkit-backdrop-filter: blur(28px);
+}
+.site-header .mobile-nav a { color: #2a1b36; }
+.site-header .mobile-nav .button { color: #fff; border-color: #f16422; }
+
+.hero { background: linear-gradient(125deg, #fffcfa, #f5f0f8 60%, #fff3ec); min-height: 100svh; display: grid; align-items: center; padding: 160px 0 90px; }
+.hero::before { z-index: -1; background: #fff; opacity: .5; pointer-events: none; }
+.hero-video { position: absolute; inset: 0; z-index: -2; overflow: hidden; pointer-events: none; background: #fff; }
+.hero-video iframe { position: absolute; top: 50%; left: 50%; width: var(--video-width, 100%); height: var(--video-height, 100%); transform: translate(-50%, -50%); border: 0; opacity: 0; transition: opacity 1.2s ease; pointer-events: none; }
+.hero-video.is-playing iframe { opacity: 1; }
+.hero-video:not(.is-playing) { background: transparent; }
+.hero-ambient { z-index: 0; opacity: .14; }
+.hero-watermark { z-index: 0; color: #7d52a024; }
+.hero-grid { min-height: 0; grid-template-columns: minmax(0, 1fr); width: min(100% - 4rem, 1320px); }
+.hero-copy { max-width: 850px; padding: 0; }
+.hero h1 { max-width: 900px; font-size: clamp(3.4rem, 6.1vw, 6.6rem); text-shadow: 0 2px 25px #ffffff60; }
+.hero-lede { max-width: 570px; color: #2a1b36; font-weight: 500; }
+.hero .eyebrow, .hero-note { color: #2a1b36; }
+.hero .text-link { color: #2a1b36; }
+.hero-local-notice { margin-top: 1.5rem; max-width: 600px; padding: 1rem 1.2rem; border: 1px solid #9e76b440; border-radius: 12px; background: #ffffffd9; color: #2a1b36; font-size: .85rem; line-height: 1.7; }
+.hero-local-notice[hidden] { display: none; }
+.hero-local-notice p { margin-bottom: .6rem; }
+.hero-local-notice a { color: #c94a10; text-decoration: underline; text-underline-offset: 4px; }
+
+.program-finder { background: transparent; }
+.finder-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4rem; }
+.finder-card { grid-column: auto; display: flex; flex-direction: column; min-height: 510px; padding: 1.8rem; border: 0; border-radius: 22px; isolation: isolate; color: #fff; box-shadow: 0 16px 40px #7d52a020; }
+.finder-undergraduate { background: #f16422; color: #2a1b36; }
+.finder-masters { background: #9e76b4; }
+.finder-doctoral { background: #7d52a0; }
+.finder-card::before { content: ''; position: absolute; z-index: -1; width: 320px; height: 320px; top: -150px; right: -140px; border: 1px solid #ffffff35; border-radius: 50%; box-shadow: 0 0 0 35px #ffffff08, 0 0 0 70px #ffffff05; transition: transform 1s ease; }
+.finder-card:hover::before { transform: translate(-20px, 40px) rotate(30deg); }
+.finder-card-top { display: flex; justify-content: space-between; align-items: center; gap: .6rem; font-size: .67rem; font-weight: 600; letter-spacing: .12em; }
+.finder-card-top > span:last-child { font-size: 1.7rem; font-weight: 400; }
+.finder-number { padding: 1.8rem 0 1rem; color: inherit; opacity: .24; font-size: clamp(5rem, 8vw, 8rem); line-height: 1; font-weight: 500; letter-spacing: -.08em; transition: transform .6s; }
+.finder-card:hover .finder-number { transform: translateX(10px); }
+.finder-copy { position: static; display: flex; flex-direction: column; flex: 1; }
+.finder-copy > small { color: inherit; font-size: .58rem; letter-spacing: .1em; }
+.finder-copy > strong { font-size: clamp(1.65rem, 2.5vw, 2.7rem); margin: .7rem 0 1rem; overflow-wrap: anywhere; }
+.finder-copy > em { color: inherit; font-size: .95rem; min-height: 5rem; line-height: 1.7; }
+.finder-badges { position: static; margin: 1.2rem 0 1.7rem; gap: .5rem; }
+.finder-badges i { color: #2a1b36; background: #fff; border: 1px solid #ffffff80; backdrop-filter: none; font-size: .6rem; padding: .5rem .75rem; letter-spacing: .07em; }
+.finder-cta { display: block; margin-top: auto; padding-top: 1.2rem; border-top: 1px solid #ffffff60; font-size: .78rem; font-weight: 500; }
+.finder-undergraduate .finder-cta { border-color: #2a1b3635; }
+.intake-bar { background: #fff8f3; color: #2a1b36; border: 1px solid #9e76b425; }
+.intake-bar > a { color: #fff; }
+
+.benefit-grid { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+.benefit-card, .benefit-card:nth-child(4) { grid-column: auto; padding: clamp(1rem, 1.6vw, 1.5rem); min-height: 315px; }
+.benefit-card h3 { font-size: clamp(1.1rem, 1.45vw, 1.4rem); line-height: 1.4; margin-top: 2.4rem; overflow-wrap: anywhere; }
+.benefit-card p { font-size: .88rem; }
+
+.rewards-section { background: #fff; }
+.rewards-heading { max-width: 850px; margin-bottom: 3rem; }
+.rewards-heading h2 { font-size: clamp(2.5rem, 4.8vw, 5rem); line-height: 1.1; font-weight: 500; }
+.rewards-heading h2 em { display: block; font-style: normal; color: #9e76b4; }
+.reward-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
+.reward-card { margin: 0; padding: 1.4rem; border: 0; border-radius: 0; background: transparent; box-shadow: none; transition: transform .4s; }
+.reward-card:hover { transform: translateY(-7px); box-shadow: none; }
+.reward-logo { height: 160px; display: grid; place-items: center; }
+.reward-logo img { width: 100%; height: 100%; object-fit: contain; background: transparent; border: 0; border-radius: 0; box-shadow: none; }
+.reward-card figcaption { margin-top: 1.2rem; border: 0; padding-top: 0; text-align: center; font-size: .8rem; color: #7d52a0; letter-spacing: .06em; }
+.contact-heading .eyebrow-light { color: #7d52a0; }
+.campus-map { margin-block: 4rem 6rem; }
+.map-heading { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-bottom: 1.5rem; }
+.map-heading .eyebrow { color: #7d52a0; margin-bottom: .8rem; }
+.map-heading h3 { font-size: clamp(1.5rem, 2.3vw, 2.2rem); font-weight: 500; margin-bottom: .6rem; }
+.map-heading p { margin-bottom: 0; color: #4d4d4d; }
+.map-heading .button { flex-shrink: 0; }
+.campus-map iframe { display: block; width: 100%; height: 420px; border: 1px solid #7d52a025; border-radius: 20px; background: #f5f0f8; }
+.pathway-grid-single { grid-template-columns: minmax(0, 850px); justify-content: center; }
+.degree-level, .stage-caption { color: #7d52a0; }
+
+@media (max-width: 1100px) {
+  .faculty-brand-text { max-width: 150px; }
+  .faculty-brand-text strong { font-size: .85rem; }
+  .desktop-nav { gap: 1rem; }
+  .desktop-nav a { font-size: .75rem; }
+  .nav-actions { gap: .6rem; }
+  .finder-card { padding: 1.4rem; }
+}
+@media (max-width: 900px) {
+  .benefit-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .benefit-card, .benefit-card:nth-child(4) { min-height: 260px; padding: 1.5rem; }
+  .finder-grid { grid-template-columns: 1fr; }
+  .finder-card { min-height: 420px; padding: 2rem; }
+  .finder-copy > strong { font-size: 2.6rem; }
+  .finder-copy > em { min-height: 0; max-width: 550px; }
+  .finder-number { font-size: 6rem; }
+  .reward-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .map-heading { align-items: flex-start; flex-direction: column; }
+}
+@media (max-width: 700px) {
+  .site-header.menu-active, .degree-page .site-header.menu-active {
+    position: fixed; backdrop-filter: none; animation: none; transform: none;
+  }
+  .site-header.menu-active .nav-wrap { position: relative; z-index: 11; }
+  .site-header.menu-active .mobile-nav { height: 100dvh; overflow-y: auto; padding-block: 115px 40px; }
+}
+@media (max-width: 600px) {
+  .faculty-logo { width: 60px; height: 56px; }
+  .brand { gap: .5rem; }
+  .faculty-brand-text { max-width: 140px; }
+  .faculty-brand-text strong { font-size: .78rem; }
+  .faculty-brand-text small { font-size: .58rem; }
+  .nav-wrap { width: calc(100% - 2rem); min-height: 88px; gap: .5rem; }
+  .nav-actions { gap: .3rem; }
+  .language-toggle { min-width: 42px; padding-inline: 0; }
+  .menu-toggle { width: 36px; height: 36px; }
+  .hero { padding-block: 145px 95px; }
+  .hero-grid { width: calc(100% - 3rem); }
+  .hero h1 { font-size: clamp(2.8rem, 11.5vw, 4.5rem); }
+  .hero-watermark { bottom: 10px; }
+  .finder-card { min-height: 430px; padding: 1.7rem; }
+  .finder-copy > strong { font-size: 2.1rem; }
+  .benefit-grid { grid-template-columns: 1fr; }
+  .benefit-card, .benefit-card:nth-child(4) { min-height: 240px; }
+  .benefit-card h3 { font-size: 1.4rem; margin-top: 1.5rem; }
+  .reward-grid { gap: .8rem; }
+  .reward-card { padding: .8rem; }
+  .reward-logo { height: 115px; }
+  .campus-map iframe { height: 340px; }
+}
+@media (max-width: 360px) {
+  .site-header .faculty-brand-text { max-width: 105px; }
+  .site-header .faculty-brand-text strong { font-size: .7rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .finder-card, .finder-card::before, .finder-number, .reward-card, .hero-video iframe { transition: none; }
+}

@@ -1,0 +1,72 @@
+/* Level themes for the degree pages.
+   Each page takes the colour of the Program Finder card that links to it (index.html):
+     body.level-ug  → Undergraduate · gold   #FAAC1E
+     body.level-ma  → Master's      · coral  #FE7F56
+     body.level-phd → Doctoral      · purple #9E76B4
+   Only the --lv-* variables change per level; every rule below uses them,
+   so all three pages share one layout and differ only in colour. */
+
+.level-ug  { --lv: #FAAC1E; --lv-light: #FDC456; --lv-deep: #C97D00; --lv-tint: #FFF6E3; --lv-text: #fff; }
+.level-ma  { --lv: #F16422; --lv-light: #FE7F56; --lv-deep: #C94A10; --lv-tint: #FFF1EB; --lv-text: #fff; }
+.level-phd { --lv: #9E76B4; --lv-light: #B99BCB; --lv-deep: #7D52A0; --lv-tint: #F5F0F8; --lv-text: #fff; }
+
+/* ---------- Hero: same gradient as the Finder card ---------- */
+.degree-page .degree-hero { color: var(--lv-text); background: var(--lv); }
+.degree-page .degree-hero::before {
+  background: radial-gradient(circle at 85% 20%, rgba(255, 255, 255, .35), transparent 40%),
+              linear-gradient(150deg, var(--lv-light) 0%, var(--lv) 55%, var(--lv-deep) 100%);
+}
+.degree-page .degree-hero::after { border-color: rgba(255, 255, 255, .35); }
+.degree-page .degree-hero h1 { color: var(--lv-text); text-shadow: none; }
+.degree-page .degree-hero h1 em { color: var(--ci-purple-strong); text-shadow: none; }
+.level-phd .degree-hero h1 em { color: #FDD58A; }
+.degree-page .degree-hero .degree-lede,
+.degree-page .degree-hero .degree-breadcrumb,
+.degree-page .degree-hero .degree-breadcrumb a,
+.degree-page .degree-hero .degree-level,
+.degree-page .degree-hero .degree-audience { color: var(--lv-text); text-shadow: none; }
+.degree-page .degree-hero .degree-level::before { background: var(--lv-text); }
+.degree-page .degree-hero .degree-audience { border-color: currentColor; background: rgba(255, 255, 255, .18); }
+.degree-page .degree-number { color: #fff; }
+.degree-page .degree-word { background: var(--ink); color: #fff; }
+.degree-page .degree-ring { border-color: rgba(255, 255, 255, .55); }
+.degree-page .degree-ring::before { background: #fff; box-shadow: none; }
+
+/* Hero buttons: primary white, secondary outline in the text colour */
+.degree-page .degree-hero .button-primary,
+.degree-page .degree-hero .ug-btn-main { color: var(--ci-orange); background: #fff; border-color: #fff; box-shadow: 0 .4rem 1rem rgba(70, 42, 94, .2); }
+.degree-page .degree-hero .button-dark,
+.degree-page .degree-hero .ug-btn-ghost { color: var(--lv-text); background: transparent; border: 1.5px solid currentColor; box-shadow: none; }
+
+/* ---------- Level navigation: active tab in the level colour ---------- */
+.degree-page .level-nav a { color: var(--ink); background: #fff; border-color: var(--ci-purple-soft); }
+.degree-page .level-nav a[aria-current="page"] { color: var(--lv-text); background: var(--lv); box-shadow: none; }
+
+/* ---------- Section accents ---------- */
+.degree-page .degree-level { color: var(--lv-deep); }
+.level-ug .degree-level, .level-ma .degree-level { color: var(--ci-orange-deep); }
+.degree-page .degree-intro, .degree-page .decision-section, .degree-page .degree-next { background: var(--cream); }
+.degree-page .decision-section { background: var(--lv-tint); }
+.degree-page .decision-card { border-top: 5px solid var(--lv); }
+.degree-page .decision-card:hover { color: var(--lv-text); background: var(--lv); }
+.degree-page .degree-proof { color: var(--lv-text); background: linear-gradient(150deg, var(--lv-light), var(--lv) 55%, var(--lv-deep)); }
+.degree-page .degree-proof h2 em, .degree-page .degree-proof p { color: var(--lv-text); text-shadow: none; }
+
+/* Program catalog (masters / doctoral) */
+.degree-page .catalog-card { border-top: 5px solid var(--lv); }
+.degree-page .catalog-tabs button[aria-selected="true"], .degree-page .catalog-tabs button:hover { color: var(--lv-text); background: var(--lv); border-color: var(--lv); }
+
+/* Undergraduate page cards follow the level colour too */
+.level-ug .ug-section-tint { background: var(--lv-tint); }
+
+/* ---------- Hero decoration: faculty mark instead of the circle rings (same as the index Finder cards) ---------- */
+.degree-page .degree-hero::after {
+  width: min(46vw, 620px); height: auto; aspect-ratio: 480 / 524; top: -14%; right: -9%;
+  border: 0; border-radius: 0; box-shadow: none; animation: none;
+  background: url("image/web/nursecmu-mark.png") center / contain no-repeat;
+  opacity: .3;
+}
+@media (max-width: 700px) {
+  .degree-page .degree-hero::after { width: 80vw; top: -6%; right: -30%; opacity: .2; }
+}
+.level-ug .degree-hero h1, .level-ug .degree-hero .degree-lede, .level-ug .degree-hero .degree-breadcrumb, .level-ug .ug-facts b, .level-ma .degree-hero h1, .level-ma .degree-hero .degree-lede, .level-ma .degree-hero .degree-breadcrumb, .level-ma .ug-facts b { text-shadow: 0 1px 4px rgba(77, 77, 77, .45); }
