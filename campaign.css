@@ -121,7 +121,7 @@
   .reward-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .map-heading { align-items: flex-start; flex-direction: column; }
 }
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
   .site-header.menu-active, .degree-page .site-header.menu-active {
     position: fixed; backdrop-filter: none; animation: none; transform: none;
   }

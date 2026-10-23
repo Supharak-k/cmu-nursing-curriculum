@@ -252,6 +252,12 @@ menuToggle.addEventListener("click", () => {
   menuToggle.setAttribute("aria-expanded", String(isOpen));
 });
 mobileLinks.forEach((link) => link.addEventListener("click", closeMenu));
+matchMedia("(max-width: 1024px)").addEventListener("change", (event) => {
+  if (!event.matches) closeMenu();
+});
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && header.classList.contains("menu-active")) closeMenu();
+});
 
 const revealObserver = new IntersectionObserver(
   (entries) => {
