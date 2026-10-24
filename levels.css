@@ -1,12 +1,12 @@
 /* Level themes for the degree pages.
    Each page takes the colour of the Program Finder card that links to it (index.html):
-     body.level-ug  → Undergraduate · gold   #FAAC1E
+     body.level-ug  → Undergraduate · lime   #7CB342
      body.level-ma  → Master's      · coral  #FE7F56
      body.level-phd → Doctoral      · purple #9E76B4
    Only the --lv-* variables change per level; every rule below uses them,
    so all three pages share one layout and differ only in colour. */
 
-.level-ug  { --lv: #FAAC1E; --lv-light: #FDC456; --lv-deep: #C97D00; --lv-tint: #FFF6E3; --lv-text: #fff; }
+.level-ug  { --lv: #7CB342; --lv-light: #AED581; --lv-deep: #557A23; --lv-tint: #F3F9EA; --lv-text: #fff; }
 .level-ma  { --lv: #F16422; --lv-light: #FE7F56; --lv-deep: #C94A10; --lv-tint: #FFF1EB; --lv-text: #fff; }
 .level-phd { --lv: #9E76B4; --lv-light: #B99BCB; --lv-deep: #7D52A0; --lv-tint: #F5F0F8; --lv-text: #fff; }
 

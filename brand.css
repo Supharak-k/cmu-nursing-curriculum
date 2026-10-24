@@ -94,7 +94,7 @@
 .chapter-strip a:hover { color: var(--ink); background: var(--ci-orange-soft); letter-spacing: .04em; }
 
 /* ---------- Program finder cards ---------- */
-.finder-undergraduate { background: linear-gradient(150deg, #FDC456, var(--ci-gold) 60%); color: var(--ink); }
+.finder-undergraduate { background: linear-gradient(150deg, #AED581, #7CB342 60%); color: var(--ink); }
 .finder-masters { background: linear-gradient(150deg, #fc8e4e, #f16422 60%); color: var(--ink); }
 .finder-doctoral { background: linear-gradient(150deg, var(--ci-purple), var(--ci-purple-strong) 60%); color: #fff; }
 .finder-undergraduate .finder-cta, .finder-masters .finder-cta { border-color: rgba(43, 24, 56, .2); }
@@ -187,7 +187,7 @@
 .degree-hero::after { border-color: #ffffff25; }
 .degree-page .site-footer { background: linear-gradient(120deg, var(--ci-purple), var(--ci-purple-deep)); }
 .level-nav a { color: var(--ink); }
-.level-nav a:nth-child(1) { background: var(--ci-gold); color: var(--ink); }
+.level-nav a:nth-child(1) { background: #7CB342; color: var(--ink); }
 .level-nav a:nth-child(2) { background: var(--ci-orange); color: var(--ink); }
 .level-nav a:nth-child(3) { background: var(--ci-purple-strong); color: #fff; }
 .level-nav a { border-color: #ffffff38; transition: filter .25s; }

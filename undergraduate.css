@@ -153,10 +153,10 @@
 
 /* ---------- Content cards: glassmorphism instead of solid yellow ---------- */
 .level-ug .ug-section { background:
-  radial-gradient(circle at 8% 15%, rgba(250, 172, 30, .22), transparent 35%),
+  radial-gradient(circle at 8% 15%, rgba(124, 179, 66, .22), transparent 35%),
   radial-gradient(circle at 92% 85%, rgba(158, 118, 180, .18), transparent 38%), var(--cream); }
 .level-ug .ug-section-tint { background:
-  radial-gradient(circle at 90% 10%, rgba(250, 172, 30, .25), transparent 38%),
+  radial-gradient(circle at 90% 10%, rgba(124, 179, 66, .25), transparent 38%),
   radial-gradient(circle at 10% 90%, rgba(241, 100, 34, .12), transparent 35%), var(--lv-tint); }
 
 .ug-program, .ug-program-thai, .ug-program-intl, .ug-card, .ug-credits li, .ug-timeline li, .ug-track, .ug-track-thai, .ug-track-intl {
@@ -214,7 +214,7 @@
   background: linear-gradient(150deg, var(--lv-light, #FDC456), var(--lv, #FAAC1E) 60%);
   font-size: clamp(1.25rem, 2vw, 1.55rem); font-weight: 600;
   text-shadow: 0 1px 4px rgba(77, 77, 77, .45);
-  box-shadow: 0 .5rem 1.2rem rgba(250, 172, 30, .25);
+  box-shadow: 0 .5rem 1.2rem rgba(70, 42, 94, .14);
   backdrop-filter: none; -webkit-backdrop-filter: none;
 }
 
