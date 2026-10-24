@@ -1,0 +1,63 @@
+/* Doctoral page (doctoral.html) — study plans, fee table, qualifications and committee */
+.level-phd .degree-hero h1 { font-size: clamp(2rem, 4.4vw, 3.6rem); line-height: 1.2; }
+.phd-code { display: inline-block; margin: .8rem 0 0; padding: .3rem .8rem; border-radius: 8px; background: rgba(255, 255, 255, .18); font-size: .9rem; font-weight: 500; letter-spacing: .04em; }
+
+/* Study plans */
+.phd-plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
+.phd-plan { display: flex; flex-direction: column; padding: clamp(1.4rem, 2.5vw, 2rem); border-radius: 20px; background: var(--lv-tint); border-top: 6px solid var(--lv); }
+.phd-plan:nth-child(2) { border-top-color: var(--ci-orange); }
+.phd-plan:nth-child(3) { border-top-color: var(--ci-gold); }
+.phd-plan h3 { margin: 0 0 1.2rem; color: var(--ink); font-size: 1.15rem; font-weight: 600; line-height: 1.4; }
+.phd-plan-total { display: flex; align-items: baseline; gap: .6rem; margin: 0; color: var(--lv-deep); }
+.phd-plan-total b { font-size: clamp(3rem, 6vw, 4.2rem); font-weight: 600; line-height: 1; }
+.phd-plan-total span { font-size: .9rem; font-weight: 500; }
+.phd-plan-label { margin: .3rem 0 1rem; color: var(--ci-gray-dark); font-size: .9rem; }
+.phd-plan dl { display: grid; gap: .1rem; margin: auto 0 0; }
+.phd-plan dl > div { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .7rem 0; border-top: 1px solid #7d52a025; }
+.phd-plan dt { color: var(--ci-gray-dark); font-size: .9rem; }
+.phd-plan dd { margin: 0; color: var(--ink); white-space: nowrap; }
+.phd-plan dd b { font-size: 1.35rem; font-weight: 600; }
+.phd-plan dd span { color: var(--ci-gray-dark); font-size: .75rem; }
+
+/* Tuition fee */
+.phd-fee { margin-top: clamp(2.5rem, 5vw, 4rem); }
+.phd-fee h3 { margin: 0 0 1rem; font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 600; }
+.phd-table-wrap { overflow-x: auto; border: 1px solid #7d52a025; border-radius: 16px; background: #fff; }
+.phd-fee table { width: 100%; min-width: 640px; border-collapse: collapse; }
+.phd-fee th, .phd-fee td { padding: 1rem 1.2rem; text-align: left; vertical-align: top; }
+.phd-fee th { background: var(--lv-deep); color: #fff; font-size: .85rem; font-weight: 500; }
+.phd-fee td { border-top: 1px solid #7d52a01c; color: var(--ink); font-size: 1.05rem; }
+.phd-fee td:nth-child(n+3) { font-variant-numeric: tabular-nums; font-weight: 600; }
+.phd-fee td:nth-child(3) { color: var(--lv-deep); }
+
+/* Qualifications and application */
+.phd-admission { display: grid; grid-template-columns: 1.15fr .85fr; gap: 1.5rem; align-items: start; }
+.phd-qual-body { padding: 1rem 1.2rem 1.2rem; color: var(--ci-gray-dark); line-height: 1.75; }
+.phd-qual-body ol, .phd-qual-body ul { margin: 0; padding-left: 1.3rem; }
+.phd-qual-body li + li { margin-top: .5rem; }
+.phd-qual-body h4 { margin: 1rem 0 .2rem; color: var(--ink); font-size: 1rem; font-weight: 600; }
+.phd-qual-body h4:first-child { margin-top: 0; }
+.phd-qual-body p { margin: 0; }
+.phd-qual-body ul { margin-top: .4rem; }
+.phd-panel { margin-bottom: 1rem; padding: 1.4rem 1.5rem; border-radius: 16px; background: #fff; border: 1px solid var(--ci-purple-soft); }
+.phd-panel h3 { margin: 0 0 .6rem; color: var(--ink); font-size: 1.1rem; font-weight: 600; }
+.phd-panel p { margin: 0; color: var(--ci-gray-dark); line-height: 1.7; }
+.phd-docs ol { margin: 0; padding-left: 1.3rem; color: var(--ci-gray-dark); font-size: .92rem; line-height: 1.7; }
+.phd-docs li + li { margin-top: .4rem; }
+.phd-docs li::marker, .phd-qual-body li::marker { color: var(--lv-deep); font-weight: 600; }
+.phd-apply { background: var(--lv-tint); border-color: transparent; }
+.phd-apply .button { margin-top: 1rem; max-width: 100%; overflow-wrap: anywhere; white-space: normal; }
+
+/* Committee */
+.phd-committee-title { margin: 0 0 1.2rem; font-size: clamp(1.3rem, 2.2vw, 1.7rem); font-weight: 600; }
+.phd-committee { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .6rem 1rem; margin: 0; padding: 0; list-style: none; }
+.phd-committee li { display: flex; align-items: center; gap: .9rem; padding: .85rem 1rem; border-radius: 12px; background: var(--lv-tint); color: var(--ink); line-height: 1.5; }
+.phd-committee li span { display: grid; place-items: center; flex: 0 0 auto; width: 2rem; height: 2rem; border-radius: 50%; background: var(--lv-deep); color: #fff; font-size: .85rem; font-weight: 600; }
+
+@media (max-width: 1024px) {
+  .phd-plans { grid-template-columns: 1fr; }
+  .phd-admission { grid-template-columns: 1fr; }
+}
+@media (max-width: 700px) {
+  .phd-committee { grid-template-columns: 1fr; }
+}
