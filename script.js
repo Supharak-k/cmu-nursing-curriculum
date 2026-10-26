@@ -9,7 +9,7 @@ const translations = {
     heroEyebrow: "CHIANG MAI UNIVERSITY · NURSING",
     heroTitle: "เรียนรู้ด้วยหัวใจ<br /><em>เติบโตเพื่อโลก</em>",
     heroLede: "เปิดประตูสู่การศึกษาพยาบาลที่ผสานความเชี่ยวชาญ ความเข้าใจมนุษย์ และมุมมองระดับนานาชาติ",
-    heroPrimary: "หลักสูตรของเรา",
+    heroPrimary: "หลักสูตรที่เปิดสอน",
     heroSecondary: "ดูเส้นทางของเรา",
     heroNote: "A place to learn. A place to belong.",
     photoLabel: "เรียนรู้จากการลงมือทำ",
@@ -24,7 +24,7 @@ const translations = {
     programsEyebrow: "FIND YOUR NEXT CHAPTER",
     programsTitle: "เส้นทางของคุณ<br /><em>เริ่มต้นที่นี่</em>",
     programsIntro: "เลือกหลักสูตรที่ตรงกับจังหวะชีวิตและความฝันในการสร้างอนาคตของการดูแล",
-    undergradType: "ปริญญาตรี · UNDERGRADUATE",
+    undergradType: "ปริญญาตรี · Bachelor's Degree",
     undergradTitle: "เริ่มต้นการเดินทาง",
     undergradBody: "วางรากฐานความรู้และทักษะเพื่อก้าวสู่การเป็นพยาบาลมืออาชีพที่มีหัวใจ",
     masterType: "ปริญญาโท · MASTER’S",
@@ -35,22 +35,22 @@ const translations = {
     phdBody: "สร้างงานวิจัยและความคิดใหม่ เพื่อขับเคลื่อนระบบสุขภาพในระดับสากล",
     learnMore: "ดูรายละเอียด",
     journeyEyebrow: "THE NURSING JOURNEY",
-    journeyTitle: "เรียนรู้<br /><em>ลงมือทำ</em><br />และเปลี่ยนแปลง",
-    journeyIntro: "ประสบการณ์ที่ดีไม่ได้เกิดขึ้นในห้องเรียนเท่านั้น แต่มาจากทุกความสัมพันธ์ ทุกคำถาม และทุกครั้งที่เราเลือกจะใส่ใจ",
-    stepOneTitle: "Discover",
-    stepOneBody: "ค้นพบคำถามที่อยากหาคำตอบ และมุมมองใหม่ต่อความหมายของการดูแล",
-    stepTwoTitle: "Practice",
-    stepTwoBody: "เปลี่ยนความรู้ให้เป็นทักษะ ผ่านสถานการณ์จริง ห้องจำลอง และการเรียนรู้ร่วมกัน",
-    stepThreeTitle: "Connect",
-    stepThreeBody: "เชื่อมต่อกับผู้คน ชุมชน และเพื่อนร่วมวิชาชีพจากหลากหลายวัฒนธรรม",
-    stepFourTitle: "Lead",
-    stepFourBody: "ก้าวออกไปด้วยความมั่นใจ เพื่อสร้างการเปลี่ยนแปลงที่มีความหมายในโลกจริง",
-    storiesEyebrow: "VOICES FROM THE JOURNEY",
-    storiesTitle: "เรื่องราวที่ยัง<br /><em>เดินทางต่อ</em>",
+    journeyTitle: "เติมเต็มองค์ความรู้<br /><em>ต่อยอดสู่การปฏิบัติ</em><br />ขับเคลื่อน สร้างสรรค์สิ่งใหม่",
+    journeyIntro: "ประสบการณ์ที่ดีไม่ได้เกิดขึ้นแค่ในห้องเรียน แต่เกิดจากการเรียนรู้ การลงมือปฏิบัติ และการแลกเปลี่ยนมุมมอง เพื่อต่อยอดความเชี่ยวชาญและสร้างองค์ความรู้ใหม่ สู่การพัฒนาวิชาชีพพยาบาลอย่างยั่งยืน",
+    stepOneTitle: "INNOVATE",
+    stepOneBody: "สร้างสรรค์นวัตกรรมและแนวทางใหม่ เพื่อพัฒนาการดูแลทางการพยาบาล",
+    stepTwoTitle: "RESEARCH",
+    stepTwoBody: "สร้างองค์ความรู้ใหม่ผ่านการวิจัยและหลักฐานเชิงประจักษ์",
+    stepThreeTitle: "EXCEL",
+    stepThreeBody: "มุ่งสู่ความเป็นเลิศ พัฒนาความเชี่ยวชาญ และยกระดับมาตรฐานวิชาชีพ",
+    stepFourTitle: "TRANSFORM",
+    stepFourBody: "เปลี่ยนองค์ความรู้ให้เกิดผลลัพธ์ที่มีความหมายต่อผู้ป่วย ระบบสุขภาพ และสังคม",
+    storiesEyebrow: "VOICES FROM THE JOURNEY ",
+    storiesTitle: "WHAT THEY SAY", 
     storiesIntro: "เพราะเส้นทางการเรียนรู้ของแต่ละคนไม่เหมือนกัน เราจึงอยากให้คุณได้ฟังเสียงจากคนที่กำลังสร้างเส้นทางของตัวเอง",
-    storyQuote: "เราไม่ได้มาเรียนเพื่อรู้วิธีดูแลผู้ป่วยเท่านั้น แต่เราได้เรียนรู้วิธีมองเห็นความเป็นมนุษย์ของกันและกัน",
-    storyName: "เสียงจากนักศึกษารุ่นใหม่",
-    storyRole: "Student voice · Chiang Mai",
+    storyQuote: "คณะพยาบาลศาสตร์ มหาลัยเชียงใหม่ มีหลักสูตรที่เข้มแข็งและมีชื่อเสียงในระดับประเทศ ทำให้มั่นใจได้ว่าในระหว่างการศึกษาหรือหลังจบการศึกษาจะกลายเป็นบุคลากรที่มีคุณภาพได้ และอีกอย่างคือโอกาสในการแลกเปลี่ยนเรียนรู้ ณ ต่างประเทศ จากความร่วมมือของมหาวิทยาลัยเชียงใหม่กับมหาวิทยาลัยอื่นๆ",
+    storyName: "นายกสโมสรนักศึกษาคณะพยาบาลศาสตร์ ปี 2566 ",
+    storyRole: "พยาบาลศาสตรบัณฑิต (หลักสูตรปกติ)",
     globalEyebrow: "FROM CHIANG MAI TO THE WORLD",
     globalTitle: "บ้านที่อบอุ่น<br /><em>โลกที่กว้างขึ้น</em>",
     globalBody: "เชียงใหม่มอบพื้นที่ให้คุณได้เติบโตอย่างเป็นตัวเอง ขณะเดียวกันชุมชนการเรียนรู้ของเราจะพาคุณเชื่อมต่อกับโลกที่กว้างกว่าที่เคย",
@@ -59,15 +59,15 @@ const translations = {
     globalPointThree: "World-ready",
     artCaption: "A global perspective<br />starts with one place.",
     admissionEyebrow: "YOUR NEXT CHAPTER STARTS HERE",
-    admissionTitle: "พร้อมหรือยัง<br /><em>ที่จะเริ่มต้น?</em>",
-    admissionBody: "สำรวจขั้นตอนการสมัคร เลือกเส้นทางที่ใช่ และเริ่มวางอนาคตของคุณไปกับเรา",
-    admissionCta: "ดูข้อมูลรับสมัครล่าสุด",
+    admissionTitle: "Ready to <br /><em>begin?</em>",
+    admissionBody: "เลือกเส้นทางที่ใช่ และเริ่มวางอนาคตวิชาชีพ",
+    admissionCta: "เข้าสู่ระบบรับสมัคร !",
     applyStepOneTitle: "Explore",
-    applyStepOneBody: "ค้นหาหลักสูตรที่เหมาะกับคุณ",
+    applyStepOneBody: "ค้นหาหลักสูตร",
     applyStepTwoTitle: "Prepare",
-    applyStepTwoBody: "เตรียมเอกสารและทำความเข้าใจขั้นตอน",
+    applyStepTwoBody: "เตรียมเอกสาร",
     applyStepThreeTitle: "Apply",
-    applyStepThreeBody: "ส่งใบสมัครและเริ่มต้นเรื่องราวบทใหม่",
+    applyStepThreeBody: "ส่งใบสมัคร",
     footerNote: "สร้างพลังพยาบาล สร้างอุดมการณ์วิชาชีพ",
     footerLocation: "Chiang Mai · Thailand",
     backTop: "กลับขึ้นด้านบน ↑"
@@ -82,7 +82,7 @@ const translations = {
     heroEyebrow: "CHIANG MAI UNIVERSITY · NURSING",
     heroTitle: "Learn with heart.<br /><em>Grow for the world.</em>",
     heroLede: "Step into a nursing education shaped by expertise, empathy, and a global perspective.",
-    heroPrimary: "Educational Academic",
+    heroPrimary: "PROGRAMS",
     heroSecondary: "Discover our journey",
     heroNote: "A place to learn. A place to belong.",
     photoLabel: "Learning by doing",
@@ -97,7 +97,7 @@ const translations = {
     programsEyebrow: "FIND YOUR NEXT CHAPTER",
     programsTitle: "Your journey<br /><em>starts here.</em>",
     programsIntro: "Choose the program that matches your rhythm, ambition, and vision for the future of care.",
-    undergradType: "UNDERGRADUATE · ปริญญาตรี",
+    undergradType: "Bachelor's Degree · ปริญญาตรี",
     undergradTitle: "Begin your journey",
     undergradBody: "Build the knowledge and skills to become a professional nurse with a human heart.",
     masterType: "MASTER’S · ปริญญาโท",
@@ -108,22 +108,22 @@ const translations = {
     phdBody: "Create research and new ideas that move health systems forward on a global scale.",
     learnMore: "View details",
     journeyEyebrow: "THE NURSING JOURNEY",
-    journeyTitle: "Learn.<br /><em>Practice.</em><br />Make change.",
-    journeyIntro: "A meaningful education happens beyond the classroom — in every relationship, question, and choice to care.",
-    stepOneTitle: "Discover",
-    stepOneBody: "Find the questions worth asking and new ways to understand what care can mean.",
-    stepTwoTitle: "Practice",
-    stepTwoBody: "Turn knowledge into skill through real situations, simulation, and shared learning.",
-    stepThreeTitle: "Connect",
-    stepThreeBody: "Connect with people, communities, and peers from many cultures and perspectives.",
-    stepFourTitle: "Lead",
-    stepFourBody: "Step forward with confidence to create meaningful change in the real world.",
+    journeyTitle: "From Knowledge to Practice<br /><em> From Ideas to Innovation.</em>",
+    journeyIntro: "Beyond the Classroom, Learning Through Practice, Advancing Expertise, and Creating Knowledge to Transform Nursing.",
+    stepOneTitle: "INNOVATE",
+    stepOneBody: "Create New Possibilities Develop innovative solutions and new approaches to advance nursing care.",
+    stepTwoTitle: "RESEARCH",
+    stepTwoBody: "Generate New Knowledge Generate new knowledge through research and evidence-based practice.",
+    stepThreeTitle: "EXCEL",
+    stepThreeBody: "Pursue Professional Excellence Strive for excellence, advance professional expertise, and elevate nursing standards..",
+    stepFourTitle: "TRANSFORM",
+    stepFourBody: "Make Meaningful Impact Transform knowledge into meaningful outcomes for patients, healthcare systems, and society.",
     storiesEyebrow: "VOICES FROM THE JOURNEY",
-    storiesTitle: "Stories that<br /><em>move forward.</em>",
+    storiesTitle: "WHAT THEY SAY",
     storiesIntro: "Every learning journey is different. Hear from the people shaping a path of their own.",
     storyQuote: "I came to learn how to care for patients, but I also learned how to see the humanity in one another.",
-    storyName: "A voice from the next generation",
-    storyRole: "Student voice · Chiang Mai",
+    storyName: "Head of the Nursing Student Union",
+    storyRole: "Bachelor of Nursing Science",
     globalEyebrow: "FROM CHIANG MAI TO THE WORLD",
     globalTitle: "A warm home.<br /><em>A wider world.</em>",
     globalBody: "Chiang Mai gives you space to grow as yourself, while our learning community connects you to a world wider than you imagined.",
@@ -134,13 +134,13 @@ const translations = {
     admissionEyebrow: "YOUR NEXT CHAPTER STARTS HERE",
     admissionTitle: "Ready to<br /><em>begin?</em>",
     admissionBody: "Explore the application steps, find your fit, and start shaping your future with us.",
-    admissionCta: "View current admissions",
+    admissionCta: "Admissions here !",
     applyStepOneTitle: "Explore",
-    applyStepOneBody: "Find the program that fits you",
+    applyStepOneBody: "Find the program ",
     applyStepTwoTitle: "Prepare",
-    applyStepTwoBody: "Understand the requirements and prepare",
+    applyStepTwoBody: "Prepare documents",
     applyStepThreeTitle: "Apply",
-    applyStepThreeBody: "Submit your application and begin",
+    applyStepThreeBody: "Submit your application",
     footerNote: "Empowering Future Nurses with Pride and Professionalism",
     footerLocation: "Chiang Mai · Thailand",
     backTop: "Back to top ↑"
@@ -157,18 +157,16 @@ try { if (localStorage.getItem(languageStorageKey) === "th") currentLanguage = "
 // Replace these four bilingual messages when the final campaign copy is ready.
 const competencySlides = {
   th: [
-    { title: "สร้างพลังพยาบาล\nสร้างอุดมการณ์วิชาชีพ", lede: "" },
     { title: "การศึกษา\nมาตรฐานสากล", lede: "หลักสูตรคุณภาพ 14 หลักสูตร 4 ระดับการศึกษา\nสร้างศิษย์เก่าคุณภาพกว่า 16,600 คน ทั่วโลก" },
-    { title: "งานวิจัย\nเพื่อชีวิตที่ดีกว่า", lede: "สร้างสรรค์นวัตกรรมและงานวิจัยที่นำไปใช้ได้จริง \nด้วยทุนสนับสนุนกว่า 30 ล้านบาทต่อปี" },
-    { title: "ผู้นำด้านการพยาบาล\nระดับโลก", lede: "การันตีคุณภาพด้วยรางวัล TQC และการจัดอันดับ\n Top 151-170 ของโลกโดย QS World University Rankings" },
-    { title: "เครือข่ายความร่วมมือ\nไร้พรมแดน", lede: "ศูนย์ความร่วมมือระดับนานาชาติ (WHOCC, JBICC) \nและพันธมิตรกว่า 50 สถาบันทั่วโลก" }
+    { title: "งานวิจัย\nเพื่อชีวิตที่ดีกว่า", lede: "สร้างสรรค์นวัตกรรมและงานวิจัยที่นำไปใช้ได้จริง " },
+    { title: "ผู้นำด้านการพยาบาล\nระดับโลก", lede: "การันตีคุณภาพด้วยการรับรองหลักสูตร ACEN \nและการจัดอันดับ Top 101-150 ของโลก โดย QS World University Rankings" },
+    { title: "เครือข่ายความร่วมมือ\nไร้พรมแดน", lede: "ความหลากหลายและความแตกต่างทางวัฒนธรรม \nและพันธมิตรกว่า 50 สถาบันทั่วโลก" }
   ],
   en: [
-    { title: "Empowering Future Nurses with Pride and Professionalism", lede: "" },
     { title: "World-Class \nEducation", lede: "14 quality programs across 4 educational levels,\nshaping over 16,600 successful alumni worldwide." },
-    { title: "Research \nfor Better Lives", lede: "Driving practical health innovations and research \nwith over 30 million THB in annual funding." },
-    { title: "Global \nNursing Leadership", lede: "Recognized globally with the TQC award and ranked \nTop 151-170 by QS World University Rankings." },
-    { title: "Borderless \nCollaboration", lede: "An international collaborating center (WHOCC, JBICC) \nwith over 50 partner institutions globally." }
+    { title: "Research \nfor Better Lives", lede: "Driving practical health innovations and research." },
+    { title: "Global \nNursing Leadership", lede: "Recognized Quality Through ACEN Accreditation \nTop 101-150 by QS World University Rankings." },
+    { title: "Borderless \nCollaboration", lede: "Intercultural and diversity \nwith over 50 partner institutions globally." }
   ]
 };
 let activeHeroSlide = 0;
@@ -458,21 +456,21 @@ function addProgramFinder() {
   const heroSection = document.querySelector("main > .hero");
   if (!heroSection || document.querySelector(".program-finder")) return;
   const programs = [
-    { slug: "undergraduate", number: "01", label: "BACHELOR’S", titleTh: "ปริญญาตรี", titleEn: "Undergraduate",
-      textTh: "เริ่มต้นวิชาชีพด้วยความรู้และการฝึกปฏิบัติ", textEn: "Begin your nursing journey with knowledge, compassion, and hands-on learning.",
+    { slug: "undergraduate", number: "01", label: "BACHELOR’S", titleTh: "ปริญญาตรี", titleEn: "BACHELOR’S",
+      textTh: "เริ่มต้นวิชาชีพด้วยความรู้และการฝึกปฏิบัติ", textEn: "Empowering Future Nurses Through Knowledge, Skills, and Practices.",
       languages: ["THAI", "INTERNATIONAL"], word: "BEGIN" },
-    { slug: "masters", number: "02", label: "MASTER’S", titleTh: "ปริญญาโท", titleEn: "Master’s",
-      textTh: "ต่อยอดประสบการณ์ สู่ความเชี่ยวชาญและมุมมองระดับโลก", textEn: "Deepen your expertise. Connect experience with research and a global perspective.",
+    { slug: "masters", number: "02", label: "MASTER’S", titleTh: "ปริญญาโท", titleEn: "MASTER’S",
+      textTh: "ต่อยอดความรู้ขั้นสูง สู่การปฏิบัติที่สร้างความเปลี่ยนแปลง", textEn: "Advancing Nursing Through Knowledge and Innovation.",
       languages: ["THAI", "INTERNATIONAL"], word: "ADVANCE" },
-    { slug: "doctoral", number: "03", label: "DOCTORAL", titleTh: "ปริญญาเอก", titleEn: "Doctoral",
-      textTh: "สร้างองค์ความรู้ใหม่และเครือข่ายวิจัยระดับนานาชาติ", textEn: "Create new knowledge and build international research connections.",
+    { slug: "doctoral", number: "03", label: "DOCTORAL", titleTh: "ปริญญาเอก", titleEn: "DOCTORAL",
+      textTh: "สร้างองค์ความรู้ใหม่และเครือข่ายวิจัยระดับนานาชาติ", textEn: "Creating new knowledge and build international research connections.",
       languages: ["INTERNATIONAL"], word: "LEAD" }
   ];
   heroSection.insertAdjacentHTML("afterend", `<section class="program-finder" id="program-finder" aria-labelledby="finder-title">
     <div class="container">
       <div class="finder-heading reveal">
         <div>
-          <h2 id="finder-title" data-th="หลักสูตรที่เปิดสอน" data-en="Educational Academic" data-lang-html>Educational Academic</em></h2>
+          <h2 id="finder-title" data-th="หลักสูตรที่เปิดสอน" data-en="PROGRAMS" data-lang-html>PROGRAMS</em></h2>
         </div>
       </div>
       <div class="finder-grid">
@@ -480,11 +478,10 @@ function addProgramFinder() {
           <span class="finder-card-top"><span>${program.label}</span><span aria-hidden="true">↗</span></span>
           <span class="finder-number" aria-hidden="true">${program.number}</span>
           <span class="finder-copy">
-            <small>${program.word} / YOUR NEXT CHAPTER</small>
             <strong data-th="${program.titleTh}" data-en="${program.titleEn}">${program.titleEn}</strong>
             <em data-th="${program.textTh}" data-en="${program.textEn}">${program.textEn}</em>
             <span class="finder-badges">${program.languages.map(language => `<i>${language}</i>`).join("")}</span>
-            <span class="finder-cta" data-th="สำรวจหลักสูตร ↗" data-en="Explore the program ↗">Explore the program ↗</span>
+            <span class="finder-cta" data-th="รายละเอียดหลักสูตร ↗" data-en="Program ↗">Program ↗</span>
           </span>
         </a>`).join("")}
       </div>
@@ -501,16 +498,11 @@ function addRewards() {
   const rewards = [
     ["image/web/reward-edpex.png", "EdPEx", "Education Criteria for Performance Excellence"],
     ["image/web/reward-acen.png", "ACEN", "Accreditation Commission for Education in Nursing"],
-    ["image/web/reward-tqc.png", "TQC 2019", "Thailand Quality Class 2019"]
+    ["image/web/reward-tqc.png", "TQC 2019", "Thailand Quality Class 2019"],
+    ["image/web/reward-tqc2022.png", "TQC 2022", "Thailand Quality Class 2022"],
+    ["image/reward/QS logo.png", "QS", "QS World University Rankings"]
   ];
   const rankings = [
-    {
-      href: "https://www.nurse.cmu.ac.th/web/FONEventDetail.aspx?id=43026",
-      logo: "image/reward/QS logo.png", alt: "QS World University Rankings", width: 1280, height: 399,
-      badge: "TOP 100", tag: "QS 2025",
-      th: "คณะพยาบาลศาสตร์ มช. ติด <strong>1 ใน 100</strong> ของโลก QS World University Rankings by Subject 2025",
-      en: "Faculty of Nursing, CMU is among the <strong>top 100</strong> in the world in the QS World University Rankings by Subject 2025"
-    },
     {
       href: "https://www.cmu.ac.th/th/article/5db07799-13c0-4e46-bf73-33a422fefae9",
       logo: "image/reward/logo.60897d4.svg", alt: "ShanghaiRanking", width: 207, height: 76,
@@ -524,7 +516,7 @@ function addRewards() {
       <div class="rewards-heading reveal"><p class="eyebrow"><span class="eyebrow-line"></span>REWARD</p>
         <h2 id="rewards-title" data-th="คุณภาพที่มุ่งมั่น<em>คุณค่าที่ได้รับการยอมรับ</em>" data-en="Committed to quality.<em>Inspired by recognition.</em>" data-lang-html>Committed to quality.<em>Inspired by recognition.</em></h2>
       </div>
-      <div class="reward-ranks">${rankings.map(({ href, logo, alt, width, height, badge, tag, th, en }) => `<a class="reward-rank reveal" href="${href}" target="_blank" rel="noopener"><img class="reward-rank-logo" src="${encodeURI(logo)}" alt="${alt}" width="${width}" height="${height}" loading="lazy" decoding="async"><span class="reward-rank-badge"><b>${badge}</b><span>${tag}</span></span><p data-th="${th}" data-en="${en}" data-lang-html>${th}</p><span class="reward-rank-go" aria-hidden="true">↗</span></a>`).join("")}</div>
+      <div class="reward-ranks">${rankings.map(({ href, logo, alt, width, height, badge, tag, th, en }) => `<a class="reward-rank${logo ? "" : " reward-rank-nologo"} reveal" href="${href}" target="_blank" rel="noopener">${logo ? `<img class="reward-rank-logo" src="${encodeURI(logo)}" alt="${alt}" width="${width}" height="${height}" loading="lazy" decoding="async">` : ""}<span class="reward-rank-badge"><b>${badge}</b><span>${tag}</span></span><p data-th="${th}" data-en="${en}" data-lang-html>${th}</p><span class="reward-rank-go" aria-hidden="true">↗</span></a>`).join("")}</div>
       <div class="reward-grid">${rewards.map(([file, name, alt]) => `<figure class="reward-card reveal"><div class="reward-logo"><img src="${encodeURI(file)}" alt="${alt}" loading="lazy" decoding="async"></div><figcaption>${name}</figcaption></figure>`).join("")}</div>
     </div>
   </section>`);
@@ -535,3 +527,88 @@ addRewards();
 updateScrollScene();
 setLanguage(currentLanguage);
 startHeroSlideRotation();
+
+// Student stories: one story per slide, always in the original order; a random story is shown first on each visit.
+// The slides are cloned before and after the originals; when the track drifts into a clone it jumps back
+// by exactly one set (an identical snap position), so there is no visible seam.
+function initStorySlider() {
+  const track = document.querySelector(".story-track");
+  const prev = document.querySelector(".story-prev");
+  const next = document.querySelector(".story-next");
+  if (!track || !prev || !next) return;
+  const slider = track.closest(".story-slider");
+  const originals = [...track.querySelectorAll(".story-card")];
+  if (originals.length < 2) return;
+
+  // Long quotes get a smaller type size so every slide stays a similar height.
+  originals.forEach(card => {
+    const text = card.querySelector(".story-quote p");
+    if (text && text.textContent.trim().length > 380) text.classList.add("story-long");
+  });
+  const startCard = originals[Math.floor(Math.random() * originals.length)];
+
+  const clone = card => {
+    const copy = card.cloneNode(true);
+    copy.setAttribute("aria-hidden", "true");
+    copy.setAttribute("inert", "");
+    copy.dataset.clone = "";
+    return copy;
+  };
+  track.prepend(...originals.map(clone));
+  track.append(...originals.map(clone));
+
+  const reduced = matchMedia("(prefers-reduced-motion: reduce)");
+  // Cards hidden for the current language take no space, so count only the visible originals.
+  const visibleCount = () => originals.filter(card => card.offsetParent !== null).length;
+  const slideWidth = () => track.clientWidth;
+  const jump = left => {
+    const previous = track.style.scrollSnapType;
+    track.style.scrollSnapType = "none";
+    track.scrollLeft = left;
+    track.style.scrollSnapType = previous;
+  };
+  const home = () => {
+    const visible = originals.filter(card => card.offsetParent !== null);
+    // Start on the random story; if it is hidden in this language, start on the first visible one.
+    const index = Math.max(0, visible.indexOf(startCard));
+    jump((visible.length + index) * slideWidth());
+  };
+  const wrap = () => {
+    const count = visibleCount();
+    if (!count) return;
+    const width = count * slideWidth();
+    if (track.scrollLeft < width - 2) jump(track.scrollLeft + width);
+    else if (track.scrollLeft >= width * 2 - 2) jump(track.scrollLeft - width);
+  };
+  const go = direction => {
+    wrap();
+    track.scrollBy({ left: direction * slideWidth(), behavior: reduced.matches ? "auto" : "smooth" });
+  };
+
+  let settle;
+  track.addEventListener("scroll", () => { clearTimeout(settle); settle = setTimeout(wrap, 90); }, { passive: true });
+  prev.addEventListener("click", () => go(-1));
+  next.addEventListener("click", () => go(1));
+  track.addEventListener("keydown", event => {
+    if (event.key === "ArrowRight") { event.preventDefault(); go(1); }
+    if (event.key === "ArrowLeft") { event.preventDefault(); go(-1); }
+  });
+  addEventListener("resize", home);
+  // Switching TH/EN changes which stories are visible, so re-centre on the first set.
+  new MutationObserver(() => requestAnimationFrame(home)).observe(document.documentElement, { attributes: true, attributeFilter: ["lang"] });
+  requestAnimationFrame(home);
+
+  // Autoplay: pauses on hover/focus/touch, when the tab is hidden, when off-screen, or with reduced/paused motion.
+  let holding = false;
+  let onScreen = false;
+  const canPlay = () => !holding && onScreen && !document.hidden && !reduced.matches && !document.documentElement.classList.contains("motion-paused");
+  slider.addEventListener("pointerenter", () => { holding = true; });
+  slider.addEventListener("pointerleave", () => { holding = false; });
+  slider.addEventListener("focusin", () => { holding = true; });
+  slider.addEventListener("focusout", () => { holding = false; });
+  slider.addEventListener("touchstart", () => { holding = true; }, { passive: true });
+  slider.addEventListener("touchend", () => { setTimeout(() => { holding = false; }, 6000); }, { passive: true });
+  new IntersectionObserver(([entry]) => { onScreen = entry.isIntersecting; }, { threshold: .35 }).observe(slider);
+  setInterval(() => { if (canPlay()) go(1); }, 7500);
+}
+initStorySlider();

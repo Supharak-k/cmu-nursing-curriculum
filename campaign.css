@@ -85,7 +85,7 @@
 .rewards-heading { max-width: 850px; margin-bottom: 3rem; }
 .rewards-heading h2 { font-size: clamp(2.5rem, 4.8vw, 5rem); line-height: 1.1; font-weight: 500; }
 .rewards-heading h2 em { display: block; font-style: normal; color: #9e76b4; }
-.reward-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin-top: clamp(2rem, 4vw, 3.2rem); }
+.reward-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 1.2rem; margin-top: clamp(2rem, 4vw, 3.2rem); }
 .reward-card { margin: 0; padding: 1.4rem; border: 0; border-radius: 0; background: transparent; box-shadow: none; transition: transform .4s; }
 .reward-card:hover { transform: translateY(-7px); box-shadow: none; }
 .reward-logo { --lh: 160px; height: var(--lh); display: flex; align-items: center; justify-content: center; }
@@ -94,6 +94,7 @@
 .reward-ranks { display: grid; gap: 1.2rem; }
 .reward-rank { display: grid; grid-template-columns: 210px auto 1fr auto; align-items: center; gap: clamp(1.2rem, 3vw, 2.4rem); padding: clamp(1.3rem, 2.6vw, 2rem) clamp(1.4rem, 3vw, 2.6rem); color: inherit; transition: transform .3s, box-shadow .3s, border-color .3s; border: 1px solid #7d52a026; border-radius: 24px; background: linear-gradient(110deg, #f8f3fb 0%, #fff 55%, #fff4ee 100%); box-shadow: 0 12px 34px #7d52a014; }
 .reward-rank:hover { transform: translateY(-4px); border-color: #7d52a066; box-shadow: 0 18px 44px #7d52a02e; }
+.reward-rank-nologo { grid-template-columns: auto 1fr auto; }
 .reward-rank-logo { display: block; width: clamp(150px, 16vw, 207px); height: auto; max-height: 76px; object-fit: contain; justify-self: start; }
 .reward-rank-go { display: grid; place-items: center; width: 2.8rem; height: 2.8rem; border-radius: 50%; background: #f16422; color: #fff; font-size: 1.2rem; font-weight: 700; box-shadow: 0 6px 16px #f1642240; transition: transform .3s; }
 .reward-rank:hover .reward-rank-go { transform: translate(3px, -3px); }

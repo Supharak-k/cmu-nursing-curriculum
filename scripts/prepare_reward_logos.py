@@ -11,6 +11,7 @@ SOURCES = (
     ("02logo EdPex.png", "reward-edpex.png"),
     ("acen.webp", "reward-acen.png"),
     ("Logo TQA2019.jpg", "reward-tqc.png"),
+    ("Logo TQA2022.jpg", "reward-tqc2022.png"),
 )
 
 
@@ -45,7 +46,7 @@ def main():
     output.mkdir(exist_ok=True)
     for original, filename in SOURCES:
         with Image.open(ROOT / "image" / "reward" / original) as image:
-            result = remove_white_matte(image, preserve_star=filename == "reward-tqc.png")
+            result = remove_white_matte(image, preserve_star=filename.startswith("reward-tqc"))
         result.save(output / filename, optimize=True)
         assert result.getchannel("A").getextrema() == (0, 255)
         print(f"{filename}: {result.width}x{result.height}, transparent PNG")
