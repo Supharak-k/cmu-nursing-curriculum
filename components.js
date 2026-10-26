@@ -34,10 +34,10 @@
         <img class="footer-cmu-white" src="image/web/cmu-logo-white.png" width="560" height="75" alt="Chiang Mai University" loading="lazy">
       </div>
       <div class="footer-details">
-        <div class="footer-row"><span>CMU / FON</span><strong data-th="คณะพยาบาลศาสตร์<br>มหาวิทยาลัยเชียงใหม่" data-en="Faculty of Nursing<br>Chiang Mai University" data-lang-html>Faculty of Nursing<br>Chiang Mai University</strong></div>
+        <div class="footer-row"><span>FON CMU</span><strong data-th="คณะพยาบาลศาสตร์<br>มหาวิทยาลัยเชียงใหม่" data-en="Faculty of Nursing<br>Chiang Mai University" data-lang-html>Faculty of Nursing<br>Chiang Mai University</strong></div>
         <address class="footer-row"><span data-th="ที่อยู่" data-en="Address">Address</span><p data-th="110/406 ถนนอินทวโรรส ตำบลสุเทพ อำเภอเมือง จังหวัดเชียงใหม่ 50200" data-en="110/406 Inthawarorot Road, Suthep, Mueang Chiang Mai, Chiang Mai 50200, Thailand">110/406 Inthawarorot Road, Suthep, Mueang Chiang Mai, Chiang Mai 50200, Thailand</p></address>
         <div class="footer-actions">
-          <a href="tel:+6653935024"><span data-th="โทรศัพท์ทั่วไป" data-en="General enquiries">General enquiries</span><strong>053-935024 <i aria-hidden="true">↗</i></strong></a>
+          <a href="tel:+6653935024"><span data-th="ติดต่องานรับเข้าศึกษา" data-en="Contact Admisstion team.">Tel.</span><strong>+66 5393 5025 <i aria-hidden="true">↗</i></strong></a>
           <a href="https://www.nurse.cmu.ac.th" target="_blank" rel="noopener"><span data-th="เว็บไซต์คณะ" data-en="Faculty website">Faculty website</span><strong>nurse.cmu.ac.th <i aria-hidden="true">↗</i></strong></a>
         </div>
       </div>
