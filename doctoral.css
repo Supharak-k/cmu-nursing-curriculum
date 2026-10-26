@@ -1,5 +1,12 @@
-/* Doctoral page (doctoral.html) — study plans, fee table, qualifications and committee */
+/* Doctoral page (doctoral.html) — hero, section headings, study plans, fee table, qualifications and committee */
 .level-phd .degree-hero h1 { font-size: clamp(2rem, 4.4vw, 3.6rem); line-height: 1.2; }
+
+/* Per-plan colours: purple (1.1) · orange (2.1) · green (2.2) */
+.phd-c-p { --pc: #7D52A0; --pc-soft: #EFE6F6; --pc-tint: #F8F3FB; }
+.phd-c-o { --pc: #E2581A; --pc-soft: #FFE6D9; --pc-tint: #FFF6F1; }
+.phd-c-g { --pc: #23874D; --pc-soft: #DDF1E4; --pc-tint: #F2FAF5; }
+
+.phd-i { width: 1.25em; height: 1.25em; flex: 0 0 auto; }
 
 /* Hero: deep purple so white text stays readable (white on #5E3A7D ≈ 9:1), with CI gold/orange glows */
 .degree-page.level-phd .degree-hero { background: #5E3A7D; }
@@ -10,87 +17,181 @@
 }
 .degree-page.level-phd .degree-hero h1 { text-shadow: 0 2px 18px rgba(30, 12, 45, .45); }
 .degree-page.level-phd .degree-hero h1::after { content: ""; display: block; width: 4.5rem; height: 5px; margin-top: 1.1rem; border-radius: 5px; background: linear-gradient(90deg, #FDD58A, var(--ci-orange)); }
-.degree-page.level-phd .degree-hero .degree-lede { color: #FDD58A; font-weight: 500; }
+.degree-page.level-phd .degree-hero h1 em { color: #fff; }
+.degree-page.level-phd .degree-hero .degree-lede { color: #fff; font-weight: 500; text-shadow: 0 1px 12px rgba(0, 0, 0, .35); }
 .degree-page.level-phd .degree-hero .degree-breadcrumb, .degree-page.level-phd .degree-hero .degree-breadcrumb a { color: rgba(255, 255, 255, .85); }
-.level-phd .ug-facts li { background: rgba(30, 12, 45, .35); border: 1px solid rgba(255, 255, 255, .22); border-left: 5px solid #FDD58A; box-shadow: 0 .8rem 2rem rgba(20, 8, 30, .3); backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
-.level-phd .ug-facts li:nth-child(2) { border-left-color: var(--ci-orange); }
-.level-phd .ug-facts li:nth-child(3) { border-left-color: #B99BCB; }
-.level-phd .ug-facts b { color: #fff; text-shadow: none; }
-.phd-code { display: inline-block; margin: .8rem 0 0; padding: .3rem .8rem; border-radius: 8px; background: rgba(255, 255, 255, .18); font-size: .9rem; font-weight: 500; letter-spacing: .04em; }
+.degree-page.level-phd .degree-hero .degree-breadcrumb a { display: inline-flex; align-items: center; gap: .4rem; }
+.phd-crumb-i { width: 1.05rem; height: 1.05rem; }
+
+.phd-code { display: inline-flex; align-items: center; gap: .55rem; margin: 1rem 0 0; padding: .5rem 1rem; border-radius: 12px; background: rgba(255, 255, 255, .14); border: 1px solid rgba(255, 255, 255, .18); color: #fff; font-size: .9rem; font-weight: 500; letter-spacing: .02em; }
+.phd-code .phd-i { color: #FDD58A; }
+
+.phd-actions { flex-wrap: wrap; gap: .8rem; }
+.phd-btn { display: inline-flex; align-items: center; gap: .65rem; min-height: 3.4rem; padding: .5rem .6rem .5rem 1.4rem; border-radius: 999px; font-size: 1rem; font-weight: 600; transition: transform .2s, box-shadow .2s, background .2s; }
+.phd-btn:hover { transform: translateY(-2px); }
+.phd-btn-main { background: #fff; color: var(--ci-orange); box-shadow: 0 .6rem 1.4rem rgba(20, 8, 30, .25); }
+.phd-btn-go { display: grid; place-items: center; width: 2.3rem; height: 2.3rem; border-radius: 50%; background: var(--ci-orange); color: #fff; }
+.phd-btn-go .phd-i { width: 1rem; height: 1rem; }
+.phd-btn-ghost { padding-right: 1.3rem; border: 1.5px solid rgba(255, 255, 255, .55); color: #fff; }
+.phd-btn-ghost:hover { background: rgba(255, 255, 255, .1); }
+.phd-btn-chev { width: .9rem; height: .9rem; opacity: .8; }
+
+/* Hero type cards */
+.phd-types { display: grid; gap: 1rem; margin: 0; padding: 0; list-style: none; }
+.phd-type { display: flex; align-items: center; gap: 1.1rem; padding: 1.15rem 1.3rem; border: 1px solid #ffffffb3; border-radius: 20px; background: linear-gradient(110deg, #ffffffb3, #fff8f385 60%, #f5f0f880); -webkit-backdrop-filter: blur(22px) saturate(150%); backdrop-filter: blur(22px) saturate(150%); color: var(--ink); box-shadow: 0 8px 32px #2a143e40; transition: transform .25s, background .25s, box-shadow .25s; }
+.phd-type:hover { transform: translateX(-6px); background: linear-gradient(110deg, #ffffffd9, #fff8f3b3 60%, #f5f0f8a6); box-shadow: 0 12px 36px #2a143e55; }
+.phd-type-icon { display: grid; place-items: center; flex: 0 0 auto; width: 3.6rem; height: 3.6rem; border-radius: 50%; background: var(--pc-soft); color: var(--pc); }
+.phd-type-icon .phd-i { width: 1.7rem; height: 1.7rem; }
+.phd-type-text { display: grid; flex: 1; min-width: 0; gap: .1rem; }
+.phd-type-k { color: var(--pc); font-size: .8rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; }
+.phd-type-text b { font-size: clamp(1.05rem, 1.6vw, 1.3rem); font-weight: 600; line-height: 1.3; }
+.phd-type-sub { color: var(--ci-gray-dark); font-size: .88rem; }
+.phd-type-go { display: grid; place-items: center; flex: 0 0 auto; width: 2.6rem; height: 2.6rem; border-radius: 50%; background: var(--pc); color: #fff; }
+
+/* Section headings: number badge + title + other-language subtitle */
+.phd-head { display: flex; align-items: flex-start; gap: clamp(.9rem, 2vw, 1.4rem); margin-bottom: clamp(1.8rem, 3.5vw, 2.6rem); }
+.phd-num { display: grid; place-items: center; flex: 0 0 auto; width: clamp(3.2rem, 6vw, 4.4rem); aspect-ratio: 1; border-radius: 18px; background: var(--ci-purple-soft); color: var(--lv-deep); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 700; }
+.phd-head h2 { margin: 0; color: var(--ink); font-size: clamp(1.9rem, 4vw, 3rem); font-weight: 700; line-height: 1.15; }
+.phd-head-sub { margin: .35rem 0 0; color: var(--ci-gray-dark); font-size: clamp(1rem, 1.8vw, 1.3rem); }
 
 /* Study plans */
-.phd-plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; }
-.phd-plan { display: flex; flex-direction: column; padding: clamp(1.4rem, 2.5vw, 2rem); border-radius: 20px; background: var(--lv-tint); border-top: 6px solid var(--lv); }
-.phd-plan:nth-child(2) { border-top-color: var(--ci-orange); }
-.phd-plan:nth-child(3) { border-top-color: var(--ci-gold); }
-.phd-plan h3 { margin: 0 0 1.2rem; color: var(--ink); font-size: 1.15rem; font-weight: 600; line-height: 1.4; }
-.phd-plan-total { display: flex; align-items: baseline; gap: .6rem; margin: 0; color: var(--lv-deep); }
-.phd-plan-total b { font-size: clamp(3rem, 6vw, 4.2rem); font-weight: 600; line-height: 1; }
-.phd-plan-total span { font-size: .9rem; font-weight: 500; }
-.phd-plan-label { margin: .3rem 0 1rem; color: var(--ci-gray-dark); font-size: .9rem; }
-.phd-plan dl { display: grid; gap: .1rem; margin: auto 0 0; }
-.phd-plan dl > div { display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: .7rem 0; border-top: 1px solid #7d52a025; }
-.phd-plan dt { color: var(--ci-gray-dark); font-size: .9rem; }
-.phd-plan dd { margin: 0; color: var(--ink); white-space: nowrap; }
-.phd-plan dd b { font-size: 1.35rem; font-weight: 600; }
-.phd-plan dd span { color: var(--ci-gray-dark); font-size: .75rem; }
+.phd-plans { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.2rem; }
+.phd-plan { display: flex; flex-direction: column; gap: .2rem; padding: 0 1.3rem 1.3rem; border-radius: 22px; background: #fff; border-top: 6px solid var(--pc); box-shadow: 0 .8rem 2rem rgba(70, 42, 94, .1); scroll-margin-top: 110px; }
+.phd-plan-head { display: flex; align-items: center; gap: .9rem; margin: 0 -1.3rem 1rem; padding: 1.2rem 1.3rem; border-radius: 0 0 20px 20px; background: linear-gradient(120deg, var(--pc-tint), #fff); }
+.phd-plan-icon { display: grid; place-items: center; flex: 0 0 auto; width: 3.4rem; height: 3.4rem; border-radius: 50%; background: var(--pc-soft); color: var(--pc); }
+.phd-plan-icon .phd-i { width: 1.6rem; height: 1.6rem; }
+.phd-plan-head > div { flex: 1; min-width: 0; }
+.phd-plan-head h3 { margin: 0; color: var(--pc); font-size: clamp(1.5rem, 2.4vw, 1.9rem); font-weight: 700; line-height: 1.1; }
+.phd-plan-head p { margin: .2rem 0 0; color: var(--ink); font-size: .92rem; font-weight: 600; }
+.phd-plan-go { display: grid; place-items: center; flex: 0 0 auto; width: 2.4rem; height: 2.4rem; border-radius: 50%; background: var(--pc); color: #fff; transition: transform .2s; }
+.phd-plan-go:hover { transform: translateX(3px); }
+.phd-plan-total { display: flex; align-items: baseline; gap: .7rem; margin: 0; }
+.phd-plan-total b { color: var(--pc); font-size: clamp(3rem, 6vw, 4rem); font-weight: 700; line-height: 1; }
+.phd-plan-total span { color: var(--ink); font-size: 1.3rem; font-weight: 500; }
+.phd-plan-label { margin: .2rem 0 1rem; padding-bottom: 1rem; border-bottom: 1px solid #7d52a01f; color: var(--ci-gray-dark); font-size: .92rem; }
+.phd-plan-rows { display: grid; margin: 0 0 1rem; padding: .3rem .9rem; border-radius: 14px; background: #faf8fc; list-style: none; }
+.phd-plan-rows li { display: grid; grid-template-columns: auto 1fr auto auto; align-items: center; gap: .3rem .7rem; padding: .7rem 0; }
+.phd-plan-rows li + li { border-top: 1px solid #7d52a017; }
+.phd-plan-rows .phd-i { color: var(--pc); }
+.phd-plan-rows span { color: var(--ink); font-size: .92rem; }
+.phd-plan-rows b { color: var(--ink); font-size: 1.25rem; font-weight: 700; text-align: right; }
+.phd-plan-rows small { color: var(--ci-gray-dark); font-size: .8rem; }
+.phd-plan-fee { display: flex; align-items: center; gap: .9rem; margin-top: auto; padding: .95rem 1.1rem; border-radius: 14px; background: var(--pc-tint); }
+.phd-plan-fee > .phd-i { width: 2rem; height: 2rem; color: var(--pc); }
+.phd-plan-fee span { display: block; color: var(--ci-gray-dark); font-size: .85rem; }
+.phd-plan-fee b { color: var(--pc); font-size: clamp(1.5rem, 2.4vw, 1.9rem); font-weight: 700; line-height: 1.2; }
 
 /* Tuition fee */
-.phd-fee { margin-top: clamp(2.5rem, 5vw, 4rem); }
-.phd-fee h3 { margin: 0 0 1rem; font-size: clamp(1.4rem, 2.4vw, 1.9rem); font-weight: 600; }
-.phd-table-wrap { overflow-x: auto; border: 1px solid #7d52a025; border-radius: 16px; background: #fff; }
+.phd-fee { margin-top: clamp(2.5rem, 5vw, 3.5rem); }
+.phd-fee-head { display: flex; flex-wrap: wrap; align-items: center; gap: .8rem 1rem; margin-bottom: 1.1rem; }
+.phd-fee-icon { display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 50%; background: var(--ci-purple-soft); color: var(--lv-deep); }
+.phd-fee-icon .phd-i { width: 1.5rem; height: 1.5rem; }
+.phd-fee h3 { margin: 0; color: var(--ink); font-size: clamp(1.4rem, 2.4vw, 1.8rem); font-weight: 700; }
+.phd-fee-note { margin: 0 0 0 auto; padding: .55rem 1.1rem; border-radius: 999px; background: var(--ci-purple-tint); border: 1px solid var(--ci-purple-soft); color: var(--lv-deep); font-size: .88rem; font-weight: 500; }
+.phd-table-wrap { overflow-x: auto; border: 1px solid #7d52a025; border-radius: 16px; background: #fff; box-shadow: 0 .6rem 1.6rem rgba(70, 42, 94, .07); }
 .phd-fee table { width: 100%; min-width: 640px; border-collapse: collapse; }
-.phd-fee th, .phd-fee td { padding: 1rem 1.2rem; text-align: left; vertical-align: top; }
-.phd-fee th { background: var(--lv-deep); color: #fff; font-size: .85rem; font-weight: 500; }
+.phd-fee th, .phd-fee td { padding: 1rem 1.3rem; text-align: left; vertical-align: top; }
+.phd-fee th { background: var(--lv-deep); color: #fff; font-size: .88rem; font-weight: 600; }
+.phd-fee th + th, .phd-fee td + td { border-left: 1px solid #7d52a01c; }
+.phd-fee th + th { border-left-color: rgba(255, 255, 255, .18); }
 .phd-fee td { border-top: 1px solid #7d52a01c; color: var(--ink); font-size: 1.05rem; }
 .phd-fee td:nth-child(n+3) { font-variant-numeric: tabular-nums; font-weight: 600; }
 .phd-fee td:nth-child(3) { color: var(--lv-deep); }
 
-/* Qualifications and application */
+/* Qualifications (accordions) */
 .phd-admission { display: grid; grid-template-columns: 1.15fr .85fr; gap: 1.5rem; align-items: start; }
-.phd-qual-body { padding: 1rem 1.2rem 1.2rem; color: var(--ci-gray-dark); line-height: 1.75; }
-.phd-qual-body ol, .phd-qual-body ul { margin: 0; padding-left: 1.3rem; }
-.phd-qual-body li + li { margin-top: .5rem; }
-.phd-qual-body h4 { margin: 1rem 0 .2rem; color: var(--ink); font-size: 1rem; font-weight: 600; }
-.phd-qual-body h4:first-child { margin-top: 0; }
-.phd-qual-body p { margin: 0; }
-.phd-qual-body ul { margin-top: .4rem; }
-.phd-panel { margin-bottom: 1rem; padding: 1.4rem 1.5rem; border-radius: 16px; background: #fff; border: 1px solid var(--ci-purple-soft); }
-.phd-panel h3 { margin: 0 0 .6rem; color: var(--ink); font-size: 1.1rem; font-weight: 600; }
+.phd-acc { margin-bottom: 1rem; overflow: hidden; border-radius: 20px; background: #fff; box-shadow: 0 .6rem 1.6rem rgba(70, 42, 94, .08); scroll-margin-top: 110px; }
+.phd-acc summary { position: relative; display: flex; align-items: center; gap: .9rem; margin: .6rem; padding: 1rem 3rem 1rem 1.1rem; border-radius: 14px; background: var(--ci-purple-tint); color: var(--ink); font-size: clamp(1rem, 1.6vw, 1.2rem); font-weight: 600; cursor: pointer; list-style: none; }
+.phd-acc summary::-webkit-details-marker { display: none; }
+.phd-acc summary::after { content: ""; position: absolute; right: 1.3rem; top: 50%; border: 7px solid transparent; border-top: 9px solid var(--ci-orange); transform: translateY(-25%); }
+.phd-acc[open] summary::after { border-top-color: transparent; border-bottom: 9px solid var(--ci-orange); transform: translateY(-80%); }
+.phd-acc-i { width: 1.6rem; height: 1.6rem; color: var(--lv-deep); }
+.phd-acc-body { display: grid; gap: 1.4rem; padding: 1rem 1.4rem 1.6rem; }
+.phd-q { display: grid; grid-template-columns: auto 1fr; gap: 1rem; }
+.phd-q-i { box-sizing: content-box; width: 1.3rem; height: 1.3rem; padding: .7rem; border-radius: 50%; background: var(--ci-purple-tint); color: var(--lv-deep); }
+.phd-q h4 { display: inline-block; margin: .35rem 0 .6rem; padding: .3rem .9rem; border-radius: 10px; background: var(--ci-purple-tint); color: var(--ink); font-size: 1rem; font-weight: 600; }
+.phd-q p { margin: 0; color: var(--ci-gray-dark); line-height: 1.75; }
+.phd-q-list { display: grid; gap: .35rem; margin: .8rem 0 0; padding: .9rem 1.1rem .9rem 2.1rem; border-radius: 12px; background: #faf8fc; color: var(--ci-gray-dark); line-height: 1.6; }
+.phd-q-list li::marker { color: var(--lv-deep); }
+
+/* Right column panels */
+.phd-panel { margin-bottom: 1rem; padding: 1.3rem 1.4rem; border-radius: 20px; background: #fff; box-shadow: 0 .6rem 1.6rem rgba(70, 42, 94, .08); }
+.phd-panel h3 { margin: 0 0 .4rem; color: var(--ink); font-size: 1.15rem; font-weight: 700; }
 .phd-panel p { margin: 0; color: var(--ci-gray-dark); line-height: 1.7; }
-.phd-docs ol { margin: 0; padding-left: 1.3rem; color: var(--ci-gray-dark); font-size: .92rem; line-height: 1.7; }
-.phd-docs li + li { margin-top: .4rem; }
-.phd-docs li::marker, .phd-qual-body li::marker { color: var(--lv-deep); font-weight: 600; }
-.phd-apply { background: var(--lv-tint); border-color: transparent; }
-.phd-apply .button { margin-top: 1rem; max-width: 100%; overflow-wrap: anywhere; white-space: normal; }
+.phd-panel-head { display: flex; align-items: center; gap: .8rem; margin-bottom: 1rem !important; }
+.phd-panel-icon { display: grid; place-items: center; flex: 0 0 auto; width: 2.8rem; height: 2.8rem; border-radius: 50%; background: var(--ci-purple-tint); color: var(--lv-deep); }
+.phd-panel-icon .phd-i { width: 1.35rem; height: 1.35rem; }
+.phd-panel-row { display: flex; align-items: center; gap: 1rem; }
+.phd-doclist { display: grid; gap: .45rem; margin: 0; padding: 0; list-style: none; }
+.phd-doclist li { display: flex; align-items: flex-start; gap: .8rem; padding: .6rem .8rem; border-radius: 12px; background: #faf8fc; }
+.phd-doclist span { display: grid; place-items: center; flex: 0 0 auto; width: 1.8rem; height: 1.8rem; border-radius: 50%; background: var(--ci-purple-soft); color: var(--lv-deep); font-size: .85rem; font-weight: 700; }
+.phd-doclist p { margin: 0; color: var(--ink); font-size: .9rem; line-height: 1.55; }
+
+/* Application channel card */
+.phd-apply { position: relative; overflow: hidden; padding: 1.5rem 1.6rem 1.6rem; border-radius: 22px; color: #fff; background: radial-gradient(circle at 90% 10%, rgba(250, 172, 30, .3), transparent 40%), linear-gradient(140deg, #7D52A0, #4A2B66); box-shadow: 0 1rem 2.4rem rgba(70, 42, 94, .3); }
+.phd-apply-k { display: flex; align-items: center; gap: .7rem; margin: 0; font-size: 1.05rem; font-weight: 600; }
+.phd-apply-k .phd-panel-icon { background: rgba(255, 255, 255, .16); color: #fff; }
+.phd-apply-big { margin: .6rem 0 .3rem; font-size: clamp(1.5rem, 2.6vw, 1.9rem); font-weight: 700; line-height: 1.2; }
+.phd-apply-big em { color: #9BE3A8; font-style: normal; }
+.phd-apply-text { margin: 0 0 1.2rem; color: rgba(255, 255, 255, .88); }
+.phd-apply-btn { display: inline-flex; align-items: center; justify-content: center; gap: .8rem; width: 100%; padding: 1rem 1.4rem; border-radius: 999px; background: linear-gradient(90deg, var(--ci-orange), #F98A3C); color: #fff; font-size: 1.15rem; font-weight: 700; box-shadow: 0 .6rem 1.4rem rgba(241, 100, 34, .4); transition: transform .2s; }
+.phd-apply-btn:hover { transform: translateY(-2px); }
+.phd-apply-url { display: inline-flex; align-items: center; gap: .5rem; margin-top: 1rem; color: #fff; font-size: .92rem; text-decoration: underline; text-underline-offset: 3px; overflow-wrap: anywhere; }
 
 /* Committee */
 .phd-committee-title { margin: 0 0 1.2rem; font-size: clamp(1.3rem, 2.2vw, 1.7rem); font-weight: 600; }
-.phd-committee { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; margin: 0; padding: 0; list-style: none; }
-.phd-member { display: flex; flex-direction: column; overflow: hidden; border-radius: 18px; background: #fff; border: 1px solid var(--ci-purple-soft); box-shadow: 0 .5rem 1.4rem rgba(70, 42, 94, .07); transition: transform .25s, box-shadow .25s; }
+.phd-committee { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: .8rem; margin: 0; padding: 0; list-style: none; }
+.phd-member { display: flex; flex-direction: column; overflow: hidden; border-radius: 14px; background: #fff; border: 1px solid var(--ci-purple-soft); box-shadow: 0 .5rem 1.4rem rgba(70, 42, 94, .07); transition: transform .25s, box-shadow .25s; }
 .phd-member:hover { transform: translateY(-4px); box-shadow: 0 1rem 2rem rgba(70, 42, 94, .14); }
-/* Placeholder silhouette shows until image/committee/NN.jpg exists (the img removes itself on error) */
+/* Placeholder silhouette shows until the photo exists (the img removes itself on error) */
 .phd-photo { position: relative; margin: 0; aspect-ratio: 1; background: var(--lv-tint) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='38' r='17' fill='%23B99BCB'/%3E%3Cpath d='M16 96c2-22 17-34 34-34s32 12 34 34z' fill='%23B99BCB'/%3E%3C/svg%3E") center bottom / 70% no-repeat; }
 .phd-photo img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center top; }
-.phd-member > div { display: flex; flex: 1; flex-direction: column; gap: .5rem; padding: 1rem 1.1rem 1.2rem; }
-.phd-member-title { margin: 0; color: var(--lv-deep); font-size: .8rem; font-weight: 600; line-height: 1.3; letter-spacing: .02em; }
-.phd-member-name { margin: -.25rem 0 0; color: var(--ink); font-size: 1rem; font-weight: 600; line-height: 1.45; }
-.phd-member-role { align-self: flex-start; margin: auto 0 0; padding: .2rem .7rem; border-radius: 999px; background: var(--lv-tint); color: var(--lv-deep); font-size: .8rem; font-weight: 600; }
+.phd-member > div { display: flex; flex: 1; flex-direction: column; gap: .35rem; padding: .7rem .8rem .85rem; }
+.phd-member-title { margin: 0; color: var(--lv-deep); font-size: .72rem; font-weight: 600; line-height: 1.3; letter-spacing: .02em; }
+.phd-member-name { margin: -.2rem 0 0; color: var(--ink); font-size: .88rem; font-weight: 600; line-height: 1.4; }
+.phd-member-role { align-self: flex-start; margin: auto 0 0; padding: .15rem .6rem; border-radius: 999px; background: var(--lv-tint); color: var(--lv-deep); font-size: .72rem; font-weight: 600; }
 .phd-member:first-child .phd-member-role { background: var(--lv-deep); color: #fff; }
 /* Chair sits alone, centred, on the first row (same card width as one column); the other 12 fill rows 2–4 */
-.phd-committee { column-gap: 1rem; row-gap: 1rem; }
-.phd-member:first-child { grid-column: 1 / -1; justify-self: center; width: calc((100% - 3rem) / 4); margin-bottom: clamp(1.2rem, 2.5vw, 2rem); border-color: var(--lv-deep); box-shadow: 0 1rem 2.2rem rgba(94, 58, 125, .22); }
+.phd-committee { column-gap: .8rem; row-gap: .8rem; }
+.phd-member:first-child { grid-column: 1 / -1; justify-self: center; width: calc((100% - 4rem) / 6); margin-bottom: clamp(1rem, 2vw, 1.5rem); border-color: var(--lv-deep); box-shadow: 0 1rem 2.2rem rgba(94, 58, 125, .22); }
 .phd-committee-title { margin-bottom: clamp(1.6rem, 3vw, 2.4rem); }
 
-@media (max-width: 1024px) {
-  .phd-plans { grid-template-columns: 1fr; }
-  .phd-admission { grid-template-columns: 1fr; }
+@media (max-width: 1180px) {
+  .phd-committee { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .phd-member:first-child { width: calc((100% - 2.4rem) / 4); }
+}
+@media (max-width: 900px) {
   .phd-committee { grid-template-columns: repeat(3, minmax(0, 1fr)); }
-  .phd-member:first-child { width: calc((100% - 2rem) / 3); }
+  .phd-member:first-child { width: calc((100% - 1.6rem) / 3); }
+}
+@media (max-width: 1100px) {
+  .phd-plans { grid-template-columns: 1fr; max-width: 640px; }
+}
+@media (max-width: 1024px) {
+  .phd-admission { grid-template-columns: 1fr; }
+  .phd-fee-note { margin-left: 0; }
 }
 @media (max-width: 700px) {
+  .phd-actions { flex-direction: column; align-items: stretch; }
+  .phd-btn { white-space: nowrap; }
+  .phd-btn-main .phd-btn-go { margin-left: auto; }
+  .phd-btn-ghost .phd-btn-chev { margin-left: auto; }
+  .phd-type { gap: .8rem; padding: 1rem; }
+  .phd-type-icon { width: 2.9rem; height: 2.9rem; }
+  .phd-type-go { width: 2.2rem; height: 2.2rem; }
+  .phd-acc-body { padding: .8rem 1rem 1.3rem; }
+  .phd-q { grid-template-columns: 1fr; gap: .2rem; }
+  .phd-q-i { display: none; }
   .phd-committee { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: .7rem; row-gap: .7rem; }
   .phd-member:first-child { width: calc((100% - .7rem) / 2); }
-  .phd-member > div { padding: .8rem .85rem 1rem; }
-  .phd-member-name { font-size: .9rem; }
+  .phd-member > div { padding: .7rem .75rem .9rem; }
 }
+
+/* English mode shows English only: hide the Thai subtitle under each section heading */
+html[lang="en"] .phd-head-sub { display: none; }
+html[lang="en"] .phd-head { align-items: center; }
+
+/* Curriculum-structure button, right of the section 1 heading (opens the CMU MIS page in a new tab) */
+.phd-mis { align-self: center; flex: 0 0 auto; margin-left: auto; display: inline-flex; align-items: center; min-height: 3.2rem; padding: .6rem 1.6rem; border-radius: 999px; background: linear-gradient(90deg, var(--ci-orange), #F98A3C); color: #fff; font-size: 1rem; font-weight: 600; box-shadow: 0 .5rem 1.3rem rgba(241, 100, 34, .35); transition: transform .2s, box-shadow .2s; }
+.phd-mis:hover { transform: translateY(-2px); box-shadow: 0 .8rem 1.6rem rgba(241, 100, 34, .45); }
+@media (max-width: 700px) { #study-plan .phd-head { flex-wrap: wrap; } .phd-mis { margin-left: 0; flex-basis: 100%; justify-content: center; } }

@@ -12,17 +12,35 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="experience.css" />
     <link rel="stylesheet" href="program-pages.css" />
-    <link rel="stylesheet" href="campaign.css?v=20261023-1" />
-    <link rel="stylesheet" href="brand.css?v=20261024-1" />
-    <link rel="stylesheet" href="undergraduate.css?v=20261024-1" />
+    <link rel="stylesheet" href="campaign.css?v=20261026-4" />
+    <link rel="stylesheet" href="brand.css?v=20261026-3" />
+    <link rel="stylesheet" href="undergraduate.css?v=20261026-1" />
     <link rel="stylesheet" href="levels.css?v=20261024-1" />
+    <link rel="stylesheet" href="degree-ui.css?v=20261026-30" />
     <!-- components.js draws the shared header/footer; script.js handles language, menu and reveal effects -->
     <script defer src="components.js?v=20261023-3"></script>
-    <script defer src="script.js?v=20261023-1"></script>
+    <script defer src="script.js?v=20261026-4"></script>
   </head>
-  <body class="degree-page level-ug" data-title-th="ปริญญาตรี | คณะพยาบาลศาสตร์ มช." data-title-en="Undergraduate | Faculty of Nursing, CMU">
+  <body class="degree-page level-ug ug-page" data-desc-th="หลักสูตรพยาบาลศาสตรบัณฑิต (ไทย และนานาชาติ) คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่" data-desc-en="Bachelor of Nursing Science (Thai and International programs), Faculty of Nursing, Chiang Mai University" data-title-th="ปริญญาตรี | คณะพยาบาลศาสตร์ มช." data-title-en="Undergraduate | Faculty of Nursing, CMU">
     <div class="reading-progress" aria-hidden="true"></div>
     <a class="skip-link" href="#main-content" data-th="ข้ามไปยังเนื้อหาหลัก" data-en="Skip to main content">ข้ามไปยังเนื้อหาหลัก</a>
+    <!-- Icon sprite (shared look with doctoral.html) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z" fill="currentColor"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M21 9v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 5.5C5.5 4 9 4 12 6c3-2 6.5-2 9-.5V19c-2.5-1.3-6-1.3-9 .5-3-1.8-6.5-1.8-9-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z M14 3v4h4 M9 12h6 M9 16h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+      <symbol id="i-coins" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 6v4c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V6 M5 10v4c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-4 M5 14v4c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-4" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5" fill="currentColor"/><path d="M2 20c0-4 3.1-6.5 7-6.5s7 2.5 7 6.5z" fill="currentColor"/><circle cx="17" cy="9" r="2.6" fill="currentColor" opacity=".6"/><path d="M17 13.5c3 0 5 2 5 5.5h-4.5" fill="currentColor" opacity=".6"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18 M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7 M5.5 9.5V20h13V9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v5l3.5 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.5" fill="currentColor"/></symbol>
+      <symbol id="i-layers" viewBox="0 0 24 24"><path d="M12 3l9 5-9 5-9-5z M3 13l9 5 9-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+      <symbol id="i-route" viewBox="0 0 24 24"><circle cx="6" cy="18" r="2.5" fill="currentColor"/><circle cx="18" cy="6" r="2.5" fill="currentColor"/><path d="M8.5 18H15a3 3 0 0 0 0-6H9a3 3 0 0 1 0-6h6.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-bed" viewBox="0 0 24 24"><path d="M3 18V6 M3 14h18v4 M21 14v-2a3 3 0 0 0-3-3h-7v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><circle cx="7" cy="10.5" r="2" fill="currentColor"/></symbol>
+      <symbol id="i-brief" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 7V5h6v2 M3 12h18" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+      <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </svg>
     <header class="site-header"></header>
 
     <main id="main-content">
@@ -31,23 +49,23 @@
       <section class="degree-hero" style="--level-glow:#faac1e">
         <div class="container degree-hero-grid">
           <div class="reveal">
-            <div class="degree-breadcrumb"><a href="index.html" data-th="หน้าแรก" data-en="Home">หน้าแรก</a><span>/</span><span data-th="ปริญญาตรี" data-en="Undergraduate">ปริญญาตรี</span></div>
+            <div class="degree-breadcrumb"><a href="index.html"><svg class="dg-crumb-i" aria-hidden="true"><use href="#i-home"/></svg><span data-th="หน้าแรก" data-en="Home">หน้าแรก</span></a><span>/</span><span data-th="ปริญญาตรี" data-en="Undergraduate">ปริญญาตรี</span></div>
             <h1 data-th="พยาบาลศาสตรบัณฑิต<em>หลักสูตรไทย และนานาชาติ</em>" data-en="BACHELOR OF <em>NURSING SCIENCE</em>" data-lang-html>พยาบาลศาสตรบัณฑิต<em>หลักสูตรไทย และนานาชาติ</em></h1>
             <p class="degree-lede" 
               data-th="เส้นทางวิชาชีพที่พร้อมให้เรียนรู้ทั้งภาคทฤษฎีและการฝึกปฏิบัติ ทักษะ และความเข้าใจในความเป็นมนุษย์ เพื่ออนาคตในวิชาชีพพยาบาล" 
               data-en="A career path that combines theory, practical skills, and human empathy, shaping your future in nursing through both Thai and international programs.">
               เส้นทางวิชาชีพที่พร้อมให้เรียนรู้ทั้งภาคทฤษฎีและการฝึกปฏิบัติ ทักษะ และความเข้าใจในความเป็นมนุษย์ เพื่ออนาคตในวิชาชีพพยาบาล
             </p>
-            <div class="degree-actions">
-              <a class="button ug-btn-main" href="#programs" data-th="ข้อมูลหลักสูตร" data-en="Compare the programs">ข้อมูลหลักสูตร</a>
-              <a class="button ug-btn-ghost" href="#admission" data-th="ช่องทางการรับสมัคร" data-en="Admission routes">ช่องทางการรับสมัคร</a>
+            <div class="degree-actions dg-actions">
+              <a class="dg-btn dg-btn-main" href="#programs"><span data-th="ข้อมูลหลักสูตร" data-en="Compare the programs">ข้อมูลหลักสูตร</span><span class="dg-btn-go"><svg class="dg-i" aria-hidden="true"><use href="#i-chev"/></svg></span></a>
+              <a class="dg-btn dg-btn-ghost" href="#admission"><span data-th="ช่องทางการรับสมัคร" data-en="Admission routes">ช่องทางการรับสมัคร</span><svg class="dg-i dg-btn-chev" aria-hidden="true"><use href="#i-chev"/></svg></a>
             </div>
           </div>
-          <ul class="ug-facts reveal reveal-delay-1">
-            <li><b data-th="หลักสูตรพยาบาลศาสตรบัณฑิต" data-en="Bachelor of Nursing Science">หลักสูตรพยาบาลศาสตรบัณฑิต</b></li>
-            <li><b data-th="หลักสูตรพยาบาลศาสตรบัณฑิต (นานาชาติ)" data-en="Bachelor of Nursing Science (International)">หลักสูตรพยาบาลศาสตรบัณฑิต (นานาชาติ)</b></li>
-            <li><b data-th="ระยะเวลาเรียน 4 ปี" data-en="4-year program">ระยะเวลาเรียน 4 ปี</b></li>
-            <li><b data-th="เรียน On-site เต็มรูปแบบ" data-en="Fully On-site">เรียน On-site เต็มรูปแบบ</b></li>
+          <ul class="dg-types reveal reveal-delay-1">
+            <li><a class="dg-type dg-c1" href="#programs"><span class="dg-type-icon"><svg class="dg-i" aria-hidden="true"><use href="#i-cap"/></svg></span><b data-th="หลักสูตรพยาบาลศาสตรบัณฑิต" data-en="Bachelor of Nursing Science">หลักสูตรพยาบาลศาสตรบัณฑิต</b><span class="dg-type-go"><svg class="dg-i" aria-hidden="true"><use href="#i-chev"/></svg></span></a></li>
+            <li><a class="dg-type dg-c2" href="#programs"><span class="dg-type-icon"><svg class="dg-i" aria-hidden="true"><use href="#i-cap"/></svg></span><b data-th="หลักสูตรพยาบาลศาสตรบัณฑิต (นานาชาติ)" data-en="Bachelor of Nursing Science (International)">หลักสูตรพยาบาลศาสตรบัณฑิต (นานาชาติ)</b><span class="dg-type-go"><svg class="dg-i" aria-hidden="true"><use href="#i-chev"/></svg></span></a></li>
+            <li><a class="dg-type dg-c3" href="#structure"><span class="dg-type-icon"><svg class="dg-i" aria-hidden="true"><use href="#i-clock"/></svg></span><b data-th="ระยะเวลาเรียน 4 ปี" data-en="4-year program">ระยะเวลาเรียน 4 ปี</b><span class="dg-type-go"><svg class="dg-i" aria-hidden="true"><use href="#i-chev"/></svg></span></a></li>
+            <li><a class="dg-type dg-c4" href="#structure"><span class="dg-type-icon"><svg class="dg-i" aria-hidden="true"><use href="#i-pin"/></svg></span><b data-th="เรียน On-site เต็มรูปแบบ" data-en="Fully On-site">เรียน On-site เต็มรูปแบบ</b><span class="dg-type-go"><svg class="dg-i" aria-hidden="true"><use href="#i-chev"/></svg></span></a></li>
           </ul>
         </div>
       </section>
@@ -56,31 +74,35 @@
       <section class="ug-section" id="programs">
         <div class="container">
           <div class="ug-programs">
-            <article class="ug-program ug-program-thai reveal">
-              <h3 data-th="หลักสูตรพยาบาลศาสตรบัณฑิต" data-en="Bachelor of Nursing Science (Regular Program)">หลักสูตรพยาบาลศาสตรบัณฑิต</h3>
+            <article class="ug-program ug-program-thai reveal dg-pcard">
+              <header class="dg-pcard-head"><span class="dg-pcard-icon"><svg class="dg-i" aria-hidden="true"><use href="#i-cap"/></svg></span><div>
+              <h3 data-th="หลักสูตรพยาบาลศาสตรบัณฑิต" data-en="Bachelor of Nursing Science<br />(Regular Program)" data-lang-html>หลักสูตรพยาบาลศาสตรบัณฑิต</h3>
               <p class="ug-program-en" data-th="Bachelor of Nursing Science (Regular Program)" data-en="หลักสูตรพยาบาลศาสตรบัณฑิต">Bachelor of Nursing Science (Regular Program)</p>
-              <dl>
-                <dt data-th="ค่าธรรมเนียมการศึกษา" data-en="Tuition Fees · regular semester">ค่าธรรมเนียมการศึกษา</dt>
+              </div></header>
+              <dl class="dg-rows">
+                <div class="dg-row"><svg class="dg-i" aria-hidden="true"><use href="#i-coins"/></svg><div><dt data-th="ค่าธรรมเนียมการศึกษา" data-en="Tuition Fees · regular semester">ค่าธรรมเนียมการศึกษา</dt>
                 <dd data-th="25,000 บาท / ภาคการศึกษาปกติ" data-en="25,000 Baht / regular semester">25,000 บาท / ภาคปกติ</dd>
-                <dd data-th="12,500 บาท / ภาคการศึกษาฤดูร้อน" data-en="12,500 Baht / summer session">12,500 บาท / ภาคฤดูร้อน</dd>
-                <dt data-th="ช่องทางรับสมัคร" data-en="Admission routes">ช่องทางรับสมัคร</dt>
-                <dd data-th="TCAS 1 · TCAS 2 · TCAS 3" data-en="TCAS 1 · TCAS 2 · TCAS 3">TCAS 1 · TCAS 2 · TCAS 3</dd>
+                <dd data-th="12,500 บาท / ภาคการศึกษาฤดูร้อน" data-en="12,500 Baht / summer session">12,500 บาท / ภาคฤดูร้อน</dd></div></div>
+                <div class="dg-row dg-row-route"><svg class="dg-i" aria-hidden="true"><use href="#i-route"/></svg><div><dt data-th="ช่องทางรับสมัคร" data-en="Admission routes">ช่องทางรับสมัคร</dt>
+                <dd data-th="TCAS 1 · TCAS 2 · TCAS 3" data-en="TCAS 1 · TCAS 2 · TCAS 3">TCAS 1 · TCAS 2 · TCAS 3</dd></div></div>
               </dl>
-              <a class="ug-link" href="#admission-thai" data-th="ดูคุณสมบัติผู้สมัคร →" data-en="View applicant requirements →">ดูคุณสมบัติผู้สมัคร →</a>
+              <a class="ug-link dg-more" href="#admission-thai" data-th="ดูคุณสมบัติผู้สมัคร →" data-en="View applicant requirements →">ดูคุณสมบัติผู้สมัคร →</a>
             </article>
 
-            <article class="ug-program ug-program-intl reveal reveal-delay-1">
-              <h3 data-th="หลักสูตรพยาบาลศาสตรบัณฑิต (หลักสูตรนานาชาติ)" data-en="Bachelor of Nursing Science (International Program)">หลักสูตรพยาบาลศาสตรบัณฑิต (หลักสูตรนานาชาติ)</h3>
+            <article class="ug-program ug-program-intl reveal reveal-delay-1 dg-pcard">
+              <header class="dg-pcard-head"><span class="dg-pcard-icon"><svg class="dg-i" aria-hidden="true"><use href="#i-cap"/></svg></span><div>
+              <h3 data-th="หลักสูตรพยาบาลศาสตรบัณฑิต<br />(หลักสูตรนานาชาติ)" data-en="Bachelor of Nursing Science<br />(International Program)" data-lang-html>หลักสูตรพยาบาลศาสตรบัณฑิต<br />(หลักสูตรนานาชาติ)</h3>
               <p class="ug-program-en" data-th="Bachelor of Nursing Science (International Program)" data-en="หลักสูตรพยาบาลศาสตรบัณฑิต (หลักสูตรนานาชาติ)">Bachelor of Nursing Science (International Program)</p>
-              <dl>
-                <dt data-th="ค่าธรรมเนียม · นักศึกษาไทย" data-en="Tuition · Thai students">นักศึกษาไทย</dt>
-                <dd data-th="50,000 บาท / ภาคปกติ · 25,000 บาท / ภาคฤดูร้อน" data-en="50,000 Baht / semester · 25,000 Baht / summer">50,000 บาท / ภาคปกติ · 25,000 บาท / ภาคฤดูร้อน</dd>
-                <dt data-th="ค่าธรรมเนียม · นักศึกษาสัญชาติอื่น" data-en="Tuition · other nationalities">นักศึกษาสัญชาติอื่น</dt>
-                <dd data-th="70,000 บาท / ภาคปกติ · 33,000 บาท / ภาคฤดูร้อน" data-en="70,000 Baht / semester · 33,000 Baht / summer">70,000 บาท / ภาคปกติ · 33,000 บาท / ภาคฤดูร้อน</dd>
-                <dt data-th="ช่องทางรับสมัคร" data-en="Admission routes">ช่องทางรับสมัคร</dt>
-                <dd data-th="TCAS 2 · TCAS 3 · IPAS" data-en="TCAS 2 · TCAS 3 · IPAS">TCAS 2 · TCAS 3 · IPAS</dd>
+              </div></header>
+              <dl class="dg-rows">
+                <div class="dg-row"><svg class="dg-i" aria-hidden="true"><use href="#i-coins"/></svg><div><dt data-th="ค่าธรรมเนียม · นักศึกษาไทย" data-en="Tuition · Thai students">นักศึกษาไทย</dt>
+                <dd data-th="50,000 บาท / ภาคปกติ · 25,000 บาท / ภาคฤดูร้อน" data-en="50,000 Baht / semester · 25,000 Baht / summer">50,000 บาท / ภาคปกติ · 25,000 บาท / ภาคฤดูร้อน</dd></div></div>
+                <div class="dg-row"><svg class="dg-i" aria-hidden="true"><use href="#i-coins"/></svg><div><dt data-th="ค่าธรรมเนียม · นักศึกษาสัญชาติอื่น" data-en="Tuition · other nationalities">นักศึกษาสัญชาติอื่น</dt>
+                <dd data-th="70,000 บาท / ภาคปกติ · 33,000 บาท / ภาคฤดูร้อน" data-en="70,000 Baht / semester · 33,000 Baht / summer">70,000 บาท / ภาคปกติ · 33,000 บาท / ภาคฤดูร้อน</dd></div></div>
+                <div class="dg-row dg-row-route"><svg class="dg-i" aria-hidden="true"><use href="#i-route"/></svg><div><dt data-th="ช่องทางรับสมัคร" data-en="Admission routes">ช่องทางรับสมัคร</dt>
+                <dd data-th="TCAS 2 · TCAS 3 · IPAS" data-en="TCAS 2 · TCAS 3 · IPAS">TCAS 2 · TCAS 3 · IPAS</dd></div></div>
               </dl>
-              <a class="ug-link" href="#admission-intl" data-th="ดูคุณสมบัติผู้สมัคร →" data-en="View applicant requirements →">ดูคุณสมบัติผู้สมัคร →</a>
+              <a class="ug-link dg-more" href="#admission-intl" data-th="ดูคุณสมบัติผู้สมัคร →" data-en="View applicant requirements →">ดูคุณสมบัติผู้สมัคร →</a>
             </article>
           </div>
         </div>
@@ -89,28 +111,28 @@
       <!-- 3. Curriculum structure + mode of study (shared by both programs) -->
       <section class="ug-section ug-section-tint" id="structure">
         <div class="container ug-split">
-          <div class="ug-heading reveal">
+          <div class="dg-head ug-heading reveal">
             <h2 data-th="โครงสร้างตลอดหลักสูตร<em>134 หน่วยกิต</em>" data-en="Curriculum structure<em>134 credits</em>" data-lang-html>โครงสร้างหลักสูตร<em>134 หน่วยกิต</em></h2>
             <p data-th="รูปแบบการเรียน: จัดการเรียนการสอนเต็มเวลา 4 ปี ในรูปแบบ On-site ณ คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่ ประเทศไทย ทั้งหลักสูตรไทยและหลักสูตรนานาชาติ" 
               data-en="Mode of study: both the Thai Program and the International Program are four-year, full-time, on-site programs offered at the Faculty of Nursing, Chiang Mai University, Thailand.">
               รูปแบบการเรียน: จัดการเรียนการสอนเต็มเวลา 4 ปี ในรูปแบบ On-site ณ คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่ ประเทศไทย ทั้งหลักสูตรไทยและหลักสูตรนานาชาติ
             </p>
-            <a class="button button-primary" 
+            <a class="button button-primary dg-mis" 
             href="https://www.mis.cmu.ac.th/TQF/TQF2/CurriculumPublic.aspx?EID=c9295d13-9f40-45d9-93c1-11ea3060f0e5" 
             target="_blank" rel="noopener" 
             data-th="โครงสร้างหลักสูตร (ปกติ) ↗" 
             data-en="Curriculum structure (Regular) ↗">โครงสร้างหลักสูตร (ปกติ) ↗</a>
 
-            <a class="button button-primary" 
+            <a class="button button-primary dg-mis" 
             href="https://www.mis.cmu.ac.th/TQF/TQF2/CurriculumPublic.aspx?EID=799281b0-ed48-4d40-b621-f1f36ac530ce" 
             target="_blank" rel="noopener" 
             data-th="โครงสร้างหลักสูตร (นานาชาติ) ↗" 
             data-en="Curriculum structure (International) ↗">โครงสร้างหลักสูตร (นานาชาติ) ↗</a>
           </div>
-          <ul class="ug-credits reveal reveal-delay-1">
-            <li><span data-th="หมวดวิชาศึกษาทั่วไป" data-en="General Education">หมวดวิชาศึกษาทั่วไป</span><p><b>30</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></p></li>
-            <li><span data-th="หมวดวิชาเฉพาะ" data-en="Field of Specialization">หมวดวิชาเฉพาะ</span><p><b>98</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></p></li>
-            <li><span data-th="หมวดวิชาเลือกเสรี (ไม่น้อยกว่า)" data-en="Free Electives (minimum)">หมวดวิชาเลือกเสรี (ไม่น้อยกว่า)</span><p><b>6+</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></p></li>
+          <ul class="ug-credits dg-credits reveal reveal-delay-1">
+            <li class="dg-credit" style="--w:22.4%"><svg class="dg-i" aria-hidden="true"><use href="#i-globe"/></svg><span data-th="หมวดวิชาศึกษาทั่วไป" data-en="General Education">หมวดวิชาศึกษาทั่วไป</span><p><b>30</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></p></li>
+            <li class="dg-credit" style="--w:73.1%"><svg class="dg-i" aria-hidden="true"><use href="#i-cap"/></svg><span data-th="หมวดวิชาเฉพาะ" data-en="Field of Specialization">หมวดวิชาเฉพาะ</span><p><b>98</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></p></li>
+            <li class="dg-credit" style="--w:4.5%"><svg class="dg-i" aria-hidden="true"><use href="#i-layers"/></svg><span data-th="หมวดวิชาเลือกเสรี (ไม่น้อยกว่า)" data-en="Free Electives (minimum)">หมวดวิชาเลือกเสรี (ไม่น้อยกว่า)</span><p><b>6+</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></p></li>
           </ul>
         </div>
       </section>
@@ -118,7 +140,7 @@
       <!-- 4. Admission routes (open/close with native <details>, no JavaScript) -->
       <section class="ug-section" id="admission">
         <div class="container">
-          <div class="ug-heading ug-heading-row reveal">
+          <div class="dg-head ug-heading ug-heading-row reveal">
             <h2 data-th="การรับเข้าศึกษา<em>และคุณสมบัติผู้สมัคร</em>" 
               data-en="Admission <em>Requirements</em>" data-lang-html>
               ช่องทางการรับเข้าศึกษา<em>และคุณสมบัติผู้สมัคร</em>
@@ -133,9 +155,9 @@
 
           <div class="ug-admission-grid">
             <div id="admission-thai" class="th-only">
-              <h3 class="ug-track ug-track-thai">หลักสูตรพยาบาลศาสตรบัณฑิต</h3>
+              <div class="dg-track"><svg class="dg-i dg-track-i" aria-hidden="true"><use href="#i-cap"/></svg><h3 class="ug-track ug-track-thai">หลักสูตรพยาบาลศาสตรบัณฑิต</h3></div>
               <details class="ug-round">
-                <summary>TCAS รอบที่ 1 แฟ้มสะสมผลงาน (Portfolio)</summary>
+                <summary><svg class="dg-i dg-sum-i" aria-hidden="true"><use href="#i-doc"/></svg>TCAS รอบที่ 1 แฟ้มสะสมผลงาน (Portfolio)</summary>
                 <ul>
                   <li>สำหรับนักเรียนหรือผู้ที่สำเร็จการศึกษาแล้วในหลักสูตรแกนกลางการศึกษาขั้นพื้นฐานฯ</li>
                   <li>ผู้สมัครต้องมีสัญชาติไทยเท่านั้น</li>
@@ -147,7 +169,7 @@
               </details>
 
               <details class="ug-round">
-                <summary>TCAS รอบที่ 2 โควตา (Quota)</summary>
+                <summary><svg class="dg-i dg-sum-i" aria-hidden="true"><use href="#i-doc"/></svg>TCAS รอบที่ 2 โควตา (Quota)</summary>
                 <ol class="ug-quota">
                   <li><h4>โควตาภาคเหนือ</h4>
                   <ul>
@@ -179,7 +201,7 @@
               </details>
 
               <details class="ug-round">
-                <summary>TCAS รอบที่ 3 รับตรงร่วมกัน (Admission)</summary>
+                <summary><svg class="dg-i dg-sum-i" aria-hidden="true"><use href="#i-doc"/></svg>TCAS รอบที่ 3 รับตรงร่วมกัน (Admission)</summary>
                 <ul>
                   <li>สำหรับหลักสูตรแกนกลางการศึกษาขั้นพื้นฐานฯ</li>
                   <li>เป็นผู้สำเร็จการศึกษาชั้นมัธยมศึกษาปีที่ 6</li>
@@ -190,10 +212,10 @@
             </div>
 
             <div id="admission-intl">
-              <h3 class="ug-track ug-track-intl" data-th="หลักสูตรพยาบาลศาสตรบัณฑิต (หลักสูตรนานาชาติ)" data-en="Bachelor of Nursing Science (International Program)">หลักสูตรพยาบาลศาสตรบัณฑิต (หลักสูตรนานาชาติ)</h3>
+              <div class="dg-track"><svg class="dg-i dg-track-i" aria-hidden="true"><use href="#i-cap"/></svg><h3 class="ug-track ug-track-intl" data-th="หลักสูตรพยาบาลศาสตรบัณฑิต (หลักสูตรนานาชาติ)" data-en="Bachelor of Nursing Science (International Program)">หลักสูตรพยาบาลศาสตรบัณฑิต (หลักสูตรนานาชาติ)</h3></div>
 
               <details class="ug-round th-only">
-                <summary>TCAS รอบที่ 2 โควตา (Quota) · โควตาภาคเหนือ</summary>
+                <summary><svg class="dg-i dg-sum-i" aria-hidden="true"><use href="#i-doc"/></svg>TCAS รอบที่ 2 โควตา (Quota) · โควตาภาคเหนือ</summary>
                 <ul>
                   <li>สำหรับนักเรียนในหลักสูตรแกนกลางการศึกษาขั้นพื้นฐานฯ</li>
                   <li>เป็นผู้ที่กำลังศึกษาชั้นมัธยมศึกษาปีที่ 6 และเป็นนักเรียนระดับชั้นมัธยมศึกษาปีที่ 4-6 ตามหลักสูตรแกนกลางการศึกษาขั้นพื้นฐาน พุทธศักราช 2551 ในสังกัดโรงเรียนมัธยมศึกษาในเขตพัฒนาภาคเหนือ ที่สังกัดสำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน หรือสำนักงานคณะกรรมการการศึกษาเอกชน หรือสังกัดสำนักงานปลัดกระทรวงการอุดมศึกษา วิทยาศาสตร์ วิจัยและนวัตกรรม หรือสังกัดองค์กรปกครองส่วนท้องถิ่น ทั้ง 3 ปี</li>
@@ -203,7 +225,7 @@
               </details>
 
               <details class="ug-round th-only">
-                <summary>TCAS รอบที่ 3 รับตรงร่วมกัน (Admission)</summary>
+                <summary><svg class="dg-i dg-sum-i" aria-hidden="true"><use href="#i-doc"/></svg>TCAS รอบที่ 3 รับตรงร่วมกัน (Admission)</summary>
                 <ul>
                   <li>สำหรับหลักสูตรแกนกลางการศึกษาขั้นพื้นฐานฯ</li>
                   <li>เป็นผู้สำเร็จการศึกษาชั้นมัธยมศึกษาปีที่ 6</li>
@@ -213,23 +235,23 @@
               </details>
 
               <details class="ug-round th-only">
-                <summary>IPAS · International Programs Admission System</summary>
+                <summary><svg class="dg-i dg-sum-i" aria-hidden="true"><use href="#i-doc"/></svg>IPAS · International Programs Admission System</summary>
                 <ul>
                   <li>ผู้สมัครต้องสำเร็จการศึกษาระดับมัธยมปลายหรือเทียบเท่าจากโรงเรียนนานาชาติในไทย หรือจากสถาบันต่างประเทศ (โดยไม่รับวุฒิสายอาชีพและระดับอุดมศึกษา)</li>
                   <li>หากศึกษาในระบบ ม.6 ของไทย จะต้องเป็นนักเรียนชาวต่างชาติเท่านั้น</li>
                 </ul>
-                <a class="ug-link" href="ipas.html">ดูรายละเอียด IPAS ปีการศึกษา 2027</a>
-                <a class="ug-link" href="https://admission.reg.cmu.ac.th/ipas/index.php" target="_blank">Program Information and apply IPAS</a>
+                <a class="ug-link dg-ipas-main" href="ipas.html" data-th="ดูรายละเอียด IPAS ปีการศึกษา 2027" data-en="View IPAS details for Academic Year 2027">ดูรายละเอียด IPAS ปีการศึกษา 2027</a>
+                <a class="ug-link dg-ipas-alt" href="https://admission.reg.cmu.ac.th/ipas/index.php" target="_blank">Program Information and apply IPAS</a>
               </details>
 
               <details class="ug-round en-only" open>
-                <summary>IPAS · International Programs Admission System</summary>
+                <summary><svg class="dg-i dg-sum-i" aria-hidden="true"><use href="#i-doc"/></svg>IPAS · International Programs Admission System</summary>
                 <ul>
                   <li>Applicants must have completed upper secondary school or equivalent at an international school in Thailand or at an overseas institution (vocational and higher-education qualifications are not accepted).</li>
                   <li>Applicants studying in Thailand's M.6 (Grade 12) system must be foreign nationals.</li>
                 </ul>
-                <a class="ug-link" href="ipas.html">ดูรายละเอียด IPAS ปีการศึกษา 2027</a>
-                <a class="ug-link" href="https://admission.reg.cmu.ac.th/ipas/index.php" target="_blank">Program Information and apply IPAS</a>
+                <a class="ug-link dg-ipas-main" href="ipas.html" data-th="ดูรายละเอียด IPAS ปีการศึกษา 2027" data-en="View IPAS details for Academic Year 2027">ดูรายละเอียด IPAS ปีการศึกษา 2027</a>
+                <a class="ug-link dg-ipas-alt" href="https://admission.reg.cmu.ac.th/ipas/index.php" target="_blank">Program Information and apply IPAS</a>
               </details>
             </div>
           </div>
@@ -239,21 +261,24 @@
       <!-- 5. Support after admission -->
       <section class="ug-section ug-section-tint" id="support">
         <div class="container">
-          <div class="ug-heading reveal">
+          <div class="dg-head ug-heading reveal">
             <h2 data-th="สิ่งอำนวยความสะดวก<em>และอนาคตหลังเรียนจบ</em>" data-en="FACILITIES <em>AND CAREER PROSPECTS</em>" data-lang-html>ทุน ที่พัก<em>และอนาคตหลังเรียนจบ</em></h2>
           </div>
           <div class="ug-support">
-            <article class="ug-card reveal">
+            <article class="ug-card reveal dg-scard">
+              <span class="dg-badge"><svg class="dg-i" aria-hidden="true"><use href="#i-coins"/></svg></span>
               <h3 data-th="ทุนการศึกษา" data-en="Scholarships">ทุนการศึกษา</h3>
               <p data-th="ศึกษาข้อมูลทุนการศึกษาที่สามารถสมัครได้" data-en="Explore the scholarships available to eligible undergraduate students.">ศึกษาข้อมูลทุนการศึกษาที่สามารถสมัครได้</p>
               <a class="ug-link" href="https://sis.cmu.ac.th/scholarship/" target="_blank" rel="noopener">sis.cmu.ac.th/scholarship ↗</a>
             </article>
-            <article class="ug-card reveal reveal-delay-1">
+            <article class="ug-card reveal reveal-delay-1 dg-scard">
+              <span class="dg-badge"><svg class="dg-i" aria-hidden="true"><use href="#i-bed"/></svg></span>
               <h3 data-th="หอพักนักศึกษา" data-en="Student accommodation">หอพักนักศึกษา</h3>
               <p data-th="ข้อมูลหอพักและสิ่งอำนวยความสะดวกสำหรับนักศึกษาปริญญาตรี" data-en="Information on student dormitories and accommodation facilities for undergraduate students.">ข้อมูลหอพักและสิ่งอำนวยความสะดวกสำหรับนักศึกษาปริญญาตรี</p>
               <a class="ug-link" href="https://udo.oou.cmu.ac.th/" target="_blank" rel="noopener">udo.oou.cmu.ac.th ↗</a>
             </article>
-            <article class="ug-card reveal reveal-delay-2">
+            <article class="ug-card reveal reveal-delay-2 dg-scard">
+              <span class="dg-badge"><svg class="dg-i" aria-hidden="true"><use href="#i-brief"/></svg></span>
               <h3 data-th="อนาคตหลังสำเร็จการศึกษา" data-en="Career opportunities">อนาคตหลังสำเร็จการศึกษา</h3>
               <p data-th="ผู้สำเร็จการศึกษาจากหลักสูตรพยาบาลศาสตรบัณฑิต สามารถประกอบอาชีพด้านการพยาบาลและวิชาชีพอื่น ๆ ที่เกี่ยวข้องได้ ทั้งนี้ ต้องเป็นไปตามคุณสมบัติทางวิชาชีพและข้อกำหนดในการได้รับใบอนุญาตประกอบวิชาชีพที่เกี่ยวข้อง" 
               data-en="Graduates of the Bachelor of Nursing Science Program may pursue careers in nursing and other related professional fields, subject to applicable professional qualifications and licensing requirements.">ผู้สำเร็จการศึกษาจากหลักสูตรพยาบาลศาสตรบัณฑิต สามารถประกอบอาชีพด้านการพยาบาลและวิชาชีพอื่น ๆ ที่เกี่ยวข้องได้ ทั้งนี้ ต้องเป็นไปตามคุณสมบัติทางวิชาชีพและข้อกำหนดในการได้รับใบอนุญาตประกอบวิชาชีพที่เกี่ยวข้อง</p>

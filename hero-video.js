@@ -11,8 +11,8 @@
     return;
   }
   // Start from one of several curated moments so repeat visits feel less static.
-  // The requested values are 00:42, 00:51, 01:35 and 02:05.
-  const startPoints = [42, 51, 95, 125];
+  // The requested values are 00:00, 00:29, 01:36 and 02:10.
+  const startPoints = [0, 29, 96, 130];
   const startSeconds = startPoints[Math.floor(Math.random() * startPoints.length)];
   const endSeconds = 174;
   let player;
@@ -58,7 +58,7 @@
     player = new YT.Player('hero-youtube', {
       width: 1920,
       height: 1080,
-      videoId: 'ZIqLCFjUMIY',
+      videoId: 'uC1nIhG2pN4',
       host: 'https://www.youtube.com',
       playerVars: {
         autoplay: 1, mute: 1, controls: 0, disablekb: 1, fs: 0, cc_load_policy: 0,
