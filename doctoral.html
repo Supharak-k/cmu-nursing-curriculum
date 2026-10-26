@@ -12,18 +12,32 @@
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="experience.css" />
     <link rel="stylesheet" href="program-pages.css" />
-    <link rel="stylesheet" href="campaign.css?v=20261023-1" />
-    <link rel="stylesheet" href="brand.css?v=20261024-1" />
-    <link rel="stylesheet" href="undergraduate.css?v=20261024-1" />
+    <link rel="stylesheet" href="campaign.css?v=20261026-4" />
+    <link rel="stylesheet" href="brand.css?v=20261026-3" />
+    <link rel="stylesheet" href="undergraduate.css?v=20261026-1" />
     <link rel="stylesheet" href="levels.css?v=20261024-1" />
-    <link rel="stylesheet" href="doctoral.css?v=20261024-6" />
+    <link rel="stylesheet" href="doctoral.css?v=20261026-7" />
     <!-- components.js draws the shared header/footer; script.js handles language, menu and reveal effects -->
     <script defer src="components.js?v=20261023-3"></script>
-    <script defer src="script.js?v=20261023-1"></script>
+    <script defer src="script.js?v=20261026-4"></script>
   </head>
-  <body class="degree-page level-phd" data-title-th="ปริญญาเอก | คณะพยาบาลศาสตร์ มช." data-title-en="Doctoral | Faculty of Nursing, CMU">
+  <body class="degree-page level-phd" data-desc-th="หลักสูตรปรัชญาดุษฎีบัณฑิต สาขาวิชาพยาบาลศาสตร์ (หลักสูตรนานาชาติ) คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่" data-desc-en="Doctor of Philosophy Program in Nursing Science (International Program), Faculty of Nursing, Chiang Mai University" data-title-th="ปริญญาเอก | คณะพยาบาลศาสตร์ มช." data-title-en="Doctoral | Faculty of Nursing, CMU">
     <div class="reading-progress" aria-hidden="true"></div>
     <a class="skip-link" href="#main-content" data-th="ข้ามไปยังเนื้อหาหลัก" data-en="Skip to main content">ข้ามไปยังเนื้อหาหลัก</a>
+    <!-- Icon sprite for the doctoral page -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+      <symbol id="i-cap" viewBox="0 0 24 24"><path d="M2 9l10-5 10 5-10 5z" fill="currentColor"/><path d="M6 11v5c0 1.5 3 3 6 3s6-1.5 6-3v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M21 9v6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+      <symbol id="i-book" viewBox="0 0 24 24"><path d="M3 5.5C5.5 4 9 4 12 6c3-2 6.5-2 9-.5V19c-2.5-1.3-6-1.3-9 .5-3-1.8-6.5-1.8-9-.5z M12 6v13.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+      <symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6z M14 3v4h4 M9 12h6 M9 16h6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+      <symbol id="i-coins" viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="7" ry="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 6v4c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5V6 M5 10v4c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-4 M5 14v4c0 1.4 3.1 2.5 7 2.5s7-1.1 7-2.5v-4" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+      <symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3.5" fill="currentColor"/><path d="M2 20c0-4 3.1-6.5 7-6.5s7 2.5 7 6.5z" fill="currentColor"/><circle cx="17" cy="9" r="2.6" fill="currentColor" opacity=".6"/><path d="M17 13.5c3 0 5 2 5 5.5h-4.5" fill="currentColor" opacity=".6"/></symbol>
+      <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M3 12h18 M12 3c2.5 2.6 3.7 5.6 3.7 9s-1.2 6.4-3.7 9c-2.5-2.6-3.7-5.6-3.7-9S9.5 5.6 12 3z" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+      <symbol id="i-star" viewBox="0 0 24 24"><path d="M12 2.8l2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3-4.6-4.4 6.3-.9z" fill="currentColor"/></symbol>
+      <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 11l9-7 9 7 M5.5 9.5V20h13V9.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/></symbol>
+      <symbol id="i-chev" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M4 12h15 M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-ext" viewBox="0 0 24 24"><path d="M14 4h6v6 M20 4l-9 9 M18 14v6H4V6h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </svg>
     <header class="site-header"></header>
 
     <main id="main-content">
@@ -32,18 +46,46 @@
       <section class="degree-hero">
         <div class="container degree-hero-grid">
           <div class="reveal">
-            <div class="degree-breadcrumb"><a href="index.html" data-th="หน้าแรก" data-en="Home">หน้าแรก</a><span>/</span><span data-th="ระดับปริญญาเอก" data-en="Doctoral Degree">ระดับปริญญาเอก</span></div>
-            <h1 data-th="หลักสูตรปรัชญาดุษฎีบัณฑิต สาขาวิชาพยาบาลศาสตร์ (หลักสูตรนานาชาติ)" data-en="Doctor of Philosophy Program in Nursing Science (International Program)">หลักสูตรปรัชญาดุษฎีบัณฑิต สาขาวิชาพยาบาลศาสตร์ (หลักสูตรนานาชาติ)</h1>
-            <p class="degree-lede" data-th="Doctor of Philosophy Program in Nursing Science (International Program) (หลักสูตรปรับปรุง พ.ศ.2566)" data-en="Doctor of Philosophy Program in Nursing Science (International Program) (Revised Curriculum 2023)">Doctor of Philosophy Program in Nursing Science (International Program) (หลักสูตรปรับปรุง พ.ศ.2566)</p>
-            <div class="degree-actions">
-              <a class="button ug-btn-main" href="#study-plan" data-th="แผนการเรียน" data-en="Study Plan">แผนการเรียน</a>
-              <a class="button ug-btn-ghost" href="#admission" data-th="คุณสมบัติและการสมัคร" data-en="Qualifications and Application">คุณสมบัติและการสมัคร</a>
+            <div class="degree-breadcrumb"><a href="index.html"><svg class="phd-crumb-i" aria-hidden="true"><use href="#i-home"/></svg><span data-th="หน้าแรก" data-en="Home">หน้าแรก</span></a><span>/</span><span data-th="ระดับปริญญาเอก" data-en="Doctor of Philosophy">ระดับปริญญาเอก</span></div>
+            <h1 data-th="ปรัชญาดุษฎีบัณฑิต<em>สาขาวิชาพยาบาลศาสตร์</em> (หลักสูตรนานาชาติ)" data-en="Doctor of Philosophy<em>Program in Nursing Science</em> (International Programs)" data-lang-html>ปรัชญาดุษฎีบัณฑิต<em>สาขาวิชาพยาบาลศาสตร์</em></h1>
+            <p class="degree-lede" 
+              data-th="ก้าวสู่การเป็นผู้นำและนักวิจัยทางการพยาบาลระดับโลก" 
+              data-en="Become a world-class leader and researcher in nursing.">
+              ก้าวสู่การเป็นผู้นำและนักวิจัยทางการพยาบาลระดับโลก
+            </p>
+            <div class="degree-actions phd-actions">
+              <a class="phd-btn phd-btn-main" href="#study-plan"><span data-th="แผนการเรียน" data-en="Study Plan">แผนการเรียน</span><span class="phd-btn-go"><svg class="phd-i" aria-hidden="true"><use href="#i-chev"/></svg></span></a>
+              <a class="phd-btn phd-btn-ghost" href="#admission"><span data-th="คุณสมบัติและการสมัคร" data-en="Qualifications and Application">คุณสมบัติและการสมัคร</span><svg class="phd-i phd-btn-chev" aria-hidden="true"><use href="#i-chev"/></svg></a>
             </div>
           </div>
-          <ul class="ug-facts reveal reveal-delay-1">
-            <li><b data-th="แบบ 1.1 ผู้สำเร็จการศึกษาปริญญาโท" data-en="Type 1.1 Student with master’s degree">แบบ 1.1 ผู้สำเร็จการศึกษาปริญญาโท</b></li>
-            <li><b data-th="แบบ 2.1 ผู้สำเร็จการศึกษาปริญญาโท" data-en="Type 2.1 Student with master’s degree">แบบ 2.1 ผู้สำเร็จการศึกษาปริญญาโท</b></li>
-            <li><b data-th="แบบ 2.2 ผู้สำเร็จการศึกษาปริญญาตรี" data-en="Type 2.2 Student with bachelor’s degree">แบบ 2.2 ผู้สำเร็จการศึกษาปริญญาตรี</b></li>
+          <ul class="phd-types reveal reveal-delay-1">
+            <li><a class="phd-type phd-c-p" href="#plan-11">
+              <span class="phd-type-icon"><svg class="phd-i" aria-hidden="true"><use href="#i-cap"/></svg></span>
+              <span class="phd-type-text">
+                <small class="phd-type-k" data-th="แบบ 1.1" data-en="Type 1.1">แบบ 1.1</small>
+                <b data-th="ผู้สำเร็จการศึกษาปริญญาโท" data-en="Student with master’s degree">ผู้สำเร็จการศึกษาปริญญาโท</b>
+                <span class="phd-type-sub" data-th="แผน 1.1 (หลักสูตรนานาชาติ)" data-en="Plan 1.1 (International Program)">แผน 1.1 (หลักสูตรนานาชาติ)</span>
+              </span>
+              <span class="phd-type-go"><svg class="phd-i" aria-hidden="true"><use href="#i-chev"/></svg></span>
+            </a></li>
+            <li><a class="phd-type phd-c-o" href="#plan-21">
+              <span class="phd-type-icon"><svg class="phd-i" aria-hidden="true"><use href="#i-cap"/></svg></span>
+              <span class="phd-type-text">
+                <small class="phd-type-k" data-th="แบบ 2.1" data-en="Type 2.1">แบบ 2.1</small>
+                <b data-th="ผู้สำเร็จการศึกษาปริญญาโท" data-en="Student with master’s degree">ผู้สำเร็จการศึกษาปริญญาโท</b>
+                <span class="phd-type-sub" data-th="แผน 2.1 (หลักสูตรนานาชาติ)" data-en="Plan 2.1 (International Program)">แผน 2.1 (หลักสูตรนานาชาติ)</span>
+              </span>
+              <span class="phd-type-go"><svg class="phd-i" aria-hidden="true"><use href="#i-chev"/></svg></span>
+            </a></li>
+            <li><a class="phd-type phd-c-g" href="#plan-22">
+              <span class="phd-type-icon"><svg class="phd-i" aria-hidden="true"><use href="#i-cap"/></svg></span>
+              <span class="phd-type-text">
+                <small class="phd-type-k" data-th="แบบ 2.2" data-en="Type 2.2">แบบ 2.2</small>
+                <b data-th="ผู้สำเร็จการศึกษาปริญญาตรี" data-en="Student with bachelor’s degree">ผู้สำเร็จการศึกษาปริญญาตรี</b>
+                <span class="phd-type-sub" data-th="แผน 2.2 (หลักสูตรนานาชาติ)" data-en="Plan 2.2 (International Program)">แผน 2.2 (หลักสูตรนานาชาติ)</span>
+              </span>
+              <span class="phd-type-go"><svg class="phd-i" aria-hidden="true"><use href="#i-chev"/></svg></span>
+            </a></li>
           </ul>
         </div>
       </section>
@@ -51,44 +93,77 @@
       <!-- 2. Study plan -->
       <section class="ug-section" id="study-plan">
         <div class="container">
-          <div class="ug-heading reveal">
-            <h2 data-th="1. แผนการเรียนและการฝึก" data-en="1. Study Plan and Practical Training">1. แผนการเรียนและการฝึก</h2>
+          <div class="phd-head reveal">
+            <span class="phd-num">1.</span>
+            <div>
+              <h2 data-th="แผนการเรียนและการฝึก" data-en="Study Plan and Practical Training">แผนการเรียนและการฝึก</h2>
+              <p class="phd-head-sub" data-th="Study Plan and Practical Training" data-en="แผนการเรียนและการฝึก">Study Plan and Practical Training</p>
+            </div>
+            <a class="phd-mis" href="https://www.mis.cmu.ac.th/TQF/TQF2/CurriculumPublic.aspx?EID=c2d54677-6f58-4ce8-bf42-ce59a2037316" target="_blank" rel="noopener" data-th="โครงสร้างหลักสูตร ↗" data-en="Curriculum structure ↗">โครงสร้างหลักสูตร ↗</a>
           </div>
           <div class="phd-plans">
-            <article class="phd-plan reveal">
-              <h3 data-th="แบบ 1.1 ผู้สำเร็จการศึกษาปริญญาโท" data-en="Type 1.1 Student with master’s degree">แบบ 1.1 ผู้สำเร็จการศึกษาปริญญาโท</h3>
+            <article class="phd-plan phd-c-p reveal" id="plan-11">
+              <header class="phd-plan-head">
+                <span class="phd-plan-icon"><svg class="phd-i" aria-hidden="true"><use href="#i-cap"/></svg></span>
+                <div>
+                  <h3 data-th="แบบ 1.1" data-en="Type 1.1">แบบ 1.1</h3>
+                  <p data-th="ผู้สำเร็จการศึกษาปริญญาโท" data-en="Student with master’s degree">ผู้สำเร็จการศึกษาปริญญาโท</p>
+                </div>
+                <a class="phd-plan-go" href="#qual-a" aria-label="Qualifications"><svg class="phd-i" aria-hidden="true"><use href="#i-chev"/></svg></a>
+              </header>
               <p class="phd-plan-total"><b>48</b><span data-th="หน่วยกิต" data-en="Credits">หน่วยกิต</span></p>
               <p class="phd-plan-label" data-th="จำนวนหน่วยกิตรวม" data-en="Total Credit">จำนวนหน่วยกิตรวม</p>
-              <dl>
-                <div><dt data-th="รายวิชาบังคับ" data-en="Required Courses">รายวิชาบังคับ</dt><dd><b>-</b> <span data-th="หน่วยกิต" data-en="Credits">หน่วยกิต</span></dd></div>
-                <div><dt data-th="รายวิชาเลือก" data-en="Elective Courses">รายวิชาเลือก</dt><dd><b>-</b> <span data-th="หน่วยกิต" data-en="Credits">หน่วยกิต</span></dd></div>
-                <div><dt data-th="วิทยานิพนธ์" data-en="Dissertation">วิทยานิพนธ์</dt><dd><b>48</b> <span data-th="หน่วยกิต" data-en="Credits">หน่วยกิต</span></dd></div>
-              </dl>
+              <ul class="phd-plan-rows">
+                <li><svg class="phd-i" aria-hidden="true"><use href="#i-book"/></svg><span data-th="รายวิชาบังคับ" data-en="Required Courses">รายวิชาบังคับ</span><b>-</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></li>
+                <li><svg class="phd-i" aria-hidden="true"><use href="#i-doc"/></svg><span data-th="รายวิชาเลือก" data-en="Elective Courses">รายวิชาเลือก</span><b>-</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></li>
+                <li><svg class="phd-i" aria-hidden="true"><use href="#i-cap"/></svg><span data-th="วิทยานิพนธ์" data-en="Dissertation">วิทยานิพนธ์</span><b>48</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></li>
+              </ul>
+              <div class="phd-plan-fee"><svg class="phd-i" aria-hidden="true"><use href="#i-coins"/></svg><div><span data-th="ค่าธรรมเนียมตลอดหลักสูตร (บาท)" data-en="Total Program Fees (THB)">ค่าธรรมเนียมตลอดหลักสูตร (บาท)</span><b>495,000</b></div></div>
             </article>
-            <article class="phd-plan reveal reveal-delay-1">
-              <h3 data-th="แบบ 2.1 ผู้สำเร็จการศึกษาปริญญาโท" data-en="Type 2.1 Student with master’s degree">แบบ 2.1 ผู้สำเร็จการศึกษาปริญญาโท</h3>
+            <article class="phd-plan phd-c-o reveal reveal-delay-1" id="plan-21">
+              <header class="phd-plan-head">
+                <span class="phd-plan-icon"><svg class="phd-i" aria-hidden="true"><use href="#i-cap"/></svg></span>
+                <div>
+                  <h3 data-th="แบบ 2.1" data-en="Type 2.1">แบบ 2.1</h3>
+                  <p data-th="ผู้สำเร็จการศึกษาปริญญาโท" data-en="Student with master’s degree">ผู้สำเร็จการศึกษาปริญญาโท</p>
+                </div>
+                <a class="phd-plan-go" href="#qual-a" aria-label="Qualifications"><svg class="phd-i" aria-hidden="true"><use href="#i-chev"/></svg></a>
+              </header>
               <p class="phd-plan-total"><b>56</b><span data-th="หน่วยกิต" data-en="Credits">หน่วยกิต</span></p>
               <p class="phd-plan-label" data-th="จำนวนหน่วยกิตรวม" data-en="Total Credit">จำนวนหน่วยกิตรวม</p>
-              <dl>
-                <div><dt data-th="รายวิชาบังคับ" data-en="Required Courses">รายวิชาบังคับ</dt><dd><b>14</b> <span data-th="หน่วยกิต" data-en="Credits">หน่วยกิต</span></dd></div>
-                <div><dt data-th="รายวิชาเลือก" data-en="Elective Courses">รายวิชาเลือก</dt><dd><b>6</b> <span data-th="หน่วยกิต" data-en="Credits">หน่วยกิต</span></dd></div>
-                <div><dt data-th="วิทยานิพนธ์" data-en="Dissertation">วิทยานิพนธ์</dt><dd><b>36</b> <span data-th="หน่วยกิต" data-en="Credits">หน่วยกิต</span></dd></div>
-              </dl>
+              <ul class="phd-plan-rows">
+                <li><svg class="phd-i" aria-hidden="true"><use href="#i-book"/></svg><span data-th="รายวิชาบังคับ" data-en="Required Courses">รายวิชาบังคับ</span><b>14</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></li>
+                <li><svg class="phd-i" aria-hidden="true"><use href="#i-doc"/></svg><span data-th="รายวิชาเลือก" data-en="Elective Courses">รายวิชาเลือก</span><b>6</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></li>
+                <li><svg class="phd-i" aria-hidden="true"><use href="#i-cap"/></svg><span data-th="วิทยานิพนธ์" data-en="Dissertation">วิทยานิพนธ์</span><b>36</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></li>
+              </ul>
+              <div class="phd-plan-fee"><svg class="phd-i" aria-hidden="true"><use href="#i-coins"/></svg><div><span data-th="ค่าธรรมเนียมตลอดหลักสูตร (บาท)" data-en="Total Program Fees (THB)">ค่าธรรมเนียมตลอดหลักสูตร (บาท)</span><b>495,000</b></div></div>
             </article>
-            <article class="phd-plan reveal reveal-delay-2">
-              <h3 data-th="แบบ 2.2 ผู้สำเร็จการศึกษาปริญญาตรี" data-en="Type 2.2 Student with bachelor’s degree">แบบ 2.2 ผู้สำเร็จการศึกษาปริญญาตรี</h3>
+            <article class="phd-plan phd-c-g reveal reveal-delay-2" id="plan-22">
+              <header class="phd-plan-head">
+                <span class="phd-plan-icon"><svg class="phd-i" aria-hidden="true"><use href="#i-cap"/></svg></span>
+                <div>
+                  <h3 data-th="แบบ 2.2" data-en="Type 2.2">แบบ 2.2</h3>
+                  <p data-th="ผู้สำเร็จการศึกษาปริญญาตรี" data-en="Student with bachelor’s degree">ผู้สำเร็จการศึกษาปริญญาตรี</p>
+                </div>
+                <a class="phd-plan-go" href="#qual-b" aria-label="Qualifications"><svg class="phd-i" aria-hidden="true"><use href="#i-chev"/></svg></a>
+              </header>
               <p class="phd-plan-total"><b>73</b><span data-th="หน่วยกิต" data-en="Credits">หน่วยกิต</span></p>
               <p class="phd-plan-label" data-th="จำนวนหน่วยกิตรวม" data-en="Total Credit">จำนวนหน่วยกิตรวม</p>
-              <dl>
-                <div><dt data-th="รายวิชาบังคับ" data-en="Required Courses">รายวิชาบังคับ</dt><dd><b>19</b> <span data-th="หน่วยกิต" data-en="Credits">หน่วยกิต</span></dd></div>
-                <div><dt data-th="รายวิชาเลือก" data-en="Elective Courses">รายวิชาเลือก</dt><dd><b>6</b> <span data-th="หน่วยกิต" data-en="Credits">หน่วยกิต</span></dd></div>
-                <div><dt data-th="วิทยานิพนธ์" data-en="Dissertation">วิทยานิพนธ์</dt><dd><b>48</b> <span data-th="หน่วยกิต" data-en="Credits">หน่วยกิต</span></dd></div>
-              </dl>
+              <ul class="phd-plan-rows">
+                <li><svg class="phd-i" aria-hidden="true"><use href="#i-book"/></svg><span data-th="รายวิชาบังคับ" data-en="Required Courses">รายวิชาบังคับ</span><b>19</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></li>
+                <li><svg class="phd-i" aria-hidden="true"><use href="#i-doc"/></svg><span data-th="รายวิชาเลือก" data-en="Elective Courses">รายวิชาเลือก</span><b>6</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></li>
+                <li><svg class="phd-i" aria-hidden="true"><use href="#i-cap"/></svg><span data-th="วิทยานิพนธ์" data-en="Dissertation">วิทยานิพนธ์</span><b>48</b><small data-th="หน่วยกิต" data-en="credits">หน่วยกิต</small></li>
+              </ul>
+              <div class="phd-plan-fee"><svg class="phd-i" aria-hidden="true"><use href="#i-coins"/></svg><div><span data-th="ค่าธรรมเนียมตลอดหลักสูตร (บาท)" data-en="Total Program Fees (THB)">ค่าธรรมเนียมตลอดหลักสูตร (บาท)</span><b>825,000</b></div></div>
             </article>
           </div>
 
           <div class="phd-fee reveal">
-            <h3 data-th="ค่าธรรมเนียมการศึกษา" data-en="Tuition Fee (Thai Baht)">ค่าธรรมเนียมการศึกษา</h3>
+            <div class="phd-fee-head">
+              <span class="phd-fee-icon"><svg class="phd-i" aria-hidden="true"><use href="#i-coins"/></svg></span>
+              <h3 data-th="ค่าธรรมเนียมการศึกษา" data-en="Tuition Fee (Thai Baht)">ค่าธรรมเนียมการศึกษา</h3>
+              <p class="phd-fee-note" data-th="หมายเหตุ: นักศึกษาต่างชาติจะมีค่าธรรมเนียมชาวต่างชาติเพิ่มเติม ภาคการศึกษาละ 20,000 บาท" data-en="Note: International students are subject to an additional international student fee of THB 20,000 per semester">หมายเหตุ: นักศึกษาต่างชาติจะมีค่าธรรมเนียมชาวต่างชาติเพิ่มเติม ภาคการศึกษาละ 20,000 บาท</p>
+            </div>
             <div class="phd-table-wrap">
               <table>
                 <thead><tr><th data-th="ลำดับ" data-en="No.">ลำดับ</th><th data-th="แผนการศึกษา" data-en="Study Plan">แผนการศึกษา</th><th data-th="ค่าธรรมเนียมตลอดหลักสูตร" data-en="Total Program Fees">ค่าธรรมเนียมตลอดหลักสูตร</th><th data-th="จำนวนภาคการศึกษาปกติ" data-en="Number of Regular Semester">จำนวนภาคการศึกษาปกติ</th><th data-th="ค่าธรรมเนียมต่อภาคการศึกษาปกติ" data-en="Fee per Regular Semester">ค่าธรรมเนียมต่อภาคการศึกษาปกติ</th></tr></thead>
@@ -98,7 +173,6 @@
                 </tbody>
               </table>
             </div>
-            <p class="grad-fee-note" data-th="หมายเหตุ: นักศึกษาต่างชาติจะมีค่าธรรมเนียมชาวต่างชาติเพิ่มเติม ภาคการศึกษาละ 20,000 บาท" data-en="Note: International students are subject to an additional international student fee of THB 20,000 per semester">หมายเหตุ: นักศึกษาต่างชาติจะมีค่าธรรมเนียมชาวต่างชาติเพิ่มเติม ภาคการศึกษาละ 20,000 บาท</p>
           </div>
         </div>
       </section>
@@ -106,33 +180,41 @@
       <!-- 3. Qualifications and application -->
       <section class="ug-section ug-section-tint" id="admission">
         <div class="container">
-          <div class="ug-heading reveal">
-            <h2 data-th="2. คุณสมบัติและการสมัคร" data-en="2. Qualifications and Application">2. คุณสมบัติและการสมัคร</h2>
+          <div class="phd-head reveal">
+            <span class="phd-num">2.</span>
+            <div>
+              <h2 data-th="คุณสมบัติและการสมัคร" data-en="Qualifications and Application">คุณสมบัติและการสมัคร</h2>
+              <p class="phd-head-sub" data-th="Qualifications and Application" data-en="คุณสมบัติและการสมัคร">Qualifications and Application</p>
+            </div>
           </div>
           <div class="phd-admission">
             <div class="reveal">
-            <details class="ug-round phd-qual" open>
-              <summary data-th="คุณสมบัติการสมัคร ผู้สมัครแผน 1.1 และ 2.1" data-en="Qualifications for Applicants (Plans 1.1 and 2.1)">คุณสมบัติการสมัคร ผู้สมัครแผน 1.1 และ 2.1</summary>
-              <div class="phd-qual-body" data-th="&lt;ol&gt;&lt;li&gt;1. กรณีผู้สมัครเป็นสัญชาติไทย: ต้องสำเร็จการศึกษาระดับปริญญาโท สาขาวิชาพยาบาลศาสตร์ จากสถาบันการศึกษาที่ได้รับการรับรองจากสภาการพยาบาล และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลและการผดุงครรภ์ ชั้นหนึ่ง หรือการพยาบาลการผดุงครรภ์ จากสภาการพยาบาล&lt;/li&gt;&lt;li&gt;2. กรณีผู้สมัครไม่ใช่สัญชาติไทย: ต้องสำเร็จการศึกษาระดับปริญญาโท สาขาวิชาพยาบาลศาสตร์ หรือเทียบเท่า และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลจากองค์กรหรือสภาวิชาชีพที่รับผิดชอบในประเทศของผู้สมัคร ในกรณีที่ประเทศนั้นๆ ไม่มีระบบใบอนุญาตประกอบวิชาชีพ ต้องมีหนังสือรับรองการขึ้นทะเบียน หรือหนังสือรับรองจากองค์กรกำกับดูแลวิชาชีพการพยาบาล (Nursing Regulatory Authority) ของประเทศผู้สมัคร&lt;/li&gt;&lt;li&gt;3. มีผลการทดสอบความรู้ภาษาอังกฤษ: เป็นไปตามประกาศของบัณฑิตวิทยาลัย มหาวิทยาลัยเชียงใหม่ ดังนี้: TOEFL คะแนนไม่น้อยกว่า 430 (Paper-based), 117 (Computer-based) หรือ 39 (Internet-based) หรือ IELTS Band ไม่น้อยกว่า 4.0 หรือ CMU-eTEGS 40, CU-TEP 40%, TU-GET 40%, KU-EPT 40%, DynEd 0.5 (CEFR = A1), CMU e-Grad 50%&lt;/li&gt;&lt;li&gt;4. คุณสมบัติอื่นๆ: ให้อยู่ในดุลพินิจของคณะกรรมการบริหารหลักสูตร คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่&lt;/li&gt;&lt;/ol&gt;" data-en="&lt;h4&gt;Thai Citizen Applicants:&lt;/h4&gt;&lt;p&gt;Must have successfully completed a master&#x27;s degree in Nursing from an educational institution accredited by the Thailand Nursing and Midwifery Council, and hold a Level 1 Professional Nursing and Midwifery license from the Thailand Nursing and Midwifery Council.&lt;/p&gt;&lt;h4&gt;Non-Thai Citizen Applicants:&lt;/h4&gt;&lt;p&gt;Must have successfully completed a master&#x27;s degree program in Nursing or its equivalent, and hold a valid nursing license issued by the relevant professional board or governing body in their country. In cases where a professional licensing system is not available, official proof of registration or certification from the Nursing Regulatory Authority in the applicant&#x27;s country must be provided.&lt;/p&gt;&lt;h4&gt;English Language Proficiency Requirements:&lt;/h4&gt;&lt;p&gt;Must meet the criteria set by the Graduate School, Chiang Mai University, as follows:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;TOEFL: Minimum score of 430 (Paper-based), 117 (Computer-based), or 39 (Internet-based)&lt;/li&gt;&lt;li&gt;IELTS: Minimum overall band score of 4.0&lt;/li&gt;&lt;li&gt;CMU-eTEGS / CU-TEP / TU-GET / KU-EPT: Minimum score of 40%&lt;/li&gt;&lt;li&gt;DynEd: Minimum score of 0.5 (CEFR = A1)&lt;/li&gt;&lt;li&gt;CMU e-Grad: Minimum score of 50%&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Other Qualifications:&lt;/h4&gt;&lt;p&gt;Other qualifications will be considered at the discretion of the Program Administrative Committee, Faculty of Nursing, Chiang Mai University.&lt;/p&gt;" data-lang-html><ol><li>1. กรณีผู้สมัครเป็นสัญชาติไทย: ต้องสำเร็จการศึกษาระดับปริญญาโท สาขาวิชาพยาบาลศาสตร์ จากสถาบันการศึกษาที่ได้รับการรับรองจากสภาการพยาบาล และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลและการผดุงครรภ์ ชั้นหนึ่ง หรือการพยาบาลการผดุงครรภ์ จากสภาการพยาบาล</li><li>2. กรณีผู้สมัครไม่ใช่สัญชาติไทย: ต้องสำเร็จการศึกษาระดับปริญญาโท สาขาวิชาพยาบาลศาสตร์ หรือเทียบเท่า และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลจากองค์กรหรือสภาวิชาชีพที่รับผิดชอบในประเทศของผู้สมัคร ในกรณีที่ประเทศนั้นๆ ไม่มีระบบใบอนุญาตประกอบวิชาชีพ ต้องมีหนังสือรับรองการขึ้นทะเบียน หรือหนังสือรับรองจากองค์กรกำกับดูแลวิชาชีพการพยาบาล (Nursing Regulatory Authority) ของประเทศผู้สมัคร</li><li>3. มีผลการทดสอบความรู้ภาษาอังกฤษ: เป็นไปตามประกาศของบัณฑิตวิทยาลัย มหาวิทยาลัยเชียงใหม่ ดังนี้: TOEFL คะแนนไม่น้อยกว่า 430 (Paper-based), 117 (Computer-based) หรือ 39 (Internet-based) หรือ IELTS Band ไม่น้อยกว่า 4.0 หรือ CMU-eTEGS 40, CU-TEP 40%, TU-GET 40%, KU-EPT 40%, DynEd 0.5 (CEFR = A1), CMU e-Grad 50%</li><li>4. คุณสมบัติอื่นๆ: ให้อยู่ในดุลพินิจของคณะกรรมการบริหารหลักสูตร คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่</li></ol></div>
-            </details>
-            <details class="ug-round phd-qual">
-              <summary data-th="คุณสมบัติการสมัคร ผู้สมัครแผน 2.2" data-en="Applicant Qualifications for Plan 2.2">คุณสมบัติการสมัคร ผู้สมัครแผน 2.2</summary>
-              <div class="phd-qual-body" data-th="&lt;ol&gt;&lt;li&gt;1. กรณีผู้สมัครเป็นสัญชาติไทย: ต้องสำเร็จการศึกษาระดับปริญญาตรี สาขาวิชาพยาบาลศาสตร์ จากสถาบันการศึกษาที่ได้รับการรับรองจากสภาการพยาบาล และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลและการผดุงครรภ์ ชั้นหนึ่ง หรือการพยาบาลการผดุงครรภ์ จากสภาการพยาบาล&lt;/li&gt;&lt;li&gt;2. กรณีผู้สมัครไม่ใช่สัญชาติไทย: ต้องสำเร็จการศึกษาระดับปริญญาตรี สาขาวิชาพยาบาลศาสตร์ หรือเทียบเท่า และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลจากองค์กรหรือสภาวิชาชีพที่รับผิดชอบในประเทศของผู้สมัคร ในกรณีที่ประเทศนั้นๆ ไม่มีระบบใบอนุญาตประกอบวิชาชีพ ต้องมีหนังสือรับรองการขึ้นทะเบียน หรือหนังสือรับรองจากองค์กรกำกับดูแลวิชาชีพการพยาบาล (Nursing Regulatory Authority) ของประเทศผู้สมัคร&lt;/li&gt;&lt;li&gt;3. มีผลการทดสอบความรู้ภาษาอังกฤษ: เป็นไปตามประกาศของบัณฑิตวิทยาลัย มหาวิทยาลัยเชียงใหม่ ดังนี้: TOEFL คะแนนไม่น้อยกว่า 430 (Paper-based), 117 (Computer-based) หรือ 39 (Internet-based) หรือ IELTS Band ไม่น้อยกว่า 4.0 หรือ CMU-eTEGS 40, CU-TEP 40%, TU-GET 40%, KU-EPT 40%, DynEd 0.5 (CEFR = A1), CMU e-Grad 50%&lt;/li&gt;&lt;li&gt;4. คุณสมบัติอื่นๆ: ให้อยู่ในดุลพินิจของคณะกรรมการบริหารหลักสูตร คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่&lt;/li&gt;&lt;/ol&gt;" data-en="&lt;h4&gt;Thai Citizen Applicants:&lt;/h4&gt;&lt;p&gt;Must have successfully completed a bachelor&#x27;s degree in Nursing from an educational institution accredited by the Thailand Nursing and Midwifery Council, and hold a Level 1 Professional Nursing and Midwifery license from the Thailand Nursing and Midwifery Council.&lt;/p&gt;&lt;h4&gt;Non-Thai Citizen Applicants:&lt;/h4&gt;&lt;p&gt;Must have successfully completed a bachelor&#x27;s degree program in Nursing or its equivalent, and hold a valid nursing license issued by the relevant professional board or governing body in their country. In cases where a professional licensing system is not available, official proof of registration or certification from the Nursing Regulatory Authority in the applicant&#x27;s country must be provided.&lt;/p&gt;&lt;h4&gt;English Language Proficiency Requirements:&lt;/h4&gt;&lt;p&gt;Must meet the criteria set by the Graduate School, Chiang Mai University, as follows:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;TOEFL: Minimum score of 430 (Paper-based), 117 (Computer-based), or 39 (Internet-based)&lt;/li&gt;&lt;li&gt;IELTS: Minimum overall band score of 4.0&lt;/li&gt;&lt;li&gt;CMU-eTEGS / CU-TEP / TU-GET / KU-EPT: Minimum score of 40%&lt;/li&gt;&lt;li&gt;DynEd: Minimum score of 0.5 (CEFR = A1)&lt;/li&gt;&lt;li&gt;CMU e-Grad: Minimum score of 50%&lt;/li&gt;&lt;/ul&gt;&lt;h4&gt;Other Qualifications:&lt;/h4&gt;&lt;p&gt;Other qualifications will be considered at the discretion of the Program Administrative Committee, Faculty of Nursing, Chiang Mai University.&lt;/p&gt;" data-lang-html><ol><li>1. กรณีผู้สมัครเป็นสัญชาติไทย: ต้องสำเร็จการศึกษาระดับปริญญาตรี สาขาวิชาพยาบาลศาสตร์ จากสถาบันการศึกษาที่ได้รับการรับรองจากสภาการพยาบาล และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลและการผดุงครรภ์ ชั้นหนึ่ง หรือการพยาบาลการผดุงครรภ์ จากสภาการพยาบาล</li><li>2. กรณีผู้สมัครไม่ใช่สัญชาติไทย: ต้องสำเร็จการศึกษาระดับปริญญาตรี สาขาวิชาพยาบาลศาสตร์ หรือเทียบเท่า และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลจากองค์กรหรือสภาวิชาชีพที่รับผิดชอบในประเทศของผู้สมัคร ในกรณีที่ประเทศนั้นๆ ไม่มีระบบใบอนุญาตประกอบวิชาชีพ ต้องมีหนังสือรับรองการขึ้นทะเบียน หรือหนังสือรับรองจากองค์กรกำกับดูแลวิชาชีพการพยาบาล (Nursing Regulatory Authority) ของประเทศผู้สมัคร</li><li>3. มีผลการทดสอบความรู้ภาษาอังกฤษ: เป็นไปตามประกาศของบัณฑิตวิทยาลัย มหาวิทยาลัยเชียงใหม่ ดังนี้: TOEFL คะแนนไม่น้อยกว่า 430 (Paper-based), 117 (Computer-based) หรือ 39 (Internet-based) หรือ IELTS Band ไม่น้อยกว่า 4.0 หรือ CMU-eTEGS 40, CU-TEP 40%, TU-GET 40%, KU-EPT 40%, DynEd 0.5 (CEFR = A1), CMU e-Grad 50%</li><li>4. คุณสมบัติอื่นๆ: ให้อยู่ในดุลพินิจของคณะกรรมการบริหารหลักสูตร คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่</li></ol></div>
-            </details>
+              <details class="phd-acc" id="qual-a" open>
+                <summary><svg class="phd-acc-i" aria-hidden="true"><use href="#i-users"/></svg><span data-th="คุณสมบัติการสมัคร ผู้สมัครแผน 1.1 และ 2.1" data-en="Qualifications for Applicants (Plans 1.1 and 2.1)">คุณสมบัติการสมัคร ผู้สมัครแผน 1.1 และ 2.1</span></summary>
+                <div class="phd-acc-body" data-th="&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-cap&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;กรณีผู้สมัครเป็นสัญชาติไทย&lt;/h4&gt;&lt;p&gt;ต้องสำเร็จการศึกษาระดับปริญญาโท สาขาวิชาพยาบาลศาสตร์ จากสถาบันการศึกษาที่ได้รับการรับรองจากสภาการพยาบาล และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลและการผดุงครรภ์ ชั้นหนึ่ง หรือการพยาบาลการผดุงครรภ์ จากสภาการพยาบาล&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-globe&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;กรณีผู้สมัครไม่ใช่สัญชาติไทย&lt;/h4&gt;&lt;p&gt;ต้องสำเร็จการศึกษาระดับปริญญาโท สาขาวิชาพยาบาลศาสตร์ หรือเทียบเท่า และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลจากองค์กรหรือสภาวิชาชีพที่รับผิดชอบในประเทศของผู้สมัคร ในกรณีที่ประเทศนั้นๆ ไม่มีระบบใบอนุญาตประกอบวิชาชีพ ต้องมีหนังสือรับรองการขึ้นทะเบียน หรือหนังสือรับรองจากองค์กรกำกับดูแลวิชาชีพการพยาบาล (Nursing Regulatory Authority) ของประเทศผู้สมัคร&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-doc&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;มีผลการทดสอบความรู้ภาษาอังกฤษ&lt;/h4&gt;&lt;p&gt;เป็นไปตามประกาศของบัณฑิตวิทยาลัย มหาวิทยาลัยเชียงใหม่ ดังนี้: TOEFL คะแนนไม่น้อยกว่า 430 (Paper-based), 117 (Computer-based) หรือ 39 (Internet-based) หรือ IELTS Band ไม่น้อยกว่า 4.0 หรือ CMU-eTEGS 40, CU-TEP 40%, TU-GET 40%, KU-EPT 40%, DynEd 0.5 (CEFR = A1), CMU e-Grad 50%&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-star&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;คุณสมบัติอื่นๆ&lt;/h4&gt;&lt;p&gt;ให้อยู่ในดุลพินิจของคณะกรรมการบริหารหลักสูตร คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;" data-en="&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-cap&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;Thai Citizen Applicants&lt;/h4&gt;&lt;p&gt;Must have successfully completed a master&#x27;s degree in Nursing from an educational institution accredited by the Thailand Nursing and Midwifery Council, and hold a Level 1 Professional Nursing and Midwifery license from the Thailand Nursing and Midwifery Council.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-globe&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;Non-Thai Citizen Applicants&lt;/h4&gt;&lt;p&gt;Must have successfully completed a master&#x27;s degree program in Nursing or its equivalent, and hold a valid nursing license issued by the relevant professional board or governing body in their country. In cases where a professional licensing system is not available, official proof of registration or certification from the Nursing Regulatory Authority in the applicant&#x27;s country must be provided.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-doc&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;English Language Proficiency Requirements&lt;/h4&gt;&lt;p&gt;Must meet the criteria set by the Graduate School, Chiang Mai University, as follows:&lt;/p&gt;&lt;ul class=&quot;phd-q-list&quot;&gt;&lt;li&gt;TOEFL: Minimum score of 430 (Paper-based), 117 (Computer-based), or 39 (Internet-based)&lt;/li&gt;&lt;li&gt;IELTS: Minimum overall band score of 4.0&lt;/li&gt;&lt;li&gt;CMU-eTEGS / CU-TEP / TU-GET / KU-EPT: Minimum score of 40%&lt;/li&gt;&lt;li&gt;DynEd: Minimum score of 0.5 (CEFR = A1)&lt;/li&gt;&lt;li&gt;CMU e-Grad: Minimum score of 50%&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-star&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;Other Qualifications&lt;/h4&gt;&lt;p&gt;Other qualifications will be considered at the discretion of the Program Administrative Committee, Faculty of Nursing, Chiang Mai University.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;" data-lang-html><div class="phd-q"><svg class="phd-q-i" aria-hidden="true"><use href="#i-cap"/></svg><div><h4>กรณีผู้สมัครเป็นสัญชาติไทย</h4><p>ต้องสำเร็จการศึกษาระดับปริญญาโท สาขาวิชาพยาบาลศาสตร์ จากสถาบันการศึกษาที่ได้รับการรับรองจากสภาการพยาบาล และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลและการผดุงครรภ์ ชั้นหนึ่ง หรือการพยาบาลการผดุงครรภ์ จากสภาการพยาบาล</p></div></div><div class="phd-q"><svg class="phd-q-i" aria-hidden="true"><use href="#i-globe"/></svg><div><h4>กรณีผู้สมัครไม่ใช่สัญชาติไทย</h4><p>ต้องสำเร็จการศึกษาระดับปริญญาโท สาขาวิชาพยาบาลศาสตร์ หรือเทียบเท่า และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลจากองค์กรหรือสภาวิชาชีพที่รับผิดชอบในประเทศของผู้สมัคร ในกรณีที่ประเทศนั้นๆ ไม่มีระบบใบอนุญาตประกอบวิชาชีพ ต้องมีหนังสือรับรองการขึ้นทะเบียน หรือหนังสือรับรองจากองค์กรกำกับดูแลวิชาชีพการพยาบาล (Nursing Regulatory Authority) ของประเทศผู้สมัคร</p></div></div><div class="phd-q"><svg class="phd-q-i" aria-hidden="true"><use href="#i-doc"/></svg><div><h4>มีผลการทดสอบความรู้ภาษาอังกฤษ</h4><p>เป็นไปตามประกาศของบัณฑิตวิทยาลัย มหาวิทยาลัยเชียงใหม่ ดังนี้: TOEFL คะแนนไม่น้อยกว่า 430 (Paper-based), 117 (Computer-based) หรือ 39 (Internet-based) หรือ IELTS Band ไม่น้อยกว่า 4.0 หรือ CMU-eTEGS 40, CU-TEP 40%, TU-GET 40%, KU-EPT 40%, DynEd 0.5 (CEFR = A1), CMU e-Grad 50%</p></div></div><div class="phd-q"><svg class="phd-q-i" aria-hidden="true"><use href="#i-star"/></svg><div><h4>คุณสมบัติอื่นๆ</h4><p>ให้อยู่ในดุลพินิจของคณะกรรมการบริหารหลักสูตร คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่</p></div></div></div>
+              </details>
+              <details class="phd-acc" id="qual-b">
+                <summary><svg class="phd-acc-i" aria-hidden="true"><use href="#i-users"/></svg><span data-th="คุณสมบัติการสมัคร ผู้สมัครแผน 2.2" data-en="Applicant Qualifications for Plan 2.2">คุณสมบัติการสมัคร ผู้สมัครแผน 2.2</span></summary>
+                <div class="phd-acc-body" data-th="&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-cap&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;กรณีผู้สมัครเป็นสัญชาติไทย&lt;/h4&gt;&lt;p&gt;ต้องสำเร็จการศึกษาระดับปริญญาตรี สาขาวิชาพยาบาลศาสตร์ จากสถาบันการศึกษาที่ได้รับการรับรองจากสภาการพยาบาล และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลและการผดุงครรภ์ ชั้นหนึ่ง หรือการพยาบาลการผดุงครรภ์ จากสภาการพยาบาล&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-globe&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;กรณีผู้สมัครไม่ใช่สัญชาติไทย&lt;/h4&gt;&lt;p&gt;ต้องสำเร็จการศึกษาระดับปริญญาตรี สาขาวิชาพยาบาลศาสตร์ หรือเทียบเท่า และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลจากองค์กรหรือสภาวิชาชีพที่รับผิดชอบในประเทศของผู้สมัคร ในกรณีที่ประเทศนั้นๆ ไม่มีระบบใบอนุญาตประกอบวิชาชีพ ต้องมีหนังสือรับรองการขึ้นทะเบียน หรือหนังสือรับรองจากองค์กรกำกับดูแลวิชาชีพการพยาบาล (Nursing Regulatory Authority) ของประเทศผู้สมัคร&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-doc&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;มีผลการทดสอบความรู้ภาษาอังกฤษ&lt;/h4&gt;&lt;p&gt;เป็นไปตามประกาศของบัณฑิตวิทยาลัย มหาวิทยาลัยเชียงใหม่ ดังนี้: TOEFL คะแนนไม่น้อยกว่า 430 (Paper-based), 117 (Computer-based) หรือ 39 (Internet-based) หรือ IELTS Band ไม่น้อยกว่า 4.0 หรือ CMU-eTEGS 40, CU-TEP 40%, TU-GET 40%, KU-EPT 40%, DynEd 0.5 (CEFR = A1), CMU e-Grad 50%&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-star&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;คุณสมบัติอื่นๆ&lt;/h4&gt;&lt;p&gt;ให้อยู่ในดุลพินิจของคณะกรรมการบริหารหลักสูตร คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;" data-en="&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-cap&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;Thai Citizen Applicants&lt;/h4&gt;&lt;p&gt;Must have successfully completed a bachelor&#x27;s degree in Nursing from an educational institution accredited by the Thailand Nursing and Midwifery Council, and hold a Level 1 Professional Nursing and Midwifery license from the Thailand Nursing and Midwifery Council.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-globe&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;Non-Thai Citizen Applicants&lt;/h4&gt;&lt;p&gt;Must have successfully completed a bachelor&#x27;s degree program in Nursing or its equivalent, and hold a valid nursing license issued by the relevant professional board or governing body in their country. In cases where a professional licensing system is not available, official proof of registration or certification from the Nursing Regulatory Authority in the applicant&#x27;s country must be provided.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-doc&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;English Language Proficiency Requirements&lt;/h4&gt;&lt;p&gt;Must meet the criteria set by the Graduate School, Chiang Mai University, as follows:&lt;/p&gt;&lt;ul class=&quot;phd-q-list&quot;&gt;&lt;li&gt;TOEFL: Minimum score of 430 (Paper-based), 117 (Computer-based), or 39 (Internet-based)&lt;/li&gt;&lt;li&gt;IELTS: Minimum overall band score of 4.0&lt;/li&gt;&lt;li&gt;CMU-eTEGS / CU-TEP / TU-GET / KU-EPT: Minimum score of 40%&lt;/li&gt;&lt;li&gt;DynEd: Minimum score of 0.5 (CEFR = A1)&lt;/li&gt;&lt;li&gt;CMU e-Grad: Minimum score of 50%&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;phd-q&quot;&gt;&lt;svg class=&quot;phd-q-i&quot; aria-hidden=&quot;true&quot;&gt;&lt;use href=&quot;#i-star&quot;/&gt;&lt;/svg&gt;&lt;div&gt;&lt;h4&gt;Other Qualifications&lt;/h4&gt;&lt;p&gt;Other qualifications will be considered at the discretion of the Program Administrative Committee, Faculty of Nursing, Chiang Mai University.&lt;/p&gt;&lt;/div&gt;&lt;/div&gt;" data-lang-html><div class="phd-q"><svg class="phd-q-i" aria-hidden="true"><use href="#i-cap"/></svg><div><h4>กรณีผู้สมัครเป็นสัญชาติไทย</h4><p>ต้องสำเร็จการศึกษาระดับปริญญาตรี สาขาวิชาพยาบาลศาสตร์ จากสถาบันการศึกษาที่ได้รับการรับรองจากสภาการพยาบาล และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลและการผดุงครรภ์ ชั้นหนึ่ง หรือการพยาบาลการผดุงครรภ์ จากสภาการพยาบาล</p></div></div><div class="phd-q"><svg class="phd-q-i" aria-hidden="true"><use href="#i-globe"/></svg><div><h4>กรณีผู้สมัครไม่ใช่สัญชาติไทย</h4><p>ต้องสำเร็จการศึกษาระดับปริญญาตรี สาขาวิชาพยาบาลศาสตร์ หรือเทียบเท่า และได้รับใบอนุญาตประกอบวิชาชีพการพยาบาลจากองค์กรหรือสภาวิชาชีพที่รับผิดชอบในประเทศของผู้สมัคร ในกรณีที่ประเทศนั้นๆ ไม่มีระบบใบอนุญาตประกอบวิชาชีพ ต้องมีหนังสือรับรองการขึ้นทะเบียน หรือหนังสือรับรองจากองค์กรกำกับดูแลวิชาชีพการพยาบาล (Nursing Regulatory Authority) ของประเทศผู้สมัคร</p></div></div><div class="phd-q"><svg class="phd-q-i" aria-hidden="true"><use href="#i-doc"/></svg><div><h4>มีผลการทดสอบความรู้ภาษาอังกฤษ</h4><p>เป็นไปตามประกาศของบัณฑิตวิทยาลัย มหาวิทยาลัยเชียงใหม่ ดังนี้: TOEFL คะแนนไม่น้อยกว่า 430 (Paper-based), 117 (Computer-based) หรือ 39 (Internet-based) หรือ IELTS Band ไม่น้อยกว่า 4.0 หรือ CMU-eTEGS 40, CU-TEP 40%, TU-GET 40%, KU-EPT 40%, DynEd 0.5 (CEFR = A1), CMU e-Grad 50%</p></div></div><div class="phd-q"><svg class="phd-q-i" aria-hidden="true"><use href="#i-star"/></svg><div><h4>คุณสมบัติอื่นๆ</h4><p>ให้อยู่ในดุลพินิจของคณะกรรมการบริหารหลักสูตร คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่</p></div></div></div>
+              </details>
             </div>
             <div class="reveal reveal-delay-1">
               <article class="phd-panel">
-                <h3 data-th="เอกสารที่ใช้ในการสมัคร" data-en="Required Application Documents">เอกสารที่ใช้ในการสมัคร</h3>
-                <div class="phd-docs" data-th="&lt;ol&gt;&lt;li&gt;สำเนาบัตรประจำตัวประชาชน (สำหรับผู้สมัครสัญชาติไทย) หรือ สำเนาหนังสือเดินทาง (Passport) (สำหรับผู้สมัครชาวต่างชาติ)&lt;/li&gt;&lt;li&gt;สำเนาทะเบียนบ้าน (สำหรับผู้สมัครสัญชาติไทย)&lt;/li&gt;&lt;li&gt;รูปถ่ายหน้าตรง (ไม่สวมหมวก ไม่สวมแว่นตากันแดด และไม่สวมหน้ากากอนามัย)&lt;/li&gt;&lt;li&gt;สำเนาใบปริญญาบัตร หรือหนังสือรับรองคุณวุฒิ(ต้องเป็นฉบับภาษาอังกฤษเท่านั้น กรณีเอกสารต้นฉบับเป็นภาษาอื่น ต้องผ่านการแปลภาษาอังกฤษโดยศูนย์/บริษัทรับแปลภาษาที่ได้รับการจดทะเบียน พร้อมประทับตรารับรองความถูกต้อง)&lt;/li&gt;&lt;li&gt;สำเนาใบอนุญาตประกอบวิชาชีพการพยาบาลและการผดุงครรภ์&lt;/li&gt;&lt;li&gt;สำเนาใบรายงานผลการศึกษา (Transcript) ฉบับสมบูรณ์(ต้องเป็นฉบับภาษาอังกฤษเท่านั้น กรณีเอกสารต้นฉบับเป็นภาษาอื่น ต้องผ่านการแปลภาษาอังกฤษโดยศูนย์/บริษัทรับแปลภาษาที่ได้รับการจดทะเบียน พร้อมประทับตรารับรองความถูกต้อง)&lt;/li&gt;&lt;li&gt;สำเนาผลการทดสอบความรู้ความสามารถทางภาษาอังกฤษ&lt;/li&gt;&lt;li&gt;หนังสืออนุมัติ/หนังสือยินยอมให้ลาศึกษาต่อจากผู้บังคับบัญชาผู้มีอำนาจ&lt;/li&gt;&lt;li&gt;เค้าโครงข้อเสนอหัวข้อวิทยานิพนธ์ (Thesis Proposal Outline) ที่สนใจจัดทำ&lt;/li&gt;&lt;/ol&gt;" data-en="&lt;ol&gt;&lt;li&gt;Copy of National ID Card (for Thai applicants) or Copy of Passport (for international applicants)&lt;/li&gt;&lt;li&gt;Copy of House Registration (for Thai applicants)&lt;/li&gt;&lt;li&gt;Recent Front-Facing Photo (without sunglasses, hat, or face mask)&lt;/li&gt;&lt;li&gt;Copy of Degree Certificate / Graduation Certificate (English version only; if original is in another language, an official translation by a certified translation agency with an official stamp is required)&lt;/li&gt;&lt;li&gt;Nursing License (Professional Nursing Practice License)&lt;/li&gt;&lt;li&gt;Copy of Official Academic Transcript (English version only; if original is in another language, an official translation by a certified translation agency with an official stamp is required)&lt;/li&gt;&lt;li&gt;English Language Proficiency Test Score&lt;/li&gt;&lt;li&gt;Letter of Approval for Educational Leave signed by the authorized supervisor&lt;/li&gt;&lt;li&gt;Thesis Concept Paper / Proposal Outline on the topic of interest&lt;/li&gt;&lt;/ol&gt;" data-lang-html><ol><li>สำเนาบัตรประจำตัวประชาชน (สำหรับผู้สมัครสัญชาติไทย) หรือ สำเนาหนังสือเดินทาง (Passport) (สำหรับผู้สมัครชาวต่างชาติ)</li><li>สำเนาทะเบียนบ้าน (สำหรับผู้สมัครสัญชาติไทย)</li><li>รูปถ่ายหน้าตรง (ไม่สวมหมวก ไม่สวมแว่นตากันแดด และไม่สวมหน้ากากอนามัย)</li><li>สำเนาใบปริญญาบัตร หรือหนังสือรับรองคุณวุฒิ(ต้องเป็นฉบับภาษาอังกฤษเท่านั้น กรณีเอกสารต้นฉบับเป็นภาษาอื่น ต้องผ่านการแปลภาษาอังกฤษโดยศูนย์/บริษัทรับแปลภาษาที่ได้รับการจดทะเบียน พร้อมประทับตรารับรองความถูกต้อง)</li><li>สำเนาใบอนุญาตประกอบวิชาชีพการพยาบาลและการผดุงครรภ์</li><li>สำเนาใบรายงานผลการศึกษา (Transcript) ฉบับสมบูรณ์(ต้องเป็นฉบับภาษาอังกฤษเท่านั้น กรณีเอกสารต้นฉบับเป็นภาษาอื่น ต้องผ่านการแปลภาษาอังกฤษโดยศูนย์/บริษัทรับแปลภาษาที่ได้รับการจดทะเบียน พร้อมประทับตรารับรองความถูกต้อง)</li><li>สำเนาผลการทดสอบความรู้ความสามารถทางภาษาอังกฤษ</li><li>หนังสืออนุมัติ/หนังสือยินยอมให้ลาศึกษาต่อจากผู้บังคับบัญชาผู้มีอำนาจ</li><li>เค้าโครงข้อเสนอหัวข้อวิทยานิพนธ์ (Thesis Proposal Outline) ที่สนใจจัดทำ</li></ol></div>
+                <h3 class="phd-panel-head"><span class="phd-panel-icon"><svg class="phd-i" aria-hidden="true"><use href="#i-doc"/></svg></span><span data-th="เอกสารที่ใช้ในการสมัคร" data-en="Required Application Documents">เอกสารที่ใช้ในการสมัคร</span></h3>
+                <div class="phd-docs" data-th="&lt;ol class=&quot;phd-doclist&quot;&gt;&lt;li&gt;&lt;span&gt;1&lt;/span&gt;&lt;p&gt;สำเนาบัตรประจำตัวประชาชน (สำหรับผู้สมัครสัญชาติไทย) หรือ สำเนาหนังสือเดินทาง (Passport) (สำหรับผู้สมัครชาวต่างชาติ)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;2&lt;/span&gt;&lt;p&gt;สำเนาทะเบียนบ้าน (สำหรับผู้สมัครสัญชาติไทย)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;3&lt;/span&gt;&lt;p&gt;รูปถ่ายหน้าตรง (ไม่สวมหมวก ไม่สวมแว่นตากันแดด และไม่สวมหน้ากากอนามัย)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;4&lt;/span&gt;&lt;p&gt;สำเนาใบปริญญาบัตร หรือหนังสือรับรองคุณวุฒิ(ต้องเป็นฉบับภาษาอังกฤษเท่านั้น กรณีเอกสารต้นฉบับเป็นภาษาอื่น ต้องผ่านการแปลภาษาอังกฤษโดยศูนย์/บริษัทรับแปลภาษาที่ได้รับการจดทะเบียน พร้อมประทับตรารับรองความถูกต้อง)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;5&lt;/span&gt;&lt;p&gt;สำเนาใบอนุญาตประกอบวิชาชีพการพยาบาลและการผดุงครรภ์&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;6&lt;/span&gt;&lt;p&gt;สำเนาใบรายงานผลการศึกษา (Transcript) ฉบับสมบูรณ์(ต้องเป็นฉบับภาษาอังกฤษเท่านั้น กรณีเอกสารต้นฉบับเป็นภาษาอื่น ต้องผ่านการแปลภาษาอังกฤษโดยศูนย์/บริษัทรับแปลภาษาที่ได้รับการจดทะเบียน พร้อมประทับตรารับรองความถูกต้อง)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;7&lt;/span&gt;&lt;p&gt;สำเนาผลการทดสอบความรู้ความสามารถทางภาษาอังกฤษ&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;8&lt;/span&gt;&lt;p&gt;หนังสืออนุมัติ/หนังสือยินยอมให้ลาศึกษาต่อจากผู้บังคับบัญชาผู้มีอำนาจ&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;9&lt;/span&gt;&lt;p&gt;เค้าโครงข้อเสนอหัวข้อวิทยานิพนธ์ (Thesis Proposal Outline) ที่สนใจจัดทำ&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;" data-en="&lt;ol class=&quot;phd-doclist&quot;&gt;&lt;li&gt;&lt;span&gt;1&lt;/span&gt;&lt;p&gt;Copy of National ID Card (for Thai applicants) or Copy of Passport (for international applicants)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;2&lt;/span&gt;&lt;p&gt;Copy of House Registration (for Thai applicants)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;3&lt;/span&gt;&lt;p&gt;Recent Front-Facing Photo (without sunglasses, hat, or face mask)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;4&lt;/span&gt;&lt;p&gt;Copy of Degree Certificate / Graduation Certificate (English version only; if original is in another language, an official translation by a certified translation agency with an official stamp is required)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;5&lt;/span&gt;&lt;p&gt;Nursing License (Professional Nursing Practice License)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;6&lt;/span&gt;&lt;p&gt;Copy of Official Academic Transcript (English version only; if original is in another language, an official translation by a certified translation agency with an official stamp is required)&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;7&lt;/span&gt;&lt;p&gt;English Language Proficiency Test Score&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;8&lt;/span&gt;&lt;p&gt;Letter of Approval for Educational Leave signed by the authorized supervisor&lt;/p&gt;&lt;/li&gt;&lt;li&gt;&lt;span&gt;9&lt;/span&gt;&lt;p&gt;Thesis Concept Paper / Proposal Outline on the topic of interest&lt;/p&gt;&lt;/li&gt;&lt;/ol&gt;" data-lang-html><ol class="phd-doclist"><li><span>1</span><p>สำเนาบัตรประจำตัวประชาชน (สำหรับผู้สมัครสัญชาติไทย) หรือ สำเนาหนังสือเดินทาง (Passport) (สำหรับผู้สมัครชาวต่างชาติ)</p></li><li><span>2</span><p>สำเนาทะเบียนบ้าน (สำหรับผู้สมัครสัญชาติไทย)</p></li><li><span>3</span><p>รูปถ่ายหน้าตรง (ไม่สวมหมวก ไม่สวมแว่นตากันแดด และไม่สวมหน้ากากอนามัย)</p></li><li><span>4</span><p>สำเนาใบปริญญาบัตร หรือหนังสือรับรองคุณวุฒิ(ต้องเป็นฉบับภาษาอังกฤษเท่านั้น กรณีเอกสารต้นฉบับเป็นภาษาอื่น ต้องผ่านการแปลภาษาอังกฤษโดยศูนย์/บริษัทรับแปลภาษาที่ได้รับการจดทะเบียน พร้อมประทับตรารับรองความถูกต้อง)</p></li><li><span>5</span><p>สำเนาใบอนุญาตประกอบวิชาชีพการพยาบาลและการผดุงครรภ์</p></li><li><span>6</span><p>สำเนาใบรายงานผลการศึกษา (Transcript) ฉบับสมบูรณ์(ต้องเป็นฉบับภาษาอังกฤษเท่านั้น กรณีเอกสารต้นฉบับเป็นภาษาอื่น ต้องผ่านการแปลภาษาอังกฤษโดยศูนย์/บริษัทรับแปลภาษาที่ได้รับการจดทะเบียน พร้อมประทับตรารับรองความถูกต้อง)</p></li><li><span>7</span><p>สำเนาผลการทดสอบความรู้ความสามารถทางภาษาอังกฤษ</p></li><li><span>8</span><p>หนังสืออนุมัติ/หนังสือยินยอมให้ลาศึกษาต่อจากผู้บังคับบัญชาผู้มีอำนาจ</p></li><li><span>9</span><p>เค้าโครงข้อเสนอหัวข้อวิทยานิพนธ์ (Thesis Proposal Outline) ที่สนใจจัดทำ</p></li></ol></div>
               </article>
-              <article class="phd-panel">
-                <h3 data-th="วิธีการสอบคัดเลือก" data-en="Selection Method">วิธีการสอบคัดเลือก</h3>
-                <p data-th="สอบคัดเลือกโดยการสัมภาษณ์ผ่านระบบ Zoom" data-en="Interview examination via Zoom Meeting">สอบคัดเลือกโดยการสัมภาษณ์ผ่านระบบ Zoom</p>
+              <article class="phd-panel phd-panel-row">
+                <span class="phd-panel-icon"><svg class="phd-i" aria-hidden="true"><use href="#i-users"/></svg></span>
+                <div>
+                  <h3 data-th="วิธีการสอบคัดเลือก" data-en="Selection Method">วิธีการสอบคัดเลือก</h3>
+                  <p data-th="สอบคัดเลือกโดยการสัมภาษณ์ผ่านระบบ Online" data-en="Interview examination via Online Meeting">สอบคัดเลือกโดยการสัมภาษณ์ผ่านระบบ Zoom</p>
+                </div>
               </article>
-              <article class="phd-panel phd-apply">
-                <h3 data-th="ช่องทางการสมัครเข้าศึกษา" data-en="Application Channel">ช่องทางการสมัครเข้าศึกษา</h3>
-                <p data-th="สมัครเข้าศึกษาผ่านระบบของมหาวิทยาลัยเชียงใหม่" data-en="Online application via Chiang Mai University System:">สมัครเข้าศึกษาผ่านระบบของมหาวิทยาลัยเชียงใหม่</p>
-                <a class="button ug-btn-main" href="https://admission.reg.cmu.ac.th/gpas/" target="_blank" rel="noopener">https://admission.reg.cmu.ac.th/gpas/ ↗</a>
+              <article class="phd-apply">
+                <p class="phd-apply-big" data-th="รายละเอียดการรับสมัคร" data-en="Admission details : " data-lang-html>รายละเอียดการรับสมัคร</p>
+                <p class="phd-apply-text" data-th="สมัครเข้าศึกษาผ่านระบบของมหาวิทยาลัยเชียงใหม่" data-en="Online application via Chiang Mai University System">สมัครเข้าศึกษาผ่านระบบของมหาวิทยาลัยเชียงใหม่</p>
+                <a class="phd-apply-btn" href="https://admission.reg.cmu.ac.th/gpas/" target="_blank" rel="noopener"><span data-th="admission.reg.cmu.ac.th" data-en="admission.reg.cmu.ac.th">admission.reg.cmu.ac.th</span><svg class="phd-i" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+                
               </article>
             </div>
           </div>
@@ -142,12 +224,15 @@
       <!-- 4. Research and dissertation -->
       <section class="ug-section" id="committee">
         <div class="container">
-          <div class="ug-heading reveal">
-            <h2 data-th="3. แผนวิจัยและวิทยานิพนธ์" data-en="3. Research and Dissertation Plan">3. แผนวิจัยและวิทยานิพนธ์</h2>
+          <div class="phd-head reveal">
+            <span class="phd-num">3.</span>
+            <div>
+              <h2 data-th="คณะกรรมการบริหารหลักสูตร" data-en="Program Administrative Committee">คณะกรรมการบริหารหลักสูตร</h2>
+            </div>
           </div>
           <h3 class="phd-committee-title reveal" data-th="คณะกรรมการบริหารหลักสูตร" data-en="Program Administrative Committee">คณะกรรมการบริหารหลักสูตร</h3>
           <!-- Photos: image/Committee/<English-name>.jpg (square, ~400–600px); a placeholder shows until the file exists.
-               English names: edit data-en on .phd-member-name; academic title is .phd-member-title. -->
+          English names: edit data-en on .phd-member-name; academic title is .phd-member-title. -->
           <ul class="phd-committee reveal">
             <li class="phd-member">
               <figure class="phd-photo"><img src="image/Committee/Thitinut.jpg" alt="" loading="lazy" onerror="this.remove()"></figure>

@@ -85,12 +85,25 @@
 .rewards-heading { max-width: 850px; margin-bottom: 3rem; }
 .rewards-heading h2 { font-size: clamp(2.5rem, 4.8vw, 5rem); line-height: 1.1; font-weight: 500; }
 .rewards-heading h2 em { display: block; font-style: normal; color: #9e76b4; }
-.reward-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.5rem; }
+.reward-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.5rem; margin-top: clamp(2rem, 4vw, 3.2rem); }
 .reward-card { margin: 0; padding: 1.4rem; border: 0; border-radius: 0; background: transparent; box-shadow: none; transition: transform .4s; }
 .reward-card:hover { transform: translateY(-7px); box-shadow: none; }
-.reward-logo { height: 160px; display: grid; place-items: center; }
-.reward-logo img { width: 100%; height: 100%; object-fit: contain; background: transparent; border: 0; border-radius: 0; box-shadow: none; }
+.reward-logo { --lh: 160px; height: var(--lh); display: flex; align-items: center; justify-content: center; }
+.reward-logo img { width: auto; height: auto; max-width: 100%; max-height: var(--lh); object-fit: contain; background: transparent; border: 0; border-radius: 0; box-shadow: none; }
 .reward-card figcaption { margin-top: 1.2rem; border: 0; padding-top: 0; text-align: center; font-size: .8rem; color: #7d52a0; letter-spacing: .06em; }
+.reward-ranks { display: grid; gap: 1.2rem; }
+.reward-rank { display: grid; grid-template-columns: 210px auto 1fr auto; align-items: center; gap: clamp(1.2rem, 3vw, 2.4rem); padding: clamp(1.3rem, 2.6vw, 2rem) clamp(1.4rem, 3vw, 2.6rem); color: inherit; transition: transform .3s, box-shadow .3s, border-color .3s; border: 1px solid #7d52a026; border-radius: 24px; background: linear-gradient(110deg, #f8f3fb 0%, #fff 55%, #fff4ee 100%); box-shadow: 0 12px 34px #7d52a014; }
+.reward-rank:hover { transform: translateY(-4px); border-color: #7d52a066; box-shadow: 0 18px 44px #7d52a02e; }
+.reward-rank-logo { display: block; width: clamp(150px, 16vw, 207px); height: auto; max-height: 76px; object-fit: contain; justify-self: start; }
+.reward-rank-go { display: grid; place-items: center; width: 2.8rem; height: 2.8rem; border-radius: 50%; background: #f16422; color: #fff; font-size: 1.2rem; font-weight: 700; box-shadow: 0 6px 16px #f1642240; transition: transform .3s; }
+.reward-rank:hover .reward-rank-go { transform: translate(3px, -3px); }
+.reward-rank-badge { display: grid; justify-items: center; gap: .15rem; padding: .85rem 1.5rem; border-radius: 18px; background: linear-gradient(140deg, #7d52a0, #5e3a7d); color: #fff; box-shadow: 0 10px 24px #5e3a7d40; }
+.reward-rank-badge b { font-size: clamp(1.9rem, 3.4vw, 2.8rem); font-weight: 700; line-height: 1.05; letter-spacing: .01em; }
+.reward-rank-badge span { color: #fdd58a; font-size: .8rem; font-weight: 600; letter-spacing: .14em; }
+.reward-rank p { margin: 0; color: #2a1b36; font-size: clamp(1rem, 1.5vw, 1.2rem); line-height: 1.75; }
+.reward-rank p strong { color: #f16422; font-weight: 700; }
+@media (max-width: 900px) { .reward-rank { grid-template-columns: 1fr auto; } .reward-rank p { grid-column: 1 / -1; grid-row: 3; } .reward-rank-go { grid-row: 1; grid-column: 2; } .reward-rank-badge { justify-self: start; } }
+@media (max-width: 520px) { .reward-rank-badge { justify-items: start; } }
 .contact-heading .eyebrow-light { color: #7d52a0; }
 .campus-map { margin-block: 4rem 6rem; }
 .map-heading { display: flex; align-items: center; justify-content: space-between; gap: 2rem; margin-bottom: 1.5rem; }
@@ -118,7 +131,7 @@
   .finder-copy > strong { font-size: 2.6rem; }
   .finder-copy > em { min-height: 0; max-width: 550px; }
   .finder-number { font-size: 6rem; }
-  .reward-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .reward-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .map-heading { align-items: flex-start; flex-direction: column; }
 }
 @media (max-width: 1024px) {
@@ -149,7 +162,7 @@
   .benefit-card h3 { font-size: 1.4rem; margin-top: 1.5rem; }
   .reward-grid { gap: .8rem; }
   .reward-card { padding: .8rem; }
-  .reward-logo { height: 115px; }
+  .reward-logo { --lh: 115px; }
   .campus-map iframe { height: 340px; }
 }
 @media (max-width: 360px) {

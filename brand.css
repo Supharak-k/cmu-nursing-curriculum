@@ -339,3 +339,17 @@
 .language-toggle:not(.is-en) .lang-th, .language-toggle.is-en .lang-en { color: #fff; background: var(--ci-orange); }
 .language-toggle:hover span:not([class*="divider"]) { opacity: 1; }
 .language-toggle:focus-visible { outline: 3px solid var(--ci-orange); outline-offset: 3px; }
+
+/* English mode: the Thai faculty motto gives way to its English line, shown as the headline */
+html[lang="en"] #motto-title { display: none; }
+html[lang="en"] .motto-en { max-width: 16ch; margin: 0; color: var(--ink); font-size: clamp(2.4rem, 5.6vw, 5rem); font-weight: 600; line-height: 1.15; letter-spacing: -.02em; }
+html[lang="en"] .motto-en b { border-bottom: 0; text-decoration: underline; text-decoration-color: var(--ci-gold); text-decoration-thickness: .07em; text-underline-offset: .14em; }
+html[lang="en"] .motto-en b + b { text-decoration-color: var(--ci-orange); }
+
+/* Home page: every block gets its own background so neighbouring sections never blend together.
+   Order: finder (lilac) → intro (white) → why-cmu (peach) → rewards (lilac) → journey (butter) → stories (plum) → admissions (purple) */
+#program-finder { background: #F3ECF8; }
+#about { background: #FFFFFF; }
+#why-cmu { background: #FFEFE3; }
+#rewards { background: #F6F0FA; }
+#journey { background: #FFF9E6; }

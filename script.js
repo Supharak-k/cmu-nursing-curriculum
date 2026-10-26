@@ -9,7 +9,7 @@ const translations = {
     heroEyebrow: "CHIANG MAI UNIVERSITY · NURSING",
     heroTitle: "เรียนรู้ด้วยหัวใจ<br /><em>เติบโตเพื่อโลก</em>",
     heroLede: "เปิดประตูสู่การศึกษาพยาบาลที่ผสานความเชี่ยวชาญ ความเข้าใจมนุษย์ และมุมมองระดับนานาชาติ",
-    heroPrimary: "ค้นพบหลักสูตร",
+    heroPrimary: "หลักสูตรของเรา",
     heroSecondary: "ดูเส้นทางของเรา",
     heroNote: "A place to learn. A place to belong.",
     photoLabel: "เรียนรู้จากการลงมือทำ",
@@ -82,7 +82,7 @@ const translations = {
     heroEyebrow: "CHIANG MAI UNIVERSITY · NURSING",
     heroTitle: "Learn with heart.<br /><em>Grow for the world.</em>",
     heroLede: "Step into a nursing education shaped by expertise, empathy, and a global perspective.",
-    heroPrimary: "Explore programs",
+    heroPrimary: "Educational Academic",
     heroSecondary: "Discover our journey",
     heroNote: "A place to learn. A place to belong.",
     photoLabel: "Learning by doing",
@@ -157,12 +157,14 @@ try { if (localStorage.getItem(languageStorageKey) === "th") currentLanguage = "
 // Replace these four bilingual messages when the final campaign copy is ready.
 const competencySlides = {
   th: [
+    { title: "สร้างพลังพยาบาล\nสร้างอุดมการณ์วิชาชีพ", lede: "" },
     { title: "การศึกษา\nมาตรฐานสากล", lede: "หลักสูตรคุณภาพ 14 หลักสูตร 4 ระดับการศึกษา\nสร้างศิษย์เก่าคุณภาพกว่า 16,600 คน ทั่วโลก" },
     { title: "งานวิจัย\nเพื่อชีวิตที่ดีกว่า", lede: "สร้างสรรค์นวัตกรรมและงานวิจัยที่นำไปใช้ได้จริง \nด้วยทุนสนับสนุนกว่า 30 ล้านบาทต่อปี" },
     { title: "ผู้นำด้านการพยาบาล\nระดับโลก", lede: "การันตีคุณภาพด้วยรางวัล TQC และการจัดอันดับ\n Top 151-170 ของโลกโดย QS World University Rankings" },
     { title: "เครือข่ายความร่วมมือ\nไร้พรมแดน", lede: "ศูนย์ความร่วมมือระดับนานาชาติ (WHOCC, JBICC) \nและพันธมิตรกว่า 50 สถาบันทั่วโลก" }
   ],
   en: [
+    { title: "Empowering Future Nurses with Pride and Professionalism", lede: "" },
     { title: "World-Class \nEducation", lede: "14 quality programs across 4 educational levels,\nshaping over 16,600 successful alumni worldwide." },
     { title: "Research \nfor Better Lives", lede: "Driving practical health innovations and research \nwith over 30 million THB in annual funding." },
     { title: "Global \nNursing Leadership", lede: "Recognized globally with the TQC award and ranked \nTop 151-170 by QS World University Rankings." },
@@ -227,6 +229,9 @@ function setLanguage(language) {
   });
   const pageTitle = document.body.dataset[language === "th" ? "titleTh" : "titleEn"];
   if (pageTitle) document.title = pageTitle;
+  const pageDesc = document.body.dataset[language === "th" ? "descTh" : "descEn"];
+  const descMeta = document.querySelector('meta[name="description"]');
+  if (pageDesc && descMeta) descMeta.content = pageDesc;
   renderHeroSlide(activeHeroSlide);
   updateMotionLabel();
 }
@@ -467,7 +472,7 @@ function addProgramFinder() {
     <div class="container">
       <div class="finder-heading reveal">
         <div>
-          <h2 id="finder-title" data-th="PROGRAM FINDER" data-en="Find the path<em>made for you.</em>" data-lang-html>Find the path<em>made for you.</em></h2>
+          <h2 id="finder-title" data-th="หลักสูตรที่เปิดสอน" data-en="Educational Academic" data-lang-html>Educational Academic</em></h2>
         </div>
       </div>
       <div class="finder-grid">
@@ -496,14 +501,30 @@ function addRewards() {
   const rewards = [
     ["image/web/reward-edpex.png", "EdPEx", "Education Criteria for Performance Excellence"],
     ["image/web/reward-acen.png", "ACEN", "Accreditation Commission for Education in Nursing"],
-    ["image/web/reward-tqc.png", "TQC 2019", "Thailand Quality Class 2019"],
-    ["image/reward/QS logo.png", "QS", "QS World University Rankings"]
+    ["image/web/reward-tqc.png", "TQC 2019", "Thailand Quality Class 2019"]
+  ];
+  const rankings = [
+    {
+      href: "https://www.nurse.cmu.ac.th/web/FONEventDetail.aspx?id=43026",
+      logo: "image/reward/QS logo.png", alt: "QS World University Rankings", width: 1280, height: 399,
+      badge: "TOP 100", tag: "QS 2025",
+      th: "คณะพยาบาลศาสตร์ มช. ติด <strong>1 ใน 100</strong> ของโลก QS World University Rankings by Subject 2025",
+      en: "Faculty of Nursing, CMU is among the <strong>top 100</strong> in the world in the QS World University Rankings by Subject 2025"
+    },
+    {
+      href: "https://www.cmu.ac.th/th/article/5db07799-13c0-4e46-bf73-33a422fefae9",
+      logo: "image/reward/logo.60897d4.svg", alt: "ShanghaiRanking", width: 207, height: 76,
+      badge: "101-150", tag: "GRAS 2026",
+      th: "คณะพยาบาลศาสตร์ มหาวิทยาลัยเชียงใหม่ อยู่ในลำดับที่ <strong>101-150</strong> ของโลก สาขาการพยาบาล (Nursing) จากการจัดอันดับของ Global Ranking of Academic Subjects (GRAS) ประจำปี 2026 โดย ShanghaiRanking",
+      en: "Faculty of Nursing, Chiang Mai University is ranked <strong>101-150</strong> in the world in Nursing in the Global Ranking of Academic Subjects (GRAS) 2026 by ShanghaiRanking"
+    }
   ];
   anchor.insertAdjacentHTML("afterend", `<section class="rewards-section section" id="rewards" aria-labelledby="rewards-title">
     <div class="container">
       <div class="rewards-heading reveal"><p class="eyebrow"><span class="eyebrow-line"></span>REWARD</p>
         <h2 id="rewards-title" data-th="คุณภาพที่มุ่งมั่น<em>คุณค่าที่ได้รับการยอมรับ</em>" data-en="Committed to quality.<em>Inspired by recognition.</em>" data-lang-html>Committed to quality.<em>Inspired by recognition.</em></h2>
       </div>
+      <div class="reward-ranks">${rankings.map(({ href, logo, alt, width, height, badge, tag, th, en }) => `<a class="reward-rank reveal" href="${href}" target="_blank" rel="noopener"><img class="reward-rank-logo" src="${encodeURI(logo)}" alt="${alt}" width="${width}" height="${height}" loading="lazy" decoding="async"><span class="reward-rank-badge"><b>${badge}</b><span>${tag}</span></span><p data-th="${th}" data-en="${en}" data-lang-html>${th}</p><span class="reward-rank-go" aria-hidden="true">↗</span></a>`).join("")}</div>
       <div class="reward-grid">${rewards.map(([file, name, alt]) => `<figure class="reward-card reveal"><div class="reward-logo"><img src="${encodeURI(file)}" alt="${alt}" loading="lazy" decoding="async"></div><figcaption>${name}</figcaption></figure>`).join("")}</div>
     </div>
   </section>`);

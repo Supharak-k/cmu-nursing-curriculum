@@ -78,13 +78,13 @@ test('starts from a curated random moment, mutes before playback and covers a po
   assert.equal(h.options.playerVars.disablekb, 1);
   assert.equal(h.options.playerVars.end, 174);
   assert.ok(h.calls.indexOf('mute') < h.calls.indexOf('play'));
-  assert.ok(h.calls.some(c => Array.isArray(c) && c[1] === 95));
+  assert.ok(h.calls.some(c => Array.isArray(c) && c[1] === 96));
   assert.ok(parseInt(h.dimensions['--video-width']) >= 390);
   assert.ok(parseInt(h.dimensions['--video-height']) >= 844);
 });
 
 test('supports every configured random opening point', () => {
-  for (const [random, expected] of [[0, 42], [.24, 42], [.25, 51], [.49, 51], [.5, 95], [.74, 95], [.75, 125], [.99, 125]]) {
+  for (const [random, expected] of [[0, 0], [.24, 0], [.25, 29], [.49, 29], [.5, 96], [.74, 96], [.75, 130], [.99, 130]]) {
     const h = setup({ random }); h.ready();
     assert.ok(h.calls.some(c => Array.isArray(c) && c[1] === expected), `random=${random}`);
   }
@@ -92,24 +92,24 @@ test('supports every configured random opening point', () => {
 test('loops at 02:54, preserves playback before the boundary and restarts on ended', () => {
   const h = setup(); h.ready(); h.calls.length = 0;
   h.setTime(173.8); h.tick(); assert.equal(h.calls.length, 0);
-  h.setTime(174); h.tick(); assert.equal(h.calls[0][1], 42);
+  h.setTime(174); h.tick(); assert.equal(h.calls[0][1], 0);
   h.calls.length = 0;
   h.options.events.onStateChange({ data: 0 });
-  assert.equal(h.calls[0][1], 42); assert.equal(h.calls[1], 'play');
+  assert.equal(h.calls[0][1], 0); assert.equal(h.calls[1], 'play');
 });
 test('pauses when hidden or motion is disabled, and resumes within the selected segment', () => {
   const h = setup(); h.ready(); h.calls.length = 0;
   h.document.hidden = true; h.events.visibilitychange(); assert.equal(h.calls.at(-1), 'pause');
   h.setTime(180); h.tick(); assert.equal(h.calls.at(-1), 'pause');
   h.document.hidden = false; h.events.visibilitychange();
-  assert.equal(h.calls.at(-2)[1], 42); assert.equal(h.calls.at(-1), 'play');
+  assert.equal(h.calls.at(-2)[1], 0); assert.equal(h.calls.at(-1), 'play');
   h.rootClasses.add('motion-paused'); h.callbacks.mutation(); assert.equal(h.calls.at(-1), 'pause');
 });
 test('restores looping after browser back/forward cache', () => {
   const h = setup(); h.ready(); assert.equal(h.timers.size, 1);
   h.events.pagehide(); assert.equal(h.timers.size, 0);
   h.events.pageshow({ persisted: true }); assert.equal(h.timers.size, 1);
-  h.setTime(174); h.tick(); assert.equal(h.calls.at(-1)[1], 42);
+  h.setTime(174); h.tick(); assert.equal(h.calls.at(-1)[1], 0);
 });
 test('reduced-motion visitors do not load the player', () => {
   const h = setup({ reduced: true }); assert.equal(h.options, undefined); assert.equal(h.timers.size, 0);

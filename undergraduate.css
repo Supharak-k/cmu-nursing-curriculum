@@ -296,3 +296,6 @@ html[lang="en"] .ug-admission-grid { grid-template-columns: minmax(0, 760px); }
 .grad-fee-note { margin: 1.2rem 0 0; color: var(--ci-gray-dark); font-size: .85rem; }
 .grad-alert { display: inline-block; margin: .3rem 0 0; padding: .35rem .8rem; border-radius: 8px; background: var(--ci-orange-tint); color: var(--ci-orange-deep); font-size: .9rem; font-weight: 600; }
 .ug-card ul { margin: 0 0 .5rem; }
+
+/* English mode shows English only: the second-language subtitle under programme names is hidden */
+html[lang="en"] .ug-program-en { display: none; }
