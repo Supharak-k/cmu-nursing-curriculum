@@ -157,13 +157,13 @@ try { if (localStorage.getItem(languageStorageKey) === "th") currentLanguage = "
 // Replace these four bilingual messages when the final campaign copy is ready.
 const competencySlides = {
   th: [
-    { title: "การศึกษา\nมาตรฐานสากล", lede: "หลักสูตรคุณภาพ 14 หลักสูตร 4 ระดับการศึกษา\nสร้างศิษย์เก่าคุณภาพกว่า 16,600 คน ทั่วโลก" },
+    { title: "การศึกษา\nมาตรฐานสากล", lede: "หลักสูตรคุณภาพ 13 หลักสูตร 3 ระดับการศึกษา\nสร้างศิษย์เก่าคุณภาพกว่า 16,600 คน ทั่วโลก" },
     { title: "งานวิจัย\nเพื่อชีวิตที่ดีกว่า", lede: "สร้างสรรค์นวัตกรรมและงานวิจัยที่นำไปใช้ได้จริง " },
     { title: "ผู้นำด้านการพยาบาล\nระดับโลก", lede: "การันตีคุณภาพด้วยการรับรองหลักสูตร ACEN \nและการจัดอันดับ Top 101-150 ของโลก โดย QS World University Rankings" },
     { title: "เครือข่ายความร่วมมือ\nไร้พรมแดน", lede: "ความหลากหลายและความแตกต่างทางวัฒนธรรม \nและพันธมิตรกว่า 50 สถาบันทั่วโลก" }
   ],
   en: [
-    { title: "World-Class \nEducation", lede: "14 quality programs across 4 educational levels,\nshaping over 16,600 successful alumni worldwide." },
+    { title: "World-Class \nEducation", lede: "13 quality programs across 3 educational levels,\nshaping over 16,600 successful alumni worldwide." },
     { title: "Research \nfor Better Lives", lede: "Driving practical health innovations and research." },
     { title: "Global \nNursing Leadership", lede: "Recognized Quality Through ACEN Accreditation \nTop 101-150 by QS World University Rankings." },
     { title: "Borderless \nCollaboration", lede: "Intercultural and diversity \nwith over 50 partner institutions globally." }

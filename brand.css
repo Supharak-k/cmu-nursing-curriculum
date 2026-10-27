@@ -436,3 +436,24 @@ html[lang="en"] .story-th-only { display: none; }
 .stories h2 { font-size: clamp(2rem, 3.6vw, 3.2rem); margin-bottom: 0; }
 .story-nav { margin-top: .7rem; }
 .story-marquee { margin-top: 2rem; }
+
+/* Menu: the page being viewed is orange (#F16422) with a bar under it. Hover/focus only draws the bar; the text never changes colour. */
+.site-header .desktop-nav a { position: relative; padding-block: .45rem; }
+.site-header .desktop-nav a::after { content: ""; position: absolute; left: 0; right: 0; bottom: -.1rem; height: 3px; border-radius: 3px; background: #F16422; transform: scaleX(0); transform-origin: left; transition: transform .3s; }
+.site-header .desktop-nav a:hover::after, .site-header .desktop-nav a:focus-visible::after { transform: scaleX(1); }
+.site-header .desktop-nav a:not(.is-active):hover, .site-header .desktop-nav a:not(.is-active):focus-visible,
+.site-header .mobile-nav a:not(.is-active):hover { color: #2a1b36; opacity: 1; transform: none; }
+.site-header .desktop-nav a.is-active, .site-header .mobile-nav a.is-active { color: #F16422; font-weight: 700; opacity: 1; transform: none; }
+.site-header .desktop-nav a.is-active::after { transform: scaleX(1); }
+.site-header .mobile-nav a { position: relative; }
+.site-header .mobile-nav a.is-active { padding-left: 1rem; }
+.site-header .mobile-nav a.is-active::before { content: ""; position: absolute; left: 0; top: 12%; bottom: 12%; width: 4px; border-radius: 4px; background: #F16422; }
+
+/* Closing quotation mark, mirroring the opening one (bottom-right of every story) */
+.story-quote::after { content: "”"; position: absolute; right: 1.3rem; bottom: .2rem; color: rgba(255, 255, 255, .32); font: 4.5rem/1 var(--serif); pointer-events: none; }
+
+/* Story text block (quote + name) centred vertically between the two quotation marks */
+.story-quote { justify-content: center; }
+.story-quote p { margin-top: 0; margin-bottom: 1.3rem; }
+.story-quote footer { margin-top: 0; }
+.story-quote { padding-block: 3.2rem 3.2rem !important; }

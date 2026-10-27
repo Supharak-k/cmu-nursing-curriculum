@@ -52,4 +52,14 @@
   };
   mount("header.site-header", headerTemplate());
   mount("footer.site-footer", footerTemplate());
+
+  // Mark the menu item of the page being viewed (IPAS belongs to the Bachelor's section).
+  const file = (location.pathname.split("/").pop() || "index.html").toLowerCase();
+  const section = file === "ipas.html" ? "undergraduate.html" : file;
+  document.querySelectorAll(".desktop-nav a, .mobile-nav a").forEach(link => {
+    if ((link.getAttribute("href") || "").toLowerCase() === section) {
+      link.classList.add("is-active");
+      link.setAttribute("aria-current", "page");
+    }
+  });
 })();
