@@ -101,7 +101,10 @@
 .ug-page .ug-round .dg-ipas-main, .ug-page .ug-round .dg-ipas-alt { display: inline-flex; margin: .9rem 0 1.2rem 1.2rem; padding: .7rem 1.2rem; border: 0; border-radius: 999px; font-weight: 600; text-decoration: none; }
 .ug-page .ug-round .dg-ipas-main { background: var(--ci-orange); color: #fff; box-shadow: 0 .5rem 1.2rem rgba(241, 100, 34, .3); }
 .ug-page .ug-round .dg-ipas-alt { margin-left: .4rem; background: #fff; color: var(--ci-orange-deep); box-shadow: inset 0 0 0 1.5px var(--ci-orange); }
-.ug-page .ug-note a { display: inline-block; padding: .3rem .9rem; font-size: .95rem; border-radius: 999px; background: var(--dg-soft); color: var(--lv-deep); font-weight: 600; text-decoration: none; }
+.ug-page .ug-heading-row .ug-note { justify-items: end; gap: .55rem; color: var(--ink); font-size: 1.15rem; font-weight: 600; }
+.ug-page .ug-heading-row .ug-note a { display: inline-flex; align-items: center; gap: .6rem; padding: .85rem 1.7rem; border-radius: 999px; background: linear-gradient(90deg, #F16422, #F98A3C); color: #fff; font-size: clamp(1.1rem, 1.7vw, 1.35rem); font-weight: 700; text-decoration: none; box-shadow: 0 .6rem 1.4rem rgba(241, 100, 34, .38); transition: transform .2s, box-shadow .2s; }
+.ug-page .ug-heading-row .ug-note a:hover { transform: translateY(-3px); box-shadow: 0 .9rem 1.8rem rgba(241, 100, 34, .48); }
+@media (max-width: 700px) { .ug-page .ug-heading-row .ug-note { justify-items: start; } }
 
 /* ---------- Support cards ---------- */
 .ug-page .ug-card.dg-scard { display: flex; flex-direction: column; gap: .3rem; padding: 1.5rem; border: 0; border-radius: 22px; background: #fff; color: var(--ink); box-shadow: 0 .7rem 1.8rem rgba(70, 42, 94, .09); transition: transform .25s; }
