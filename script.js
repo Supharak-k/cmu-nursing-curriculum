@@ -431,7 +431,7 @@ function enhanceGraduatePages() {
     <div class="pathway-grid container">
       <a class="pathway-card reveal" href="https://www.nurse.cmu.ac.th" target="_blank" rel="noopener">
         <img src="image/web/${config.thaiImage}" alt="${config.thaiAlt}" width="1600" height="1069" loading="lazy"><span class="pathway-shade"></span><span class="pathway-index">01 / THAI PROGRAM</span>
-        <span class="pathway-copy"><strong data-th="หลักสูตรภาษาไทย" data-en="Thai Programs">หลักสูตรภาษาไทย</strong><small data-th="${config.thaiTh}" data-en="${config.thaiEn}">${config.thaiTh}</small><b>EXPLORE ↗</b></span>
+        <span class="pathway-copy"><strong data-th="หลักสูตรไทย" data-en="Regular Program">หลักสูตรไทย</strong><small data-th="${config.thaiTh}" data-en="${config.thaiEn}">${config.thaiTh}</small><b>EXPLORE ↗</b></span>
       </a>
       <a class="pathway-card pathway-card-offset reveal reveal-delay-1" href="https://www.nurse.cmu.ac.th" target="_blank" rel="noopener">
         <img src="image/web/${config.intlImage}" alt="${config.intlAlt}" width="1600" height="1069" loading="lazy"><span class="pathway-shade"></span><span class="pathway-index">02 / INTERNATIONAL PROGRAM</span>

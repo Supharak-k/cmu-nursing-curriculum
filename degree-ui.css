@@ -266,3 +266,12 @@ html[lang="en"] .ug-page .dg-contact-tx small { font-size: .8rem; letter-spacing
 @keyframes dgListIn { from { opacity: 0; transform: translateY(36px) scale(.97); } to { opacity: 1; transform: none; } }
 @keyframes dgRowIn { from { opacity: 0; transform: translateX(-26px); } to { opacity: 1; transform: none; } }
 @keyframes dgPop { 0% { opacity: 0; transform: scale(.3); } 100% { opacity: 1; transform: scale(1); } }
+
+/* Hero: "Program Outcomes" text link under the buttons (opens the Canva page in a new tab) */
+.ug-page .dg-outcomes { display: inline-flex; align-items: center; gap: .5rem; margin-top: 1.4rem; padding-bottom: .3rem; border-bottom: 2px solid rgba(255, 255, 255, .85); color: #fff; font-size: 1.1rem; font-weight: 700; letter-spacing: .02em; text-shadow: 0 1px 8px rgba(0, 0, 0, .35); transition: gap .2s, border-color .2s; }
+.ug-page .dg-outcomes:hover { gap: .85rem; border-bottom-color: #fff; }
+/* Pinned to the bottom edge of the hero (inside the grid's bottom padding), aligned with the left text column */
+.ug-page .degree-hero-grid { position: relative; align-self: stretch; }
+.ug-page .degree-hero .dg-outcomes { position: absolute; left: 0; bottom: 1.8rem; margin: 0; }
+@media (max-width: 1024px) { .ug-page .degree-hero-grid { padding-bottom: 5.4rem; } .ug-page .degree-hero .dg-outcomes { bottom: 1.4rem; } }
+.ug-page .dg-contact-title em { display: block; margin-top: .15rem; color: var(--lv-deep); font-style: normal; font-weight: 600; font-size: .85em; }
