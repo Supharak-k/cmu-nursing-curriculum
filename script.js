@@ -458,10 +458,10 @@ function addProgramFinder() {
   const programs = [
     { slug: "undergraduate", number: "01", label: "BACHELOR’S", titleTh: "ปริญญาตรี", titleEn: "BACHELOR’S",
       textTh: "เริ่มต้นวิชาชีพด้วยความรู้และการฝึกปฏิบัติ", textEn: "Empowering Future Nurses Through Knowledge, Skills, and Practices.",
-      languages: ["THAI", "INTERNATIONAL"], word: "BEGIN" },
+      languages: ["REGULAR", "INTERNATIONAL"], word: "BEGIN" },
     { slug: "masters", number: "02", label: "MASTER’S", titleTh: "ปริญญาโท", titleEn: "MASTER’S",
       textTh: "ต่อยอดความรู้ขั้นสูง สู่การปฏิบัติที่สร้างความเปลี่ยนแปลง", textEn: "Advancing Nursing Through Knowledge and Innovation.",
-      languages: ["THAI", "INTERNATIONAL"], word: "ADVANCE" },
+      languages: ["REGULAR", "INTERNATIONAL"], word: "ADVANCE" },
     { slug: "doctoral", number: "03", label: "DOCTORAL", titleTh: "ปริญญาเอก", titleEn: "DOCTORAL",
       textTh: "สร้างองค์ความรู้ใหม่และเครือข่ายวิจัยระดับนานาชาติ", textEn: "Creating new knowledge and build international research connections.",
       languages: ["INTERNATIONAL"], word: "LEAD" }
