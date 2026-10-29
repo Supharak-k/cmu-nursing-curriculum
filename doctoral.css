@@ -195,3 +195,7 @@ html[lang="en"] .phd-head { align-items: center; }
 .phd-mis { align-self: center; flex: 0 0 auto; margin-left: auto; display: inline-flex; align-items: center; min-height: 3.2rem; padding: .6rem 1.6rem; border-radius: 999px; background: linear-gradient(90deg, var(--ci-orange), #F98A3C); color: #fff; font-size: 1rem; font-weight: 600; box-shadow: 0 .5rem 1.3rem rgba(241, 100, 34, .35); transition: transform .2s, box-shadow .2s; }
 .phd-mis:hover { transform: translateY(-2px); box-shadow: 0 .8rem 1.6rem rgba(241, 100, 34, .45); }
 @media (max-width: 700px) { #study-plan .phd-head { flex-wrap: wrap; } .phd-mis { margin-left: 0; flex-basis: 100%; justify-content: center; } }
+
+/* Scholarship-details button: same size as the masters page link */
+#scholarships .phd-mis { padding: .85rem 1.7rem; font-size: clamp(1.1rem, 1.7vw, 1.35rem); font-weight: 700; }
+@media (max-width: 700px) { #scholarships .phd-head { flex-wrap: wrap; } #scholarships .phd-mis { margin-left: 0; flex-basis: 100%; justify-content: center; } }
